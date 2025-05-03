@@ -1,0 +1,17 @@
+#
+persist.sys.assert.state=false
+persist.sys.alwayson.enable=false
+persist.sys.debug.layer_trace.enable=false
+persist.sys.oplus.perfrecord=false
+persist.sys.oplus_trace=0
+persist.sys.oplus.theia_screen_monitor.disabled=1
+persist.sys.oplus.ostats.labmode.enable=0
+persist.sys.oplus.cvt.manager=0
+persist.sys.ostatsd.enable=0
+persist.sys.ostats_tpd.enable=0
+persist.sys.ostats_pullerd.enable=0
+persist.sys.ood.enable=0
+persist.sys.midasd.enable=0
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1

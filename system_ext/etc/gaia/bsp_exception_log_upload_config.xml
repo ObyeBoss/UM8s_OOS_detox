@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exceptionLogCheckPolicy>
+    <!-- add version for xml, it should be updated when file changed -->
+    <version>20250107001</version>
+    <commercial>
+        <!-- defualt daily total size: 5G-->
+        <dailyTotalSizeLimit>0</dailyTotalSizeLimit>
+
+    </commercial>
+    <other>
+        <!-- defualt daily total size: 5G-->
+        <dailyTotalSizeLimit>0</dailyTotalSizeLimit>
+
+    </other>
+</exceptionLogCheckPolicy>

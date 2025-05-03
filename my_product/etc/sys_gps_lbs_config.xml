@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <Android-Version>15</Android-Version>
+    <version>20241104</version>
+
+    <!-- config for oplus global flp -->
+    <integer ID="3087">0</integer>
+
+    <!-- config for gnss sv strategy -->
+    <bool ID="2064">true</bool>
+    <string ID="5038">Q,300,4000</string>
+
+    <!-- config for gnss power -->
+    <bool ID="2075">true</bool>
+
+    <!-- config for 3dma feature -->
+    <integer ID="3073">1</integer>
+
+    <!-- config for disabling qcom xtra throttle -->
+    <bool ID="2078">true</bool>
+
+    <!-- config for turning on metalcase detection-->
+    <bool ID="2069">true</bool>
+
+    <!-- config for metal case detection -->
+    <!-- bit 1: enable metal case detection feature -->
+    <!-- bit 2: enable sensor detection -->
+    <!-- bit 3: enable gnss status detection -->
+    <!-- bit 4: enable debug report detection -->
+    <!-- bit 5: enable gnss fix detection -->
+    <integer ID="3046">30</integer>
+
+    <!-- parameters for metal case detection -->
+    <string ID="5034">0,0,0,0,0,0,0,0,0,0,0,0,0,0,28.0,20.0,8,5,500.0,100.0,0.3,0.5,0.4,-0.3,-0.5,-0.4,-2.0,4765,5700,5150,5150,4765,0,0,0,0,0,5,3,3,3,3</string>
+
+    <!-- parameters for v2 detection -->
+    <string ID="5039">100,5,7,85,75</string>
+
+    <!-- GPS L1CA -->
+    <string ID="5040">1,5100,5300,5500,5800,6200,6700,7100,7700</string>
+
+    <!-- GLO G1 -->
+    <string ID="5041">1,5400,5500,5600,5900,6300,6700,7200,7700</string>
+
+    <!-- BDS B1I -->
+    <string ID="5042">1,6000,6300,6400,6400,6600,6800,7200,7800</string>
+
+    <!-- BDS B1C -->
+    <string ID="5043">1,5400,5500,5600,5900,6300,6700,7200,7700</string>
+
+    <!-- GAL E1 -->
+    <string ID="5044">1,5400,5500,5600,5900,6300,6700,7200,7700</string>
+</filter-conf>

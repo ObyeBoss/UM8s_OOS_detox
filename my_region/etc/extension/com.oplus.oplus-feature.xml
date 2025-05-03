@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oplus-config>
+	<oplus-feature name="oplus.software.radio.fetch_number_country_name"/>
+	<oplus-feature name="oplus.software.radio.custom_plmn_for_special_operator"/>
+	<oplus-feature name="oplus.software.radio.mix_sim_name_len_default_ten"/>
+	<oplus-feature name="oplus.software.radio.process_change_region"/>
+	<oplus-feature name="oplus.software.radio.sim_name_length_default_ten"/>
+	<oplus-feature name="oplus.software.radio.enable_sim_detect"/>
+	<oplus-feature name="oplus.software.radio.sa_apm_control"/>
+	<oplus-feature name="oplus.software.radio.sa_tac_control"/>
+	<oplus-feature name="oplus.software.radio.disable_nw_limit_notify"/>
+	<oplus-feature name="oplus.software.power.jobscheduler"/>
+	<!-- test -->
+	<oplus-feature name="oplus.software.radio.set_pref_rat_no_delay"/>
+	<oplus-feature name="oplus.software.deviceidle_network_optimization"/>
+	<oplus-feature name="oplus.software.radio.dns_speed_up"/>
+</oplus-config>
+<!-- Timestamp 2024-11-01T18:23:58 #255548 -->

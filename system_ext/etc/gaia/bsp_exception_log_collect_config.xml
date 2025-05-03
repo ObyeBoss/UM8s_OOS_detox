@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logCollectConfig>
+    <!-- add version for xml, it should be updated when file changed -->
+    <version>20240620001</version>
+
+</logCollectConfig>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<AtomTracker>
+    <!--Parameter Description:
+    1. scan_wifi_ssid_limit
+    Set whether AtomWifiScanInfo(atomic data) filters the target WiFi ssid. If configured as 1, it means filtering is required. Otherwise, it means no filtering is required
+    2. scan_wifi_ssid_size
+    Set the AtomWifiScanInfo(atomic data) to collect the number of WiFi scan data, configure 0 to collect 1 by default, and do not configure to collect all scanned lists by default (strongly recommended configuration)
+    3. scan_wifi_ssid_list
+    Set the target wifi ssid list for AtomWifiScanInfo(atomic data) filtering
+    -->
+    <version>1000</version>
+    <atom>
+        <!--temp mark
+        <atomConfig appId="54002" appSide="1" enable="1" expired="FOR_EVER" mask="21004,1" policy="0" rule="passivegps&amp;&amp;cellchange" stopRule="!screen">
+            <parameter name="policy_interval" value="300000" />
+            <parameter name="max_daily_size" value="819200" />
+            <parameter name="max_daily_count" value="100" />
+            <parameter name="primary_rule_expire_time" value="7200000" />
+            <parameter name="save_data_to_local" value="1" />
+            <parameter name="enable_debug_log" value="1" />
+        </atomConfig>
+        <atomConfig appId="54001" appSide="1" enable="1" expired="2024-06-10" mask="21005,21006" policy="0" rule="gamelatency&amp;&amp;!wificonnection" stopRule="!screen">
+            <parameter name="policy_interval" value="300000" />
+            <parameter name="max_daily_size" value="819200" />
+            <parameter name="max_daily_count" value="100" />
+            <parameter name="primary_rule_expire_time" value="7200000" />
+            <parameter name="save_data_to_local" value="1" />
+            <parameter name="enable_debug_log" value="1" />
+        </atomConfig>
+        <atomConfig appId="54000" appSide="1" enable="1" expired="2024-12-30" mask="10201,21001,21002,21003,21006" policy="0" rule="screen&amp;&amp;userwifistate&amp;&amp;expectedssid&amp;&amp;datachannel==2&amp;&amp;frontapp" stopRule="datachannel!=2||!screen||!expectedssid||!frontapp||!userwifistate">
+            <parameter name="policy_interval" value="30000000" />
+            <parameter name="max_daily_size" value="81920000" />
+            <parameter name="primary_rule_expire_time" value="720000000" />
+            <parameter name="scan_wifi_ssid_limit" value="1" />
+            <parameter name="scan_wifi_ssid_size" value="10" />
+            <parameter name="scan_wifi_ssid_list" value="高铁WIFI,高铁WiFi" />
+            <parameter name="save_data_to_local" value="1" />
+            <parameter name="enable_debug_log" value="1" />
+            <parameter name="user_set_fetch_data" value="1" />
+        </atomConfig>
+        -->
+        <!--
+        <atomConfig appId="054600" appSide="1" enable="1" expired="FOR_EVER" mask="21017,21018" policy="0" rule="datechange" stopRule="">
+        </atomConfig>
+        <atomConfig appId="054601" appSide="1" enable="1" expired="FOR_EVER" mask="21014" policy="0" rule="quickchangeapm" stopRule="!quickchangeapm">
+            <parameter name="max_daily_size" value="81920000" />
+            <parameter name="enable_debug_log" value="1" />
+            <parameter name="max_daily_count" value="10" />
+        </atomConfig>
+        <atomConfig appId="054602" appSide="1" enable="1" expired="FOR_EVER" mask="21015,2" policy="0" rule="weaksignal_0" stopRule="!weaksignal_0">
+            <parameter name="max_daily_size" value="81920000" />
+            <parameter name="enable_debug_log" value="1" />
+            <parameter name="max_daily_count" value="10" />
+        </atomConfig>
+        <atomConfig appId="054603" appSide="1" enable="1" expired="FOR_EVER" mask="21015,2" policy="0" rule="weaksignal_1" stopRule="!weaksignal_1">
+            <parameter name="max_daily_size" value="81920000" />
+            <parameter name="enable_debug_log" value="1" />
+            <parameter name="max_daily_count" value="10" />
+            <parameter name="atom_share_id" value="54602" />
+        </atomConfig>
+        <atomConfig appId="054502" appSide="1" enable="1" expired="ACTIVATION_DAYS:90" mask="2,3,21004" policy="0" rule="cellchange&amp;&amp;passivegps">
+            <parameter name="max_daily_size" value="819200" />
+            <parameter name="max_daily_count" value="5" />
+            <parameter name="atom_data_config" value="2,3" />
+            <parameter name="save_data_to_local" value="0" />
+            <parameter name="enable_debug_log" value="0" />
+            <parameter name="send_data_interval" value="300000" />
+        </atomConfig>
+        <atomConfig appId="054503" appSide="1" enable="1" expired="ACTIVATION_DAYS:90" mask="21005,21006" policy="0" rule="gamelatency&amp;&amp;!wificonnection" stopRule="!screen">
+            <parameter name="policy_interval" value="300000" />
+            <parameter name="max_daily_size" value="819200" />
+            <parameter name="max_daily_count" value="5" />
+            <parameter name="primary_rule_expire_time" value="7200000" />
+            <parameter name="save_data_to_local" value="0" />
+            <parameter name="enable_debug_log" value="0" />
+            <parameter name="send_data_interval" value="300000" />
+        </atomConfig>
+        <atomConfig appId="054504" appSide="1" enable="1" expired="ACTIVATION_DAYS:90" mask="10201" policy="2" rule="borderport" stopRule="regmccchange==3">
+            <parameter name="atom_data_mask" id="10201" value="67583" />
+            <parameter name="policy_interval" value="300000" />
+            <parameter name="max_daily_size" value="819200" />
+            <parameter name="primary_rule_expire_time" value="10800000" />
+            <parameter name="max_daily_action" value="20" />
+            <parameter name="max_daily_count" value="100" />
+            <parameter name="atom_data_config" value="10201" />
+            <parameter name="save_data_to_local" value="0" />
+            <parameter name="enable_debug_log" value="0" />
+        </atomConfig>
+        <atomConfig appId="054509" appSide="1" enable="1" expired="ACTIVATION_DAYS:90" mask="2,21020,21019" policy="0" rule="cellchange&amp;&amp;networkscore&amp;&amp;!wificonnection">
+            <parameter name="max_daily_size" value="819200" />
+            <parameter name="max_daily_count" value="5" />
+            <parameter name="save_data_to_local" value="0" />
+            <parameter name="enable_debug_log" value="0" />
+            <parameter name="atom_data_config" value="2" />
+            <parameter name="send_data_interval" value="300000" />
+        </atomConfig>
+        <atomConfig appId="1" appSide="1" enable="1" expired="FOR_EVER" mask="" policy="0" rule="alertEvent__id==100001&amp;&amp;alertEvent==1" action="LogAction">
+            <parameter name="enable_debug_log" value="1" />
+            <parameter name="max_daily_count" value="1" />
+            <parameter name="modem_log_time" value="120" />
+        </atomConfig>
+        -->
+    </atom>
+</AtomTracker>

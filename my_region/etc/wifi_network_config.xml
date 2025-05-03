@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wifiNetworkConfig>
+    <version>2024052315</version>
+    <NETWORK_PUBLIC_HTTPS_SERVERS_URL>https://conn-service-eu-04.allawnos.com,https://conn-service-eu-05.allawnos.com</NETWORK_PUBLIC_HTTPS_SERVERS_URL>
+    <NETWORK_FALLBACK_HTTP_SERVERS_URL>http://www.google.cn/generate_204,http://developers.google.cn/generate_204</NETWORK_FALLBACK_HTTP_SERVERS_URL>
+    <OPLUS_WIFI_ASSISTANT_NETSERVER>conn-service-eu-04.allawnos.com,conn-service-eu-05.allawnos.com</OPLUS_WIFI_ASSISTANT_NETSERVER>
+    <OPLUS_WIFI_NETCONFIG_IPV6_SERVER>conn-service-eu-07.allawnos.com,conn-service-eu-08.allawnos.com</OPLUS_WIFI_NETCONFIG_IPV6_SERVER>
+    <NETWORK_DEFAULT_DNS>1.1.1.1</NETWORK_DEFAULT_DNS>
+    <NETWORK_BACKUP_DNS>1.0.0.1,8.8.8.8</NETWORK_BACKUP_DNS>
+</wifiNetworkConfig>

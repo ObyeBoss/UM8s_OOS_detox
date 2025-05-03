@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- <allow-in-power-save package="com.facebook.services" />
+    <allow-in-power-save-except-idle package="com.facebook.appmanager"/>
+    <hidden-api-whitelisted-app package="com.facebook.appmanager" />
+    <hidden-api-whitelisted-app package="com.facebook.system" />
+    <hidden-api-whitelisted-app package="com.facebook.services" /> -->
+</config>

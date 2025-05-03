@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extend_features>
+	<app_feature name="oplus.power.onwirelesscharger.support"/>
+	<app_feature name="os.charge.settings.wirelesscharge.support"/>
+	<app_feature name="oplus.power.wirelesschgwhenwired.support"/>
+	<app_feature name="com.oplus.systemui.not_show_guide_dialog"/>
+	<app_feature name="os.charge.settings.wirelesschargingcoil.position" args="float:0.4377"/>
+	<app_feature name="com.oplus.humming_bird_enable"/>
+	<app_feature name="os.charge.settings.wirelesscharging.power" args="int:50"/>
+	<app_feature name="com.android.launcher.support_swipe_up_to_split" args="boolean:true"/>
+	<app_feature name="com.oplus.battery.whitelist_vowifi" args="boolean:true"/>
+	<!-- <app_feature name="oplus_disallow_run_apps">
+		<StringList args="PACKAGENAME"/>
+	</app_feature> -->
+	<app_feature name="com.oplus.mediaturbo.service"/>
+	<app_feature name="os.graphic.gallery.os15_secrecy" args="boolean:true"/>
+	<app_feature name="oplus.software.support_localsearch_llm" args="boolean:true"/>
+	<app_feature name="oplus.appfeature.networkless_audiovolume_config" args="int:0"/>
+	<app_feature name="com.oplus.feature.hq_doc_scan_enable" args="boolean:true"/>
+</extend_features>
+<!-- Timestamp 2025-02-12T10:14:24 #545835 -->

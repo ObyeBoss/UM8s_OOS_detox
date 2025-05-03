@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oplus-config>
+	<oplus-feature name="oplus.software.vip_preload"/>
+	<oplus-feature name="oplus.software.parallel_preload"/>
+	<oplus-feature name="oplus.software.next_preload"/>
+	<oplus-feature name="oplus.software.sau_preload"/>
+	<oplus-feature name="oplus.software.resolver_share_email"/>
+	<oplus-feature name="oplus.software.uxicon_exp"/>
+	<oplus-feature name="oplus.software.pms_install_statistics_no_silent"/>
+	<oplus-feature name="oplus.software.pms_device_owner_uninstall_policy"/>
+	<oplus-feature name="oplus.software.support_fluid_entry"/>
+	<oplus-feature name="oplus.software.fluid_replace_ntf"/>
+	<unavailable-oplus-feature name="os.tool.midas"/>
+	<oplus-feature name="oplus.software.memory_nirvana.enable"/>
+	<oplus-feature name="oplus.software.power_button_redefine"/>
+	<oplus-feature name="oplus.software.splice.navigation_gesture"/>
+	<oplus-feature name="oplus.software.antiroot_disabled"/>
+	<oplus-feature name="oplus.software.home.rotation_lock"/>
+	<oplus-feature name="oplus.software.flexible_freeform.support"/>
+	<oplus-feature name="oplus.software.pocketstudio.support"/>
+	<oplus-feature name="oplus.software.pms_oplus_otadexopt_disabled"/>
+	<oplus-feature name="oplus.software.screen_sharing_protection"/>
+	<oplus-feature name="oplus.software.gsa_gameload"/>
+	<!-- test -->
+	<!-- <unavailable-oplus-feature name="os.tool.midas.midasd.enable"/>
+	<unavailable-oplus-feature name="os.tool.midas.ostatsd.enable"/>
+	<unavailable-oplus-feature name="os.tool.midas.ostats_tpd.enable"/>
+	<unavailable-oplus-feature name="os.tool.midas.ostats_pullerd.enable"/> -->
+</oplus-config>
+<!-- Timestamp 2025-02-18T11:19:49 #550773 -->

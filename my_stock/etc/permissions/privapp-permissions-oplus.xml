@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <!-- <privapp-permissions package="com.nearme.statistics.rom">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions> -->
+
+    <privapp-permissions package="com.oneplus.membership">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <!-- <privapp-permissions package="com.oplus.statistics.rom">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.BATTERY_STATS" />
+    </privapp-permissions> -->
+
+    <privapp-permissions package="com.android.incallui">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.SEND_RESPOND_VIA_MESSAGE"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.SHUTDOWN"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.UPDATE_LOCK"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.READ_WALLPAPER_INTERNAL"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.STATUS_BAR_SERVICE"/>
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.BROADCAST_SMS"/>
+        <permission name="android.permission.ACCESS_SURFACE_FLINGER"/>
+        <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    </privapp-permissions>
+
+    <!--WangGuorui@ANDROID.UPDATABILITY,2020/07/14,add for mds app to grant permission -->
+    <!--LiuXinQi@ANDROID.UPDATABILITY,2020/12/1,change mds app packageName to re grant permission -->
+    <privapp-permissions package="com.oplus.apprecover">
+        <permission name="com.android.permission.INSTALL_EXISTING_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <!--XiqiLin@ANDROID.FRAMEWORK,2021/07/22,add for OppoAccessoryFramework app to grant permission -->
+    <privapp-permissions package="com.heytap.accessory">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="android.permission.LOCAL_MAC_ADDRESS" />
+        <permission name="android.permission.READ_WIFI_CREDENTIAL" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+		<permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <!--Wangmingming@App.UserCenter,2020/09/29,add for UserCenter app to grant permission -->
+    <privapp-permissions package="com.heytap.vip">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+    </privapp-permissions>
+
+    <!--Guibiao.Shen@ROM.OppoTZUpdate,2020/07/28,add for OppoTZUpdate app to grant permission -->
+    <privapp-permissions package="com.oplus.tzupdate">
+        <permission name="android.permission.SET_TIME_ZONE"/>
+    </privapp-permissions>
+
+    <!--majianjiang@App.CloudService,2020/07/29,add for CloudService app to grant permission -->
+    <privapp-permissions package="com.heytap.cloud">
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.STATUS_BAR_SERVICE" />
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+    </privapp-permissions>
+
+    <!--Jing.Wang@Rom.Comm.Contacts,2020/07/29,add for stock permission -->
+    <privapp-permissions package="com.android.mms">
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.DEVICE_POWER" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+		<permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.ted.number">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.WRITE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.contacts">
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.WRITE_SETTINGS" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL" />
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.MANAGE_USERS" />
+    </privapp-permissions>
+
+    <!-- zhangwei80280171@com.oplus.cast,2021/01/20,Add for grant cts permission -->
+    <privapp-permissions package="com.oplus.cast">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <!--Wangzhiming@App.HeySynergy,2021/01/20,add for HeySynergy app to grant permission -->
+    <privapp-permissions package="com.oplus.synergy">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <!--Wangzhiming@App.ONet,2021/09/02,add for ONet app to grant permission -->
+    <privapp-permissions package="com.oplus.onet">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.READ_WIFI_CREDENTIAL" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+		<permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    </privapp-permissions>
+
+    <!--Xiaodong.Qin@Apps.Screenshot,2020/12/16,add for screenshot app to grant permission -->
+    <privapp-permissions package="com.oplus.screenshot">
+        <permission name="android.permission.DUMP" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.WRITE_SETTINGS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+
+    <!--Yingde.Li@ANDROID.CTS,2021/02/18,add for com.heytap.yoli app to grant permission -->
+    <privapp-permissions package="com.heytap.yoli">
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <!--Miranda.Qian@SYSTEM,2021/03/15,add for net.oplus.odm app to grant permission -->
+    <privapp-permissions package="net.oplus.odm">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="net.oplus.odmprovider">
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+
+    <!--Piaoyu.Sun@ANDROID.CTS,2021/07/13,add for com.oplus.exsystemservice app to grant permission -->
+    <privapp-permissions package="com.oplus.exsystemservice">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oplus.sos">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+		<permission name="android.permission.WRITE_SECURE_SETTINGS" />
+		<permission name="android.permission.MODIFY_PHONE_STATE" />
+		<permission name="android.permission.STATUS_BAR" />
+		<permission name="android.permission.INTERACT_ACROSS_USERS" />
+		<permission name="android.permission.TURN_SCREEN_ON" />
+		<permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oplus.blacklistapp">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.WRITE_SETTINGS" />
+        <permission name="android.permission.WRITE_BLOCKED_NUMBERS" />
+        <permission name="android.permission.READ_BLOCKED_NUMBERS" />
+    </privapp-permissions>
+
+    <!--Abhishek.k@Apps.Scout,2021/09/15,add for scout app to grant permission -->
+    <privapp-permissions package="com.oneplus.opscout">
+        <permission name="android.permission.READ_SEARCH_INDEXABLES" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+    </privapp-permissions>
+
+    <!--Lulinsong@App.OPSynergy,2021/10/09,add for OPSynergy app to grant permission -->
+    <privapp-permissions package="com.oplus.linker">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+		<permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+		<permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+		<permission name="android.permission.INTERACT_ACROSS_USERS" />
+		<permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <!--R Yogeswari@Apps.OnePlusSetupwizard,2021/10/25,add for setupwizard app to grant permission -->
+    <privapp-permissions package="com.oneplus.setupwizard">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="android.permission.REBOOT" />
+    </privapp-permissions>
+
+    <!-- Bingjie Wang@ROM.OppoBootReg,2020/07/13,Add for grant permission -->
+    <privapp-permissions package="com.coloros.bootreg">
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.DISPATCH_PROVISIONING_MESSAGE" />
+		<permission name="android.permission.MODIFY_DAY_NIGHT_MODE" />
+		<permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+    </privapp-permissions>
+
+    <!--wanghaosong@App.cota,add for cota app to status bar and INTERACT_ACROSS_USERS permission -->
+    <privapp-permissions package="com.oplus.cota">
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+
+    <!--Jun.Cheng@ROM.SystemClone,2020/07/09,add for systemclone app to grant permission -->
+    <privapp-permissions package="com.coloros.systemclone">
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="com.android.permission.INSTALL_EXISTING_PACKAGES"/>
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <!--zhiwei.liu@APP.PhoneManager,2022/06/15,add for PhoneManager app to grant permission -->
+    <privapp-permissions package="com.coloros.phonemanager">
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+    </privapp-permissions>
+
+    <!--ferro.chang-SS000140@App.gallery, 2022/04/29, add for gallery app to grant permission -->
+    <privapp-permissions package="com.oneplus.gallery">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <!--Jet@App.Omacp,2022/08/02,add for Omacp app to grant permission -->
+    <privapp-permissions package="com.mediatek.omacp">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oneplus.account">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+    </privapp-permissions>
+
+    <!--Shiqiugan@App.Metis,2022/08/24,add for Metis app to grant permission -->
+    <privapp-permissions package="com.oplus.metis">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+    </privapp-permissions>
+
+    <!--Chenboqi@App.GlobalSearch,2022/11/3,add for GlobalSearch app to grant permission -->
+    <privapp-permissions package="com.oppo.quicksearchbox">
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+	
+	<!--WuJingCheng@App.ColorScreenRecorder,2023/04/28,add for ColorScreenRecorder app to grant permission -->
+	<privapp-permissions package="com.oplus.screenrecorder">
+		<permission name="android.permission.STATUS_BAR" />
+	</privapp-permissions>
+	
+	<!--Machan@App.GlobalGames,2023/6/6,add for GlobalGames app to grant permission -->
+    <privapp-permissions package="com.oplus.games">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+		<permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+	
+	<!-- W9090260@App.OppoGaller2, 2023/06/08 : Add for CTS Bug 5734207 -->
+	<privapp-permissions package="com.oneplus.gallery">
+		<permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+	</privapp-permissions>
+
+	<!-- ZhangPeng@ROM.LockAssistant,2024/06/25,Add for grant permission -->
+    <privapp-permissions package="com.coloros.lockassistant">
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.TETHER_PRIVILEGED" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+    </privapp-permissions>
+</permissions>

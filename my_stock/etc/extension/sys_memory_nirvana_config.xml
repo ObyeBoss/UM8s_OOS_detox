@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<filter-conf>
+    <version>2025021001</version>
+    <filter-name>sys_memory_nirvana_config</filter-name>
+
+    <config name="baseConfig" type="bundle">
+        <item name="EnableNoSwap" type="bool" value="true"/>
+        <item name="NirvanaSupportMinRam" type="int" value="12"/>
+        <item name="RootShrinkFilePath" type="string" value="/dev/memcg/memory.force_shrink_file"/>
+        <item name="BatchSize" type="int" value="2048"/>
+        <item name="CheckSupportProduct" type="bool" value="true"/>
+    </config>
+
+    <config name="memoryMonitorConfig" type="bundle">
+        <item name="MonitorStepSizeMB" type="int" value="150"/>
+        <item name="MonitorMaxThresholdCount" type="int" value="10"/>
+
+        <item name="SampleMinDuration" type="long" value="10000"/>
+        <item name="SampleMinCount" type="int" value="5"/>
+        <item name="SampleMaxCount" type="int" value="10"/>
+        <item name="SampleCoolingTime" type="long" value="1000"/>
+        <item name="SampleThrashingMaxCount" type="int" value="8"/>
+
+        <item name="MaxCachedPredictInfoCount" type="int" value="110"/>
+        <item name="PredictInfoInitLimit" type="int" value="100"/>
+        <item name="PredictInfoDiscardBatch" type="int" value="10"/>
+    </config>
+
+    <config name="memoryReleasePolicyConfig" type="bundle">
+        <item name="ShrinkMaxCpuLoad" type="int" value="85"/>
+        <item name="InterruptShrinkAndCompCpuLoad" type="int" value="91"/>
+        <item name="GlobalShrinkTimeout" type="long" value="300"/>
+        <item name="ShrinkPollingPeriod" type="long" value="2000"/>
+        <item name="GlobalShrinkMinInterval" type="long" value="5000"/>
+
+        <item name="FileMinPercent" type="int" value="40"/>
+        <item name="AnonMinPercent" type="int" value="40"/>
+        <item name="AnonBalancePercent" type="int" value="50"/>
+
+        <item name="ClearMinInterval" type="long" value="2000"/>
+        <item name="FailedCachedClearCoolingTime" type="long" value="30000"/>
+
+        <item name="ReleaseMinTargetKb" type="long" value="100000"/>
+        <item name="MaxPollingInterval" type="long" value="20000"/>
+        <item name="AppLaunchingTimeout" type="long" value="3000"/>
+        <item name="UserActionMinInterval" type="long" value="1000"/>
+
+        <item name="MinPinnedSizeKb" type="long" value="300000"/>
+        <item name="UnpinBatchSizeKb" type="long" value="500000"/>
+        
+        <item name="FileCacheThresMap" type="string" value="8-2000000|12-2500000|16-3000001|24-5000000"/>
+        <item name="CamFileCacheThresMap" type="string" value="8-1500000|12-2000000|16-3000001|24-4500000"/>
+
+        <item name="HighTempThreshold" type="int" value="39"/>
+		
+        <item name="ThermalKillPolicy" type="int" value="3"/>
+    </config>
+	
+    <config name="thermalLevelMemoryReleaseConfig" type="bundle">
+		<item name="thermal_level_42000" type="string" value="8-10|12-10|16-10|24-10"/>
+		<item name="thermal_level_49000" type="string" value="8-5|12-5|16-5|24-5"/>
+    </config>
+
+    <config name="strategyConfig" type="subconfig">
+        <config name="HIGH_FREE" type="bundle">
+            <item name="ExpectedBgCountMap" type="string" value="8-12|12-18|16-30|24-42"/>
+            <item name="CamExpectedBgCount" type="string" value="8-12|12-18|16-25|24-37"/>
+            <item name="NoSwapLow" type="string" value="8-300000|12-300000|16-500000|24-600000"/>
+            <item name="NoSwapHigh" type="string" value="8-400000|12-400000|16-800000|24-900000"/>
+            <item name="NoSwapMax" type="string" value="8-400000|12-400000|16-900000|24-1000000"/>
+            <item name="CameraNoSwapLow" type="string" value="8-200000|12-200000|16-400000|24-600000"/>
+            <item name="CameraNoSwapHigh" type="string" value="8-300000|12-300000|16-600000|24-800000"/>
+        </config>
+        <config name="MORE_BACKGROUND" type="bundle">
+            <item name="ExpectedBgCountMap" type="string" value="8-18|12-24|16-44|24-54"/>
+            <item name="CamExpectedBgCount" type="string" value="8-18|12-19|16-39|24-49"/>
+            <item name="NoSwapLow" type="string" value="8-200000|12-300000|16-300000|24-400000"/>
+            <item name="NoSwapHigh" type="string" value="8-300000|12-400000|16-500000|24-600000"/>
+            <item name="NoSwapMax" type="string" value="8-400000|12-400000|16-600000|24-700000"/>
+            <item name="CameraNoSwapLow" type="string" value="8-200000|12-200000|16-300000|24-400000"/>
+            <item name="CameraNoSwapHigh" type="string" value="8-300000|12-300000|16-400000|24-500000"/>
+        </config>
+    </config>
+
+    <config name="featureControlConfig" type="bundle">
+        <item name="ControlHybridSwap" type="bool" value="false"/>
+        <item name="ControlPreload" type="bool" value="false"/>
+        <item name="PreloadControlBufferMap" type="string" value="8-500000|12-1000000|16-1500000|24-2000000"/>
+        <item name="Rom2RamControlBufferMap" type="string" value="8-3000000|12-3000000|16-3000000|24-3000000"/>
+		<item name="ThermalEnterThres" type="int" value="41000"/>
+		<item name="ThermalExitThres" type="int" value="39000"/>
+    </config>
+    
+	<config name="SupportProductList" type="stringList">
+        <!-- 14.1.0 -->
+        <!-- Omega-C1 PJW110 23083 domestic -->
+        <item name="PJW110"/>
+        <!-- Omega-C2 PJV110 23081 domestic -->		
+        <item name="PJV110"/>
+        <!-- Omega-S2 CPH2629 23265 export GDPR -->
+        <item name="CPH2629"/>
+        <!-- Omega-S3 CPH2625 23261 export GDPR -->
+        <item name="CPH2625"/>
+
+        <!-- Corvette PJX110 23814 domestic -->
+        <item name="PJX110"/>
+
+        <!-- Caihong OPD2401 23926 domestic -->
+        <item name="OPD2401"/>
+        <!-- Caihong OPD2402 23976 export -->
+        <item name="OPD2402"/>
+        <!-- Caihong-O OPD2403 23978 GDPR -->
+        <item name="OPD2403"/>
+        <!-- Caihong-O OPD2404 23927 domestic -->
+        <item name="OPD2404"/>
+
+        <!-- Avalon CPH2661 24211 GDPR -->
+        <item name="CPH2661"/>
+
+        <!-- 15.0.0 -->
+        <!--Waffle PJD110 22825 domestic -->
+        <item name="PJD110"/>
+        <!--Waffle CPH2573 22877 export -->
+        <item name="CPH2573"/>
+        <!--Waffle CPH2581 22877 GDPR -->
+        <item name="CPH2581"/>
+
+        <!--Konka PKC110 23105 domestic -->
+        <item name="PKC110"/>
+        <!--Konka CPH2659 23216 export -->
+        <item name="CPH2659"/>
+
+        <!--Yala PKB110 23101 domestic -->
+        <item name="PKB110"/>
+        <!--Yala CPH2651 23205 export -->
+        <item name="CPH2651"/>
+
+        <!--Milkyway-C1 PKK110 24021 domestic -->
+        <item name="PKK110"/>
+        <!--Milkyway-S1 CPH2697 24261 export GDPR -->
+        <item name="CPH2697"/>
+        <!--Milkyway-C2 PKM110 24023 domestic -->
+        <item name="PKM110"/>
+        <!--Milkyway-S2 CPH2689 24222 export GDPR -->
+        <item name="CPH2689"/>
+        <!--Milkyway-S3（5G） CPH2699 24263 GDPR 24264 export -->
+        <item name="CPH2699"/>
+        <!--Milkyway S3（4G） CPH2701 24267 export -->
+        <item name="CPH2701"/>
+
+        <!--Alpha-H PKP110 24051 domestic -->
+        <item name="PKP110"/>
+        <!--Alpha-H CPH2705 24271 export -->
+        <item name="CPH2705"/>
+        <!--Alpha-M  24055 domestic 24279 export -->
+
+
+        <!--Dodge PJZ110 23821 domestic -->
+        <item name="PJZ110"/>
+        <!--Dodge CPH2655 23893 export -->
+        <item name="CPH2655"/>
+        <!--Dodge CPH2653 23893 GDPR -->
+        <item name="CPH2653"/>
+        <!--Dodge CPH2653 23893 IND -->
+        <item name="CPH2649"/>
+
+        <!--Giulia PKG110 23851 domestic -->
+        <item name="PKG110"/>
+        <!--Giulia CPH2691 23867 export -->
+        <item name="CPH2691"/>
+        <!--Giulia CPH2645 23867 GDPR -->
+        <item name="CPH2645"/>
+
+        <!--Nvwa_V PHZ110 22113 domestic -->
+		<item name="PHZ110"/>
+		
+        <!-- Hummer PKR110 24811 domestic -->
+        <item name="PKR110"/>
+
+        <!-- Linhai PGX110 22017 domestic -->
+        <item name="PGX110"/>
+
+        <!-- 15.0.1 -->
+        <!--Petrel PKH110 24001 domestic -->
+        <item name="PKH110"/>
+        <!--Petrel PKH120 24002 domestic -->
+        <item name="PKH120"/>
+        <!--Petrel CPH2671 24201 export -->
+        <item name="CPH2671"/>
+
+        <!--Zhufeng PKJ110 24019 domestic -->
+        <item name="PKJ110"/>
+        <!--Zhufeng PKU110 24018 domestic -->
+        <item name="PKU110"/>
+
+        <!--KoktoKay PKT110 24011 domestic -->
+        <item name="PKT110"/>
+
+        <!--Flamingo PHT110 22023 domestic -->
+        <item name="PHT110"/>
+        <!--Flamingo CPH2519 22223 export -->
+        <item name="CPH2519"/>
+
+        <!--SLMH PLB110 24013 domestic -->
+        <!--<item name="PLB110"/>-->
+
+        <!--Xueying PHN110 22003 domestic -->
+        <item name="PHN110"/>
+
+        <!--Dragonfly PGT110 22021 domestic -->
+        <item name="PGT110"/>
+        <!--Dragonfly CPH2437 22221 export -->
+        <item name="CPH2437"/>
+
+        <!--Udon PHK110 22803 domestic -->
+        <item name="PHK110"/>
+        <!--Udon CPH2487 22881 export -->
+        <item name="CPH2487"/>
+
+        <!--WhiteSwan PGU110 22001 domestic -->
+        <item name="PGU110"/>
+
+        <!--Luwu PFFM10 21005 domestic -->
+        <item name="PFFM10"/>
+        <!--Luwu CPH2307 21205 export -->
+        <item name="CPH2307"/>
+        
+        <!--Audi PJF110 23803 domestic -->
+        <item name="PJF110"/>
+        
+        <!--Aries-O OPD2203 22972 export -->
+        <item name="OPD2203"/>
+        <!--Aries OPD2201 22921 domestic -->
+        <item name="OPD2201"/>
+        <!--Aries OPD2202 22971 export -->
+        <item name="OPD2202"/>
+
+        <!--Vivien PHV110 22047 domestic -->
+        <item name="PHV110"/>
+
+
+        <!--Xigua PJA110 22851 domestic -->
+        <item name="PJA110"/>
+
+        <!--luna PGFM10 21135 domestic -->
+        <item name="PGFM10"/>
+
+        <!--salami PHB110 22811 domestic -->
+        <item name="PHB110"/>
+
+        <!--Diting PFFM20 21007 domestic -->
+        <item name="PFFM20"/>
+
+        <!--Taibai PFZM10 21121 domestic -->
+        <item name="PFZM10"/>
+
+        <!-- 15.0.2 -->
+        <!-- Pagani 24821 domestic -->
+        <item name="PKX110"/>
+        <!-- Pagani 24875 export -->
+        <item name="CPH2723"/>
+
+        <!-- Lexus 24881 export -->
+        <item name="CPH2709"/>
+        
+        <!-- Lexus 24882 export -->
+        <!--<item name=""/>-->
+        
+        <!-- Subaru 24825 domestic -->
+        <item name="PLF110"/>
+
+        <!-- Honda 24891 export -->
+        <item name="CPH2717"/>
+        
+        <!-- Honda 24892 export -->
+        <!--<item name=""/>-->
+		
+        <!-- Emira 24813 domestic -->
+        <item name="PLC110"/>
+
+        <!-- Zhuque-C1 24071 domestic -->
+        <item name="PKZ110"/>
+        <!-- Zhuque-C2 24075 domestic -->
+        <item name="PLA110"/>
+        <!-- Zhuque-S1 24325 export -->
+        <item name="CPH2739"/>
+		
+        <!-- Zhuque-S2 24321 domestic -->
+        <!--<item name=""/>-->
+        
+        <!-- Zhuque-S2 24322 export -->
+        <item name="CPH2737"/>
+		
+        <!-- Zhuque-S3 5G 24335 export -->
+        <!-- Zhuque-S3 5G 24336 export -->
+        <item name="CPH2743"/>
+        
+        <!-- Kningt H 24067 domestic -->
+        <!-- <item name=""/> -->
+		
+        <!-- Kningt M 24069 domestic -->
+        <item name="PLM110"/>
+        <!-- Kningt M 24297 export -->
+        <item name="CPH2761"/>
+
+	</config>
+</filter-conf>
