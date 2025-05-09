@@ -1,0 +1,418 @@
+<filter-conf>
+<version>20210726</version>
+<isOpen>1</isOpen>
+<filter-name>safe_boot_whitelist</filter-name>
+<p att="com.tencent.mm"/>
+<p att="com.xiaomi.channel"/>
+<p att="com.immomo.momo"/>
+<p att="com.feinno.felio"/>
+<p att="net.iaround"/>
+<p att="com.tencent.qqphonebook"/>
+<p att="com.tencent.WBlog"/>
+<p att="cn.com.fetion"/>
+<p att="com.alibaba.mobileim"/>
+<p att="com.snda.youni"/>
+<p att="com.sg.sledog"/>
+<p att="jp.naver.line.android"/>
+<p att="com.weico.sinaweibo"/>
+<p att="me.imid.fuubo"/>
+<p att="com.changba"/>
+<p att="com.sohu.sohuvideo"/>
+<p att="com.asiainfo.android"/>
+<p att="com.systen.tongjiqi"/>
+<p att="com.keke.otginstall"/>
+<p att="com.keke.otginstall.aid"/>
+<p att="com.whatsapp"/>
+<p att="com.rsupport.rs.activity.oneplus"/>
+<p att="com.rsupport.rs.activity.oppo"/>
+<p att="com.rsupport.rs.activity.oppoglobal"/>
+<p att="com.rsupport.rsperm.ao.a1th"/>
+<p att="com.rsupport.rs.activity.rsupport"/>
+<p att="com.rsupport.mvagent"/>
+<p att="com.rsupport.mvagent1"/>
+<p att="rsupport.AndroidViewer"/>
+<p att="com.android.cts.net"/>
+<p att="com.android.cts.stub"/>
+<p att="com.android.cts.verifier"/>
+<p att="com.android.cts.permissiondeclareappcompat"/>
+<p att="com.lbe.security"/>
+<p att="com.lbe.security.miui"/>
+<p att="com.qihoo360.mobilesafe"/>
+<p att="com.ijinshan.duba"/>
+<p att="com.tencent.qqpimsecure"/>
+<p att="com.symantec.mobilesecurity"/>
+<p att="com.anguanjia.safe"/>
+<p att="cn.opda.a.phonoalbumshoushou"/>
+<p att="com.baidu.security"/>
+<p att="com.wandoujia.phoenix2"/>
+<p att="com.wandoujia.phoenix2.usbproxy"/>
+<p att="com.nd.assistance"/>
+<p att="com.qq.AppService"/>
+<p att="com.shuame.sprite"/>
+<p att="com.oppo.assistance.gerneral"/>
+<p att="com.realtek.airplay.client"/>
+<p att="com.autonavi.xmgd.navigator.oppo"/>
+<p att="com.autonavi.xmgd.navigator"/>
+<p att="com.jb.gokeyboard.handwrite.zh"/>
+<p att="com.baidu.BaiduMap"/>
+<p att="com.sonyericsson.extras.smartwirelessheadsetpro"/>
+<p att="com.oppo.gatt"/>
+<p att="com.oppo.gatt.proximityservice"/>
+<p att="com.google.android.voicesearch"/>
+<p att="com.oppo.simplebackup"/>
+<p att="com.oppo.mediacontrol"/>
+<p att="com.gau.go.launcherex.gowidget.switchwidget"/>
+<p att="com.gau.go.launcherex.gowidget.gosearchwidget"/>
+<p att="com.gau.go.launcherex.gowidget.calendarwidget"/>
+<p att="com.gau.go.launcherex.gowidget.notewidget"/>
+<p att="com.gau.go.launcherex:goHandBook"/>
+<p att="com.gau.go.launcherex.gowidget.contactwidget"/>
+<p att="com.gau.go.launcherex.gowidget.emailwidget"/>
+<p att="com.gau.go.launcherex.gowidget.weatherwidget"/>
+<p att="com.gau.go.launcherex.gowidget.weatherwidget:MessageService"/>
+<p att="com.oppo.saus"/>
+<p att="com.anydo"/>
+<p att="com.anydo.cal"/>
+<p att="com.keenvim.cnCalendar"/>
+<p att="com.oppo.wearable.oclick2"/>
+<p att="com.oppo.pcassistant"/>
+<p att="com.android.cts.robot"/>
+<p att="com.zing.zalo"/>
+<p att="com.facebook.orca"/>
+<p att="com.facebook.katana"/>
+<p att="com.instagram.android"/>
+<p att="com.tencent.mobileqqi"/>
+<p att="com.bbm"/>
+<p att="com.bbm2"/>
+<p att="com.bbm3"/>
+<p att="com.bbm4"/>
+<p att="com.bbm5"/>
+<p att="com.bbm6"/>
+<p att="com.bbm7"/>
+<p att="com.skype.raider"/>
+<p att="com.viber.voip"/>
+<p att="com.path"/>
+<p att="com.android.email"/>
+<p att="com.google.android.syncadapters.calendar"/>
+<p att="com.kakao.talk"/>
+<p att="com.snapchat.android"/>
+<p att="com.twitter.android"/>
+<p att="com.yahoo.mobile.client.android.im"/>
+<p att="com.bsb.hike"/>
+<p att="com.sgiggle.production"/>
+<p att="com.truecaller.phoneapp"/>
+<p att="com.truecaller"/>
+<p att="com.imo.android.imoim"/>
+<p att="com.google.android.calendar"/>
+<p att="com.google.android.talk"/>
+<p att="com.opera.max.oem.oppo"/>
+<p att="com.appstar.callrecorder"/>
+<p att="com.google.android.xts.deviceowner"/>
+<p att="org.telegram.messenger"/>
+<p att="org.thunderdog.challegram"/>
+<p att="com.jio.join"/>
+<p att="com.facebook.lite"/>
+<p att="com.jiochat.jiochatapp"/>
+<p att="com.vkontakte.android"/>
+<p att="com.afwsamples.testdpc"/>
+<p att="com.google.android.apps.enterprise.dmagent"/>
+<p att="com.mobileiron"/>
+<p att="com.microsoft.office.outlook"/>
+<p att="com.coloros.oppopods"/>
+<p att="com.oplus.melody"/>
+<p att="com.redteamobile.roaming"/>
+<p att="com.nearme.gamecenter"/>
+<p att="com.heytap.gamecenter"/>
+<p att="com.google.android.apps.tachyon"/>
+<p att="com.shopee.my"/>
+<p att="com.alibaba.android.rimet"/>
+<p att="com.access_company.android.nfcommunicator"/>
+<p att="com.murad.waktusolat"/>
+<p att="com.caiharbor.esim"/>
+<p att="com.arabiait.azkar"/>
+<p att="com.athan"/>
+<p att="com.athanotify"/>
+<p att="com.athanow.prayer_times"/>
+<p att="com.bitsmedia.android.muslimpro"/>
+<p att="com.dot.azkari"/>
+<p att="com.geospatialtechnology.visualqiblah"/>
+<p att="com.guidedways.ipray"/>
+<p att="com.haz.prayer"/>
+<p att="com.hisn.almuslim"/>
+<p att="com.kosratdahmad.myprayers"/>
+<p att="com.ls.arabic"/>
+<p att="com.maher4web.hisn"/>
+<p att="com.masarat.salati"/>
+<p att="com.mobileappsteam.myprayer"/>
+<p att="com.mobilion.diyanet.namazvakit"/>
+<p att="com.parfield.prayers.lite"/>
+<p att="com.raimbekov.android.sajde"/>
+<p att="com.simppro.azkar"/>
+<p att="com.sommayah.myprayertimes"/>
+<p att="idreams.com.azkar"/>
+<p att="org.hicham.salaat"/>
+<p att="com.seagroup.seatalk"/>
+<p att="com.google.android.deskclock"/>
+<p att="com.ss.android.ugc.trill"/>
+<p att="com.turkcell.bip"/>
+<p att="com.usescotty.driver.app"/>
+<p att="com.projectslender"/>
+<p att="com.jakarta.baca.lite"/>
+<p att="com.xb.topnews"/>
+<p att="app.buzz.share"/>
+<p att="com.qidian.QDReader.traditional"/>
+<p att="com.qidian.Int.reader"/>
+<p att="com.hike.chat.stickers"/>
+<p att="com.chauffeurprive.driver"/>
+<p att="com.geckolab"/>
+<p att="com.ubercab.driver"/>
+<p att="com.ubercab.fleet"/>
+<p att="ee.mtakso.driver"/>
+<p att="fr.lecab.partner.android"/>
+<p att="taxi.android.driver"/>
+<p att="com.cabify.driver"/>
+<p att="com.deliverymobile"/>
+<p att="com.takeaway.driver"/>
+<p att="com.alibaba.icbu.app.seller"/>
+<p att="com.amazon.sellermobile.android"/>
+<p att="com.ebay.mobile"/>
+<p att="com.wish.merchant"/>
+<p att="pl.allegro.sale"/>
+<p att="com.linkedin.android"/>
+<p att="com.pinterest"/>
+<p att="pl.interia.czateria"/>
+<p att="pl.wykop.droid"/>
+<p att="com.discord"/>
+<p att="com.tinder"/>
+<p att="com.adopteunmec.androides"/>
+<p att="tv.twitch.android.app"/>
+<p att="com.citymapper.app.release"/>
+<p att="com.citynav.jakdojade.pl.android"/>
+<p att="com.google.android.apps.maps"/>
+<p att="com.gpsroutefinder.mobile.location.tracker.gps.maps.locator.route.finder"/>
+<p att="com.here.app.maps"/>
+<p att="com.justpark.jp"/>
+<p att="com.live.earth.maps.streetview.livelocations"/>
+<p att="com.magnetic.openmaps"/>
+<p att="com.mappy.app"/>
+<p att="com.mapswithme.maps.pro"/>
+<p att="com.waze"/>
+<p att="pl.naviexpert.market"/>
+<p att="pl.naviexpert.rysiek"/>
+<p att="pl.neptis.yanosik.mobi.android"/>
+<p att="uk.co.ordnancesurvey.osmaps"/>
+<p att="rge.tech.usuarios"/>
+<p att="com.vialsoft.radarbot_free"/>
+<p att="com.tomtom.gplay.navapp"/>
+<p att="com.tumblr"/>
+<p att="id.co.babe"/>
+<p att="com.engloryintertech.caping"/>
+<p att="com.eterno"/>
+<p att="com.kddi.familysmile.mvno"/>
+<p att="jp.co.daj.consumer.ifilter"/>
+<p att="com.life360.android.safetymapd"/>
+<p att="com.nationaledtech.Boomerang"/>
+<p att="com.microsoft.mobile.polymer"/>
+<p att="com.trendmicro.tmmspersonal.jp.googleplayversion"/>
+<p att="com.comprion.android.GSMA_AC_Mobile_App_SP1_signed"/>
+<p att="com.comprion.android.GSMA_AC_Mobile_App_SP2_signed"/>
+<p att="com.xtc.watch.imoo"/>
+<p att="com.pizzahut.phd"/>
+<p att="id.mcdonalds.delivery"/>
+<p att="com.deliverynow"/>
+<p att="vn.foody.delivery"/>
+<p att="com.mobile.app.mcdelivery"/>
+<p att="com.global.foodpanda.android"/>
+<p att="com.shopee.Th"/>
+<p att="com.lazada.android"/>
+<p att="com.fitbit.FitbitMobile"/>
+<p att="com.nationaledtech.Boommerang.apk"/>
+<p att="com.quora.android"/>
+<p att="in.mohalla.sharechat"/>
+<p att="com.ftw_and_co.happn"/>
+<p att="com.microsoft.mobile.ploymer"/>
+<p att="app.goplus.in.myapplication"/>
+<p att="com.winit.merucab"/>
+<p att="carzonrent.crdapp"/>
+<p att="com.savaari.app"/>
+<p att="com.stpl.fasttrackbooking1"/>
+<p att="com.megacabsnew.app.customer"/>
+<p att="com.mti.taxibookings.app"/>
+<p att="com.tabcabs.android"/>
+<p att="taxi.sixcrore.customer"/>
+<p att="droid.shuttl.driver"/>
+<p att="com.meru.merumobile"/>
+<p att="com.cordrive.app.carzonrent"/>
+<p att="in.swiggy.delivery"/>
+<p att="com.application.zomato.ordering"/>
+<p att="com.india.foodpanda.android"/>
+<p att="com.Dominos"/>
+<p att="com.ubercab.eats"/>
+<p att="in.burgerkingindia.android"/>
+<p att="com.pizzahut"/>
+<p att="com.done.faasos"/>
+<p att="com.yum.kfc"/>
+<p att="com.mcdonalds.mobileapp"/>
+<p att="com.poncho"/>
+<p att="fit.cure.android"/>
+<p att="com.freshmenu"/>
+<p att="in.swiggy.partnerapp"/>
+<p att="com.application.services.partner"/>
+<p att="com.application.zomatomerchant"/>
+<p att="com.notifier.bamboo"/>
+<p att="ma.dista.yum"/>
+<p att="com.jabong.android"/>
+<p att="in.amazon.mShop.android"/>
+<p att="com.flipkart.android"/>
+<p att="com.myntra.android"/>
+<p att="com.paytmmall"/>
+<p att="com.snapdeal.main"/>
+<p att="com.shopclues"/>
+<p att="com.shopping.limeroad"/>
+<p att="com.zzkko"/>
+<p att="com.ril.ajio"/>
+<p att="club.fromfactory"/>
+<p att="in.amazonbusiness.berrio.android.app"/>
+<p att="com.paytm.business"/>
+<p att="com.snapdeal.seller"/>
+<p att="com.shopclues.seller"/>
+<p att="com.olacabs.android.operator"/>
+<p att="com.olacabs.customer"/>
+<p att="im.thebot.messenger"/>
+<p att="com.pathao.driver"/>
+<p att="com.tokopedia.tkpd"/>
+<p att="com.egets.drivers"/>
+<p att="com.egets.takeaways"/>
+<p att="com.daraz.sellercenter"/>
+<p att="com.onekyat.app"/>
+<p att="com.shop.android"/>
+<p att="nz.co.trademe.trademe"/>
+<p att="com.grabtaxi.passenger"/>
+<p att="com.honestbee.consumer"/>
+<p att="com.zalora.android"/>
+<p att="com.shopee.ph"/>
+<p att="com.allgoritm.youla"/>
+<p att="com.avito.android"/>
+<p att="com.deliveryclub"/>
+<p att="com.deliveryclub.rider"/>
+<p att="com.gettaxi.dbx.android"/>
+<p att="com.joom"/>
+<p att="ru.foodfox.client"/>
+<p att="ru.foodfox.courier.debug.releaseserver"/>
+<p att="ru.foodfox.vendor"/>
+<p att="ru.handh.net"/>
+<p att="ru.ok.android"/>
+<p att="ru.yandex.taximeter"/>
+<p att="com.deliveroo.driverapp"/>
+<p att="com.gojek.driver.sg.car"/>
+<p att="com.grab.food.dax"/>
+<p att="com.grabpay.merchant"/>
+<p att="com.sc.lazada"/>
+<p att="com.zalora.sc"/>
+<p att="net.giosis.qsm.sg"/>
+<p att="com.jumia.android"/>
+<p att="com.shopee.tw"/>
+<p att="dbx.taiwantaxi"/>
+<p att="app.zenly.locator"/>
+<p att="com.orangelabs.quickpass.android.cardevent"/>
+<p att="com.comprion.android.GSMA_AC_Mobile_App_SP1_signed_AndroidPOnwards"/>
+<p att="com.til.timesnews"/>
+<p att="com.facebook.mlite"/>
+<p att="com.whatsapp.w4b"/>
+<p att="com.imo.android.imoimbeta"/>
+<p att="org.thunderdog.challegram"/>
+<p att="im.thebot.messenger"/>
+<p att="mobi.skred.app"/>
+<p att="com.imo.android.imoimlite"/>
+<p att="com.michatapp.im"/>
+<p att="kik.android"/>
+<p att="com.perm.kate_new_6"/>
+<p att="sg.omi"/>
+<p att="th.cyberapp.beechat"/>
+<p att="com.p1.mobile.putong"/>
+<p att="cn.soulapp.android"/>
+<p att="com.android.coloros.movetosdcard"/>
+<p att="com.google.android.apps.vega"/>
+<p att="com.google.android.apps.maps"/>
+<p att="com.linecorp.linelite"/>
+<p att="com.coloros.locationproxy"/>
+<p att="com.samsung.android.geargplugin"/>
+<p att="sg.gov.tech.bluetrace"/>
+<p att="fr.gouv.android.stopcovid"/>
+<p att="sg.gov.homer"/>
+<p att="ch.admin.bag.dp3t"/>
+<p att="com.google.android.keep"/>
+<p att="com.market.heydemo"/>
+<p att="com.oneplus.note"/>
+<p att="com.finshell.fin"/>
+<whitelist>com.sohu.inputmethod.sogou</whitelist>
+<whitelist>com.oppo.mp_battery_autotest</whitelist>
+<whitelist>com.oppo.fpstest</whitelist>
+<whitelist>com.oppo.autotest.agingautotesttool</whitelist>
+<whitelist>com.oppo.PhenixTestServer</whitelist>
+<whitelist>com.oppo.networkautotest</whitelist>
+<whitelist>com.tencent.mm</whitelist>
+<whitelist>com.oppo.community</whitelist>
+<whitelist>com.facebook.orca</whitelist>
+<whitelist>com.nearme.note</whitelist>
+<whitelist>com.tencent.tvoem</whitelist>
+<whitelist>com.oppo.ubeauty</whitelist>
+<whitelist>com.example.hellojni</whitelist>
+<whitelist>com.android.email</whitelist>
+<whitelist>com.taobao.taobao</whitelist>
+<whitelist>com.rsupport.rs.activity.oppo</whitelist>
+<whitelist>com.rsupport.rsperm.ao.a1th</whitelist>
+<autosync>com.kingsoft.email</autosync>
+<autosync>com.netease.mail</autosync>
+<autosync>com.android.email</autosync>
+<autosync>com.google.android.gms</autosync>
+<autosync>com.tencent.androidqqmail</autosync>
+<autosync>com.tencent.qqpim</autosync>
+<autosync>com.tencent.pb</autosync>
+<autosync>com.smartisan.email</autosync>
+<autosync>com.google.android.syncadapters.calendar</autosync>
+<autosync>com.google.android.syncadapters.contacts</autosync>
+<autosync>com.google.android.email</autosync>
+<autosync>com.google.android.gm</autosync>
+<autosync>com.yahoo.mobile.client.android.mail</autosync>
+<autosync>com.rediff.mail.and</autosync>
+<autosync>ru.mail.mailapp</autosync>
+<autosync>com.trtf.blue</autosync>
+<autosync>com.my.mail</autosync>
+<autosync>com.mail.mobile.android.mail</autosync>
+<autosync>com.appple.app.email</autosync>
+<autosync>ru.yandex.mail</autosync>
+<autosync>com.syntomo.email</autosync>
+<autosync>com.maildroid</autosync>
+<autosync>de.web.mobile.android.mail</autosync>
+<autosync>com.netease.mobimail</autosync>
+<autosync>com.cloudmagic.mail</autosync>
+<autosync>it.italiaonline.mail</autosync>
+<autosync>jp.co.yahoo.android.ymail</autosync>
+<autosync>com.nhn.android.mail</autosync>
+<autosync>net.daum.android.solmail</autosync>
+<autosync>com.google.android.keep</autosync>
+<actionlist>qualcomm.intent.action.WIFI_DISPLAY_AUDIO</actionlist>
+<actionlist>android.provider.Telephony.WAP_PUSH_DELIVER</actionlist>
+<actionlist>android.provider.Telephony.SMS_DELIVER</actionlist>
+<actionlist>android.content.cts.ContextWrapperTest.STICKY_BROADCAST_RESULT</actionlist>
+<actionlist>android.intent.action.ANALOG_AUDIO_DOCK_PLUG</actionlist>
+<actionlist>android.media.AUDIO_BECOMING_NOISY</actionlist>
+<actionlist>android.media.VOLUME_CHANGED_ACTION</actionlist>
+<actionlist>com.google.android.c2dm.intent.RECEIVE</actionlist>
+<actionlist>android.appwidget.action.APPWIDGET_ENABLED</actionlist>
+<hideWhite auto="1" associate="1" pkg="com.redteamobile.roaming"/>
+<hideWhite auto="1" associate="1" pkg="com.nearme.gamecenter"/>
+<hideWhite auto="1" associate="1" pkg="com.heytap.gamecenter"/>
+<hideWhite auto="0" associate="1" pkg="com.nearme.note"/>
+<hideWhite auto="0" associate="1" pkg="com.coloros.screenrecorder"/>
+<hideWhite auto="0" associate="1" pkg="com.oppo.community"/>
+<hideWhite auto="1" associate="1" pkg="com.coloros.oppopods"/>
+<hideWhite auto="1" associate="1" pkg="com.oplus.melody"/>
+<hideWhite auto="0" associate="1" pkg="com.standardar.service"/>
+
+<hideWhite auto="1" associate="1" pkg="com.oneplus.twspods"/>
+<hideWhite auto="0" associate="1" pkg="com.oneplus.screenrecord"/>
+<hideWhite auto="0" associate="1" pkg="com.oneplus.soundrecorder"/>
+<hideWhite auto="1" associate="0" pkg="com.oneplus.brickmode"/>
+</filter-conf>

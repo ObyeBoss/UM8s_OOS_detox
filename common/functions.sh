@@ -236,14 +236,15 @@ fi
 ui_print " "
 ui_print "- Setting Permissions"
 set_perm_recursive "$MODPATH" 0 0 0755 0644
-for i in /system/vendor /vendor /system/vendor/app /vendor/app /system/vendor/etc /vendor/etc /system/odm/etc /odm/etc /system/vendor/odm/etc /vendor/odm/etc /system/vendor/overlay /vendor/overlay; do
+for i in /data /my_product /my_region /my_stock /product /system_ext /system/vendor /vendor /system/vendor/app /vendor/app /system/vendor/etc /vendor/etc /system/odm/etc /odm/etc /system/vendor/odm/etc /vendor/odm/etc /system/vendor/overlay /vendor/overlay; do
   if [ -d "$MODPATH$i" ] && [ ! -L "$MODPATH$i" ]; then
     case $i in
-      *"/odm"|*"/vendor") set_dir "$MODPATH$i" 0 0 0755 u:object_r:vendor_file:s0 ;;
+      *"/data") set_perm_recursive "$MODPATH$i" 1000 1000 0755 0400 u:object_r:os_data_file:s0 ;;
+      *"/odm"|*"/vendor") set_perm_recursive "$MODPATH$i" 0 0 0755 0644 u:object_r:vendor_file:s0 ;;
       *"/app") set_perm_recursive "$MODPATH$i" 0 0 0755 0644 u:object_r:vendor_app_file:s0 ;;
       *"/overlay") set_perm_recursive "$MODPATH$i" 0 0 0755 0644 u:object_r:vendor_overlay_file:s0 ;;
       *"/etc") set_perm_recursive "$MODPATH$i" 0 2000 0755 0644 u:object_r:vendor_configs_file:s0 ;;
-      *"/my_product"|*"/system_ext") set_dir "$MODPATH$i" 0 0 0755 u:object_r:system_file:s0 ;;
+      *"/my_product"|*"/my_region"|*"/my_stock"|*"/product"|*"/system_ext") set_perm_recursive "$MODPATH$i" 0 0 0755 0644 u:object_r:system_file:s0 ;;
     esac
   fi
 done

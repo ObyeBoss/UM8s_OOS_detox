@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ********************************************************************************
+ ** Copyright (C) 2018-2020 Oplus. All rights reserved.
+ ** All rights reserved.
+ **
+ ** File: - privapp-permission-oplus.xml
+ ** Description:
+ **     Customization of Android privapp-permission-platform.xml
+ **
+ ** Version: 1.0
+ ** Date: 2019-07-18
+ ** Author: sijiaquan@ANDROID.PMS
+ **
+ ** <author>                        <data>       <version>   <desc>
+  ** sijiaquan@ANDROID.PMS       2019-07-18   1.0         Create this file
+ ********************************************************************************/
+  -->
+
+<!--
+This XML file declares which signature|privileged permissions should be granted to privileged
+applications that come with the platform
+This file contains the customization of Android privapp-permission-platform.xml,we should
+not add logic in privapp-permission-platform.xml directly.
+-->
+<permissions>
+    <!-- #Runsheng.Pei@PSW.AD.0000, 2019/11/18, Add for OPLUS EX SERVICE -->
+    <privapp-permissions package="com.oplus.exsystemservice">
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <!-- George.Yi@Android.WMS, 2022/07/07, add for 3955440-->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <!-- Rong.Han@ANDROID.PREINSTALL, 2023/06/15, add for 5734196-->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <!-- Zhifan.zhang@ANDROID.WMS 2023/07/24, add for 5894793-->
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+    </privapp-permissions>
+
+    <!--  #WangHui,80275930,3888121 2022/06/29  Add for engineernetwork-->
+    <!--  <privapp-permissions package="com.oplus.engineernetwork">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USB" />
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
+    </privapp-permissions> -->
+
+    <privapp-permissions package="com.oplus.engineermode">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="android.permission.LOCAL_MAC_ADDRESS" />
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oplus.engineercamera">
+        <permission name="android.permission.SYSTEM_CAMERA" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+</permissions>

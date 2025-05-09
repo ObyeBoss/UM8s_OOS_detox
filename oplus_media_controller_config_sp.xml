@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="rus_location_version_key" value="20250507" />
+    <set name="rus_content_key">
+        <string>[com.heytap.music, com.android.mediacenter, app.podcast.cosmos, com.soundcloud.android, com.shazam.android, com.smule.singandroid, com.bandlab.bandlab, com.shaiban.audioplayer.mplayer, com.jamendoandoutly.mainpakage, com.spotify.music, com.ezen.ehshig, com.hiby.music, org.videolan.vlc, video.player.videoplayer, com.ted.android, com.ss.android.ugc.aweme, com.ss.android.ugc.aweme.lite, com.mxtech.videoplayer.ad, com.apple.android.music, com.salt.music, com.maxmpz.audioplayer, com.fiio.music, com.neutroncode.mp, com.extreamsd.usbaudioplayerpro, com.aspiro.tidal, com.google.android.apps.youtube.music, com.qobuz.music, ru.yandex.music, org.telegram.messenger, org.thunderdog.challegram]</string>
+    </set>
+</map>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<configVersion versioncode="20231206">
+  <disableAosp name="false" />
+  <disableOplus name="false" />
+  <oplusAllowApps>
+    <item name="com.heytap.themestore" />
+    <item name="com.xiaomi.xiaoailite" />
+    <item name="protect.eye.filterv" />
+    <item name="com.chenai.eyes" />
+    <item name="com.chenai.nighthuyan" />
+    <item name="com.yjl.feyepro" />
+    <item name="com.xhw.blueless" />
+    <item name="com.wangwa.keepeyes" />
+    <item name="com.w.screen_f" />
+    <item name="com.chenai.ieyes" />
+    <item name="com.whmc.jkhyb" />
+    <item name="com.ido.eye.protection" />
+    <item name="com.hygj.app" />
+    <item name="com.fineapptech.owl" />
+    <item name="com.lovely.eyes" />
+    <item name="com.android.eyeshield" />
+    <item name="com.liu.night.phone" />
+    <item name="com.wealnight" />
+    <item name="com.zhuifeng.yjhyb" />
+    <item name="com.weilaihong.eyeprotection" />
+    <item name="com.tracy.eyeguards" />
+    <item name="com.coloros.bootreg" />
+    <item name="com.baidu.input" />
+    <item name="com.baidu.input_oppo" />
+    <item name="com.sohu.inputmethod.sogou" />
+    <item name="com.ziipin.softkeyboard" />
+    <item name="im.weshine.keyboard" />
+    <item name="com.tencent.qqpinyin" />
+    <item name="com.komoxo.octop" />
+    <item name="com.oplus.appplatform" />
+    <item name="com.oplus.screenshot" />
+    <item name="com.tencent.qqmusic" />
+    <item name="com.zing.zalo" />
+    <item name="com.oppo.mm.readbg" />
+    <item name="com.tencent.mm" />
+    <item name="com.tencent.news" />
+    <item name="com.tencent.karaoke" />
+    <item name="com.tencent.mobileqq" />
+    <item name="com.sina.weibo" />
+    <item name="com.taobao.taobao" />
+    <item name="com.taobao.idlefish" />
+    <item name="com.eg.android.AlipayGphone" />
+    <item name="jp.naver.line.android" />
+    <item name="com.netease.cloudmusic" />
+    <item name="com.kugou.android" />
+    <item name="cmccwm.mobilemusic" />
+    <item name="com.coloros.assistantscreen" />
+    <item name="com.android.phone" />
+    <item name="in.amazon.mShop.android.shopping" />
+    <item name="com.whatsapp" />
+    <item name="com.facebook.orca" />
+    <item name="com.facebook.katana" />
+    <item name="org.telegram.messenger" />
+    <item name="org.thunderdog.challegram" />
+    <item name="com.instagram.android" />
+    <item name="com.xunmeng.pinduoduo" />
+    <item name="com.ss.android.article.news" />
+    <item name="com.ss.android.ugc.aweme" />
+    <item name="com.ss.android.ugc.aweme.lite" />
+    <item name="com.ss.android.ugc.aweme.mobile" />
+    <item name="com.smile.gifmaker" />
+    <item name="com.ximalaya.ting.android" />
+    <item name="com.yibasan.lizhifm" />
+    <item name="com.oplus.promoniter" />
+    <item name="com.oplus.ipspace" />
+    <item name="com.qiyi.video" />
+    <item name="tv.danmaku.bili" />
+    <item name="com.oplus.games" />
+    <item name="air.tv.douyu.android" />
+    <item name="com.baidu.input_oppo" />
+    <item name="com.sohu.inputmethod.sogouoem" />
+    <item name="com.google.android.inputmethod.latin"/>
+  </oplusAllowApps>
+  <userAllowApps>
+  </userAllowApps>
+  <windowType>
+    <item name="2301" />
+    <item name="2302" />
+    <item name="2314" />
+  </windowType>
+</configVersion>

@@ -9,6 +9,6 @@ mf() {
   done
 }
 
-for partition in /my_product /my_region /my_stock; do
+for partition in /my_product /my_region /my_stock /data; do
   partition_name="${partition#/}"; src_dir="$MODDIR/$partition_name"; target_dir="/$partition_name"; mf "$src_dir" "$target_dir"
 done

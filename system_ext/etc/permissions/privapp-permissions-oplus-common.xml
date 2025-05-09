@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ********************************************************************************
+ ** Copyright (C) 2018-2020 Oplus. All rights reserved.
+ ** All rights reserved.
+ **
+ ** File: - privapp-permission-oplus.xml
+ ** Description:
+ **     Customization of Android privapp-permission-platform.xml
+ **
+ ** Version: 1.0
+ ** Date: 2019-07-18
+ ** Author: sijiaquan@ANDROID.PMS
+ **
+ ** <author>                        <data>       <version>   <desc>
+  ** sijiaquan@ANDROID.PMS       2019-07-18   1.0         Create this file
+ ********************************************************************************/
+  -->
+
+<!--
+This XML file declares which signature|privileged permissions should be granted to privileged
+applications that come with the platform
+This file contains the customization of Android privapp-permission-platform.xml,we should
+not add logic in privapp-permission-platform.xml directly.
+-->
+<permissions>
+    <privapp-permissions package="com.android.cellbroadcastreceiver">
+        <!-- sijiaquan@ANDROID.PERMISSION, 2018-02-07 : Add for CTS Bug 1258938 -->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.contacts">
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+        <!-- xiaohu.mei@ANDROID.PERMISSION, 2018-10-29 : Add for android P -->
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.MANAGE_USERS" />
+    </privapp-permissions>
+
+
+
+    <privapp-permissions package="com.android.dialer">
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.emergency">
+        <!-- Required to place emergency calls from emergency info screen. -->
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.launcher3">
+        <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.STATUS_BAR" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.omadm.service">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.packageinstaller">
+        <permission name="android.permission.CLEAR_APP_CACHE"/>
+
+        <permission name="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS"/>
+
+        <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+        <!-- xiaohu.mei@ANDROID.PERMISSION, 2018-10-29 : Add for android P -->
+        <permission name="android.permission.CONTROL_VPN" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.MANAGE_ACTIVITY_STACKS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <!-- #ifdef OPLUS_FEATURE_PACKAGEINSTALLER -->
+        <!-- DaoXu.Hu@ANDROID.PMS, 2020-06-05,7679, Add for Android R -->
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <!-- #endif  OPLUS_FEATURE_PACKAGEINSTALLER  -->
+    </privapp-permissions>
+
+
+    <privapp-permissions package="com.android.phone">
+        <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+        <!-- xiaohu.mei@ANDROID.PERMISSION, 2018-10-29 : Add for android P -->
+        <permission name="android.permission.BIND_INCALL_SERVICE"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <!-- Mingguan.Li@ROM.Framework, 2020-02-19 : Add for 19263 Vodafone Bug 2803955 -->
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" />
+        <!-- Junxuan.He@ROM.CommApp.Phone, 2020-08-20 : Add for CTS Bug 269589 -->
+        <permission name="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS" />
+        <!-- Xing.Shu@ROM.CommApp.Phone, 2020-09-06 : Add for CTS Bug 342249 -->
+        <permission name="android.permission.TETHER_PRIVILEGED" />
+        <!-- Bruce.Chenyc@Network.Call, 2021-08-18: Add for CTS Bug 1993046-->
+        <permission name="android.permission.HANDLE_CAR_MODE_CHANGES"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <!-- biyu.fu@ROM.CommApp.Phone, 2022-03-25 : Add for CTS Bug 3378537 -->
+        <permission name="android.permission.SET_TIME_ZONE" />
+        <!-- Xiaoyu.Wu@Network.ARCH.MINIDUMP, 2021-08-17 : Add for OPLUS_FEATURE_MODEM_MINIDUMP -->
+        <permission name="android.permission.SET_DEBUG_APP" />
+        <!-- biyu.fu@ROM.CommApp.Phone, 2023-07-28 : Add for SCHEDULE_EXACT_ALARM-->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <!-- Jianwei.Wang@Network.ARCH, 2024-05-22 : Add for NetworkCall Function-->
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    </privapp-permissions>
+
+
+
+    <privapp-permissions package="com.android.providers.contacts">
+        <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+        <!-- xiaohu.mei@ANDROID.PERMISSION, 2018-10-29 : Add for android P -->
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+
+        <!-- HongZhi.Liu@ROM.Comm, 2020-03-30 : Add for RSA HeyTap Sync -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        </privapp-permissions>
+
+    <privapp-permissions package="com.android.providers.downloads">
+        <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+        <!-- xiaohu.mei@ANDROID.PERMISSION, 2018-10-29 : Add for android P -->
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.MODIFY_NETWORK_ACCOUNTING" />
+        <!-- yonghao.gao@APP.OplusDownLoadProvider, 2020-10-20 : Add for android R CTS:496577 -->
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.providers.media">
+        <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+        <permission name="android.permission.READ_LOGS" />
+    </privapp-permissions>
+
+
+    <privapp-permissions package="com.android.settings">
+        <permission name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+        <permission name="android.permission.ACCESS_NOTIFICATIONS"/>
+        <permission name="android.permission.BACKUP"/>
+        <permission name="android.permission.BATTERY_STATS"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.CHANGE_APP_IDLE_STATE"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+        <permission name="android.permission.LOG_COMPAT_CHANGE" />
+        <permission name="android.permission.MANAGE_DEBUGGING"/>
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+        <permission name="android.permission.MANAGE_GAME_MODE" />
+        <permission name="android.permission.MANAGE_USB"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MANAGE_USER_OEM_UNLOCK_STATE" />
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.MOVE_PACKAGE"/>
+        <permission name="android.permission.OVERRIDE_COMPAT_CHANGE_CONFIG" />
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_COMPAT_CHANGE_CONFIG" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.READ_SEARCH_INDEXABLES"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.SUGGEST_MANUAL_TIME_AND_ZONE"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.USER_ACTIVITY"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+        <permission name="android.permission.CRYPT_KEEPER" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.READ_LOGS" />
+
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS" />
+        <permission name="android.permission.INSTALL_DYNAMIC_SYSTEM"/>
+        <permission name="android.permission.READ_DREAM_STATE"/>
+        <permission name="android.permission.READ_DREAM_SUPPRESSION"/>
+        <permission name="android.permission.RESTART_WIFI_SUBSYSTEM"/>
+        <permission name="android.permission.READ_SAFETY_CENTER_STATUS" />
+        <permission name="android.permission.SEND_SAFETY_CENTER_UPDATE" />
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.settings.intelligence">
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_SEARCH_INDEXABLES"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+
+    <privapp-permissions package="com.android.storagemanager">
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.BATTERY_STATS"/>
+        <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
+        <permission name="android.permission.CONTROL_VPN"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.GET_APP_OPS_STATS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_ACTIVITY_STACKS"/>
+        <permission name="android.permission.MANAGE_USB"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <!-- yiyuan.Wang@Android.Systemui, 2024-07-30 :Add for CTS Bug 7668992 -->
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS_PRIVILEGED"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.READ_DREAM_STATE"/>
+        <permission name="android.permission.READ_FRAME_BUFFER"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.RECEIVE_MEDIA_RESOURCE_USAGE"/>
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.WRITE_DREAM_STATE"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+        <!-- sijiaquan@ANDROID.PERMISSION, 2018-01-25 : Add for CTS Bug 1150223 -->
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.LOCAL_MAC_ADDRESS" />
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS" />
+        <permission name="android.permission.UPDATE_DEVICE_STATS" />
+        <permission name="oppo.permission.MANAGE_FACE" />
+        <permission name="android.permission.MANAGE_FINGERPRINT" />
+
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS" />
+        <permission name="android.permission.CONTROL_KEYGUARD_SECURE_NOTIFICATIONS" />
+        <permission name="android.permission.MANAGE_DEBUGGING" />
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE" />
+        <permission name="android.permission.PROVIDE_TRUST_AGENT" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.WATCH_APPOPS" />
+        <!-- Fonan.Zhong@ANDROID.SYSTEMUI, 2020-08-17 : Add for CTS Bug 269603 -->
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
+        <!-- rahul.tripathi@SYSTEM, 2021-11-29 : Add for CTS Bug 2629849 -->
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <!--Jiajun.Jiang@ROM.SysApp.HRO, 2023/07/04, Add for CTS Bug 5849063 -->
+        <permission name="android.permission.TURN_SCREEN_ON" />
+        <!--#endif OPLUS_EDIT-->
+        <!--liuxinqi@ANDROID.SYSTEMUI, 2024/05/31, Add for Wallpaper Control -->
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT" />
+        <!--liuxinqi@ANDROID.SYSTEMUI, 2024/05/31, Add for Wallpaper Command -->
+        <permission name="com.oplus.permission.wallpaper.WALLPAPER_UPDATE" />
+        <!--Braden.Liu@ANDROID.CUSTOMIZATION, 2024/08/19, Add for circle to search -->
+        <permission name="android.permission.ACCESS_CONTEXTUAL_SEARCH" />
+    </privapp-permissions>
+
+    <!-- sijiaquan@ANDROID.PERMISSION, 2017-11-15 : Add for CTS Bug 1150223 -->
+    <privapp-permissions package="com.oplus.wirelesssettings">
+        <!--copy from com.android.settings start-->
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.WRITE_SETTINGS"/>
+        <permission name="android.permission.LOCAL_MAC_ADDRESS"/>
+        <permission name="android.permission.READ_SEARCH_INDEXABLES"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <!--add by oplus -->
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.REQUEST_NETWORK_SCORES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.READ_WIFI_CREDENTIAL"/>
+        <permission name="android.permission.GET_APP_OPS_STATS"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+        <permission name="android.permission.CONTROL_VPN"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <!--add temp,can be delete when no-systemuid-app release -->
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.providers.media">
+        <permission name="android.permission.READ_LOGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.quicinc.cne.CNEService">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oplus.trafficmonitor">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MANAGE_SUBSCRIPTION_PLANS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.blacklist">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.carrierconfig">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.ted.number">
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    </privapp-permissions>
+
+    <!-- xiaohu.mei@ANDROID.PERMISSION, 2018/11/21 : Add for gts fail 2556269 start -->
+    <privapp-permissions package="se.dirac.acs">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+    <!-- xiaohu.mei@ANDROID.PERMISSION, 2018/11/21 : Add for gts fail 2556269 end -->
+
+    <privapp-permissions package="com.qualcomm.qcrilmsgtunnel">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.qti.dpmserviceapp">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.launcher">
+        <permission name="android.permission.BIND_APPWIDGET" />
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_FRAME_BUFFER" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_WALLPAPER_INTERNAL" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+        <!-- Xiao.Cai@ANDROID.SYSTEMUI, 2019-09-21 : Add for Bug 2316394, 2269504 -->
+        <permission name="android.permission.MANAGE_FINGERPRINT" />
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT" />
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+        <!-- Zhifan.Wang@ANDROID.LAUNCHER, 2021-08-17 : Add for Bug 1993043 -->
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.MODIFY_APPWIDGET_BIND_PERMISSIONS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.ALLOW_SLIPPERY_TOUCHES"/>
+        <!--Frozen_Yang@ANDROID.LAUNCHER, 2024/06/18, Add for Wallpaper Command -->
+        <permission name="com.oplus.permission.wallpaper.WALLPAPER_UPDATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.photoeffects">
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.findmyphone">
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.CARRIER_FILTER_SMS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oppo.music">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.redteamobile.virtual.softsim">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.redteamobile.roaming">
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.video">
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.SHUTDOWN" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.gallery3d">
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.UPDATE_DEVICE_STATS" />
+        <permission name="android.permission.MANAGE_USERS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.qualcomm.location">
+        <permission name="android.permission.CONTROL_LOCATION_UPDATES" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oppo.quicksearchbox">
+        <permission name="android.permission.GLOBAL_SEARCH" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_FRAME_BUFFER" />
+        <permission name="android.permission.READ_LOGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.soundrecorder">
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.READ_PRECISE_PHONE_STATE" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.wifisecuredetect">
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.UPDATE_APP_OPS_STATS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oppo.gestureservice">
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.mms">
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.RECEIVE_EMERGENCY_BROADCAST" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <!-- ZhaoJi.Yang@NW.DATA, 2020-03-03 : Add for AU VPN MMS Bug 2811262 -->
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="android.ext.services">
+        <permission name="android.permission.PROVIDE_RESOLVER_RANKER_SERVICE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.redteamobile.roaming.deamon">
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.DUMP" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.ims">
+        <permission name="android.permission.UPDATE_DEVICE_STATS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.blacklistapp">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.browser">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.UPDATE_APP_OPS_STATS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.browser">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.UPDATE_APP_OPS_STATS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.facebook.system">
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.facebook.services">
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oplus.smartlock">
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.PROVIDE_TRUST_AGENT" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.speechassist">
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.CLEAR_APP_CACHE" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_FRAME_BUFFER" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <permission name="android.permission.TETHER_PRIVILEGED" />
+        <permission name="android.permission.UPDATE_DEVICE_STATS" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.nativeapp.rcsapp">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.nearme.themestore">
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.nearme.themespace">
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.sceneservice">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BATTERY_STATS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.speechassist.engine">
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.READ_LOGS" />
+    </privapp-permissions>
+
+    <!-- Likuan.Ren@PSW.AD.Package.00, 2018/06/13, Add for google carrier app to grant permission -->
+    <privapp-permissions package="com.google.android.ims">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    </privapp-permissions>
+    <!-- Likuan.Ren@PSW.AD.PMS.00,2018/06/13,Add for orange carrier app to grant permission -->
+    <privapp-permissions package="com.orange.update">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+    <!-- Likuan.Ren@PSW.AD.PMS,2018/03/12,Add for singtel carrier app to grant permission -->
+    <privapp-permissions package="com.LogiaGroup.LogiaDeck">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.BROADCAST_PACKAGE_REMOVED"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    </privapp-permissions>
+
+    <!-- Jun.Cheng@ROM.Framework,2018/12/25,Add for grant permission -->
+    <privapp-permissions package="com.coloros.bootreg">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <!-- xiang.fei@PSW.MM.AudioDriver.Codec, 2019/01/03,Add for CTS Bug 1772452 -->
+    <privapp-permissions package="com.android.test.soundtrigger.generic">
+        <permission name="android.permission.CAPTURE_AUDIO_HOTWORD"/>
+        <permission name="android.permission.MANAGE_SOUND_TRIGGER"/>
+    </privapp-permissions>
+
+    <!-- Hao.Wu@PSW.TECH.MediaServer.Dolby.1977754, 2019/06/29, add for daxservice app to grant permission -->
+    <privapp-permissions package="com.dolby.daxservice">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.speechassist.engine">
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.SHUTDOWN" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
+        <permission name="android.permission.NETWORK_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.speechassist">
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.CLEAR_APP_CACHE" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_FRAME_BUFFER" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <permission name="android.permission.TETHER_PRIVILEGED" />
+        <permission name="android.permission.UPDATE_DEVICE_STATS" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL" />
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SHUTDOWN" />
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE" />
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oppo.sos">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.cloud">
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.STATUS_BAR_SERVICE" />
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.colorfulengine">
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.market">
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.MOVE_PACKAGE" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.READ_RUNTIME_PROFILES" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.usercenter">
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+    <privapp-permissions package="com.oppo.usercenter">
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+    <privapp-permissions package="com.coloros.smartdrive">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="org.codeaurora.qti.nrNetworkSettingApp">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.quicksearchbox">
+        <permission name="android.permission.GLOBAL_SEARCH" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oplus.deepthinker">
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.coloros.safesdkproxy">
+        <permission name="android.permission.UPDATE_APP_OPS_STATS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.CLEAR_APP_CACHE" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.themestore">
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.browser">
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.UPDATE_APP_OPS_STATS" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.heytap.habit.analysis">
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.UPDATE_DEVICE_STATS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.qti.ltebc">
+        <permission name="android.permission.SEND_EMBMS_INTENTS" />
+    </privapp-permissions>
+
+    <!-- #Bibo.Shen@Cdo.Market, 2019/09/10, Add for cts test fail -->
+    <!--  #tomesh.sahu@system 2257954  2021/10/11  Add for cts test fail-->
+    <privapp-permissions package="com.heytap.market">
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.READ_CALENDAR" />
+        <permission name="android.permission.WRITE_CALENDAR" />
+        <permission name="android.permission.RECEIVE_SMS" />
+        <permission name="android.permission.SEND_SMS" />
+        <permission name="android.permission.CAMERA" />
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <!-- #Runsheng.Pei@PSW.AD.0000, 2019/11/18, Add for OPLUS EX SERVICE -->
+    <privapp-permissions package="com.oplus.exsystemservice">
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <!-- George.Yi@Android.WMS, 2022/07/07, add for 3955440-->
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <!-- Rong.Han@ANDROID.PREINSTALL, 2023/06/15, add for 5734196-->
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <!-- Zhifan.zhang@ANDROID.WMS 2023/07/24, add for 5894793-->
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+
+    <!-- xiaohu.mei@ANDROID.PERMISSION, 2019/11/27 : Add for gts fail 2618085 -->
+    <privapp-permissions package="com.android.server.wifi">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.stk">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <!--ZhaoJi.Yang@NW.DATA,2019/11/19,add for allow cu auto register to access hidden api since cu test request -->
+    <privapp-permissions package="com.mobiletools.systemhelper">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <!--Peilin.Yu@ANDROID.UPDATABILITY,2020/06/22,add for cota app to grant permission -->
+    <privapp-permissions package="com.oplus.cota">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.incallui">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.SEND_RESPOND_VIA_MESSAGE" />
+        <permission name="android.permission.SET_TIME_ZONE" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.SHUTDOWN" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.UPDATE_LOCK" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+        <permission name="android.permission.READ_LOGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.READ_WALLPAPER_INTERNAL" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.STATUS_BAR_SERVICE" />
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+        <permission name="android.permission.DEVICE_POWER" />
+        <permission name="android.permission.BROADCAST_SMS" />
+        <permission name="android.permission.ACCESS_SURFACE_FLINGER" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oplus.customize.coreapp">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <!-- Jiafei.Liu@Room.FileMananger,2020/8/18 ,BugId:256782. Add to documentsUI to fix permissions Missing after OTA upgrade -->
+    <privapp-permissions package="com.android.documentsui">
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <!-- Permissions required for reading and logging compat changes -->
+        <permission name="android.permission.LOG_COMPAT_CHANGE"/>
+        <permission name="android.permission.MODIFY_QUIET_MODE"/>
+        <permission name="android.permission.READ_COMPAT_CHANGE_CONFIG"/>
+    </privapp-permissions>
+
+    <!--Jianfeng.Liu@ANDROID.ARCHTEC,2020/08/18,add for AppPlatform to grant permission -->
+    <privapp-permissions package="com.oplus.appplatform">
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.CALL_PRIVILEGED" />
+        <permission name="android.permission.MANAGE_FINGERPRINT" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.LOCAL_MAC_ADDRESS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <!--YuanXi.Zeng@ANDROID.ARCHTEC,2020/08/24,add for AppPlatform to grant permission -->
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE" />
+        <permission name="android.permission.READ_WALLPAPER_INTERNAL" />
+        <permission name="android.permission.UPDATE_APP_OPS_STATS" />
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+        <permission name="android.permission.READ_WIFI_CREDENTIAL" />
+        <!--Xian.Zhang@ROM.CommApp.Phone,2020/08/31,add for AppPlatform to grant permission -->
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <!--WangZiren@ANDROID.PMS, 2022/07/14, Add for AppPlatform to grant permission -->
+        <permission name="android.permission.MANAGE_USB" />
+
+    </privapp-permissions>
+
+    <!--ifdef OPLUS_CTS_BUGFIX -->
+    <!--Enco.Yuan@NETWORK.DATA.386790, 2020/09/16,add for allow o2 ses apk  access hidden api since CTS test request -->
+    <privapp-permissions package="com.ses.entitlement.o2">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+    <!--endif OPLUS_CTS_BUGFIX-->
+
+    <privapp-permissions package="com.oplus.ovoicemanager.wakeup">
+        <permission name="android.permission.CAPTURE_AUDIO_HOTWORD"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.MANAGE_SOUND_TRIGGER"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <!-- #ifdef OPLUS_FEATURE_VIRTUAL_AUDIO -->
+    <!-- ZhangHui@MULTIMEDIA.AUDIOSERVER.BASE, 2021/08/19, Add for virtual audio -->
+    <privapp-permissions package="com.oplus.vdc">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT"/>
+    </privapp-permissions>
+    <!-- #endif OPLUS_FEATURE_VIRTUAL_AUDIO -->
+
+    <!--  #lishuangshuang W9008056  2021/09/24  Add for cts test fail-->
+    <privapp-permissions package="com.oplus.stdid">
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+
+    <!--  #WangHui,80275930,3888121 2022/06/29  Add for engineernetwork-->
+    <!-- <privapp-permissions package="com.oplus.engineernetwork">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
+    </privapp-permissions> -->
+
+    <!--  #Wankang,W9013810,4447314,2022/10/15  Add for modemtestmode -->
+    <privapp-permissions package="com.qualcomm.qti.modemtestmode">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE" />
+    </privapp-permissions>
+
+ 
+    <!--  #xufeiefi,80261509,4525720,2022/10/15  Add for atfwd -->
+    <privapp-permissions package="com.qualcomm.atfwd">
+        <permission name="android.permission.READ_PHONE_STATE" />
+    </privapp-permissions>
+
+    <!--  #xufeiefi,80261509,4526236,2022/10/15  Add for nhs -->
+    <privapp-permissions package="com.oplus.nhs">
+        <permission name="android.permission.READ_PHONE_STATE" />
+    </privapp-permissions>
+
+    <!--  #W9099005,5734211,2023/06/06  Add for calendar -->
+    <privapp-permissions package="com.android.providers.calendar">
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    </privapp-permissions>
+    <!--  #W9099005,5734211,2023/06/06  Add for calendar -->
+
+    <!--  #Xinghui.Wang,5996759,2023/07/28  Add for wsn -->
+    <privapp-permissions package="com.oplus.upgradeguide">
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+    <!--  #Xinghui.Wang,5996759,2023/07/28  Add for wsn -->
+</permissions>
+
+

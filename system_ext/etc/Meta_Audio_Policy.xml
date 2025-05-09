@@ -1,0 +1,3080 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<filter-conf>
+    <filter-name>meta_audio_policy</filter-name>
+    <version>20240812</version>
+    <MetaAudioItem>
+        <name>com.android.settings</name>
+        <scene>0</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.test.mm.audiohelper</name>
+        <scene>2</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>android.uid.system</name>
+        <scene>0</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.android.systemui</name>
+        <scene>0</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tmgp.pubgmhd</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tmgp.cf</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tmgp.cod</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netease.hyxd.nearme.gamecenter</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.yingxiong.heroo.nearme.gamecenter</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.shootgame</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netease.lztg.nearme.gamecenter</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.dts.freefireth</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.gamematrix.pubgmhd</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tmgp.sgame</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.lolm</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tmgp.speedmobile</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netease.mrzh</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netease.mrzh.nearme.gamecenter</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.KiHan</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.ig</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.dts.freefiremax</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.vng.pubgmobile</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.iglite</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.pubg.krmobile</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.mobile.legends</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ludo.king</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.neptune.domino</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.garena.game.kgvn</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.king.candycrushsaga</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.yunhaoge.tanchishe.egame</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.garena.game.kgth</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kiloo.subwaysurf</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.king.candycrushsaga</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tmgp.supercell.clashofclans</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.imangi.templerun</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.teenpatti.hd.gold</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.imangi.templerun2</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tmgp.gnyx</name>
+        <scene>1</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.yingxiong.dftk.nearme.gamecenter</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netease.party.nearme.gamecenter</name>
+        <scene>1</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.heytap.music</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.aaron.caige</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netease.cloudmusic</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.qqmusic</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.qqmusicpad</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kugou.android</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.migu.music.heytap</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.luna.music</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.kuwo.player</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kugou.android.elder</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cmccwm.mobilemusic</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.duoduo.opera</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.vvvdj.player</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kugou.viper</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.red.answer</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.blueocean.musicplayer</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.sing.client</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.kuwo.kwmusichd</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.zq.live</name>
+        <scene>2</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kugou.android.lite</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.gwsoft.imusic.controller</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.blueocean.huoledj</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ting.mp3.android</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.imusic.iting</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.google.android.apps.youtube.music</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.spotify.music</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.soundcloud.android</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.moonvideo.android.resso</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.starmakerinteractive.starmaker</name>
+        <scene>2</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.dywx.larkplayer</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.shazam.android</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>br.com.rodrigokolb.realdrum</name>
+        <scene>2</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.smule.singandroid</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.fundevs.app.mediaconverter</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.hitrolab.audioeditor</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.musicops.vanillamusicdownload</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>mbinc12.mb32</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.midifun</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.anghami</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.sofeh.android.musicstudio3</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.gd.smartplayliz</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.gismart.drum.pads.machine</name>
+        <scene>2</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.agminstruments.drumpadmachine</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>ringtone.maker.mp3.cutter.audio</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.atpc</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.mercandalli.android.apps.youtube</name>
+        <scene>2</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.graymatrix.did</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.andromo.dev540689.app522042</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>net.andromo.dev540689.app521311</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.jamendoandoutly.mainpakage</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.bandlab.bandlab</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.storybeat</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.gaana</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.karaoke.offline.download.free.karaoke.music</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.shaiban.audioplayer.mplayer</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.andromo.dev540689.app521846</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.clogica.mp3cutter</name>
+        <scene>2</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ximalaya.ting.android</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.weread</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>fm.qingting.qtradio</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.yibasan.lizhifm</name>
+        <scene>3</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.kuwo.tingshu</name>
+        <scene>3</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.cjtec.fmradio</name>
+        <scene>3</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.shinyv.cnr</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.missevan</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.xs.fm</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ximalaya.ting.lite</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>bubei.tingshu</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>io.dushu.fandengreader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.kuwo.tingshu.lite</name>
+        <scene>3</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.luojilab.player</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.sdiread.kt.ktandroid</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.wehear</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.dragon.read</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kmxs.reader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.lechuan.mdwz</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.shuqi.controller</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.cootek.crazyreader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.qq.reader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.weread</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.lwby.breader.ad</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.martian.ttbookhd</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.iflytek.speechsuite</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.yueyou.adreader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.jjwxc.reader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ushaqi.zhuishushenqi.adfree</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.chaozh.iReader.dj</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.qidian.QDReader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tadu.read</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.wifi.reader</name>
+        <scene>3</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.lechuan.midunovel</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.chaozh.iReaderFree</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.audible.application</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>app.librivox.android</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ted.android</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.overdrive.mobile.android.mediaconsole</name>
+        <scene>3</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.heytap.reader</name>
+        <scene>3</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ss.android.ugc.aweme</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.youku.phone</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.smile.gifmaker</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>tv.danmaku.bili</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>tv.danmaku.bilibilihd</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.heytap.yoli</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ss.android.ugc.aweme.mobile</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ss.android.ugc.aweme.lite</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.xunlei.downloadprovider</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.qiyi.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.qqlive</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kuaishou.nebula</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.xingin.xhs</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ss.android.article.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.baidu.haokan</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.hunantv.imgo.activity</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.imgo.pad</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.le123.ysdq</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.xyhj.hanju</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.videogo</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>tv.pps.mobile</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.sohu.sohuvideo</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.cmcc.cmvideo</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.zhongduomei.rrmj.society</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.baidu.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.baidu.video.pad</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.all.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.qqsports</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.cntv</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.cntvhd</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.wlantv.kznk</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.wondertek.miguaikan</name>
+        <scene>4</scene>
+        <denyFast>true</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.badamkino</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.letv.android.client</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.vcinema.cinema</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.sevenVideo.app.android</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>tv.acfundanmaku.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.pplive.androidphone</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cc.kixmix.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.dianshijia.tvlive</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.iqiyi.acg</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.qqlivepad</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.lanmao.ydiqo.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.m1905.mobilefree</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tvbc.maiduidui</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.storm.smart</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.research.drop</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>red.phones.tpop</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.doudou.ysvideo</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.izdax.flim</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.qiyi.video.pad</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.rumtel.mobiletv</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tudou.android</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.cctv.yangshipin.app.androidp</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>dopool.player</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.zbx.ct.tvzhibo</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.cctv4g.cctvmobiletv</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.qqsports</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.pplive.androidphone.sport</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.cctv.cctv5ultimate</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.tv.qie</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.seca.live</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.dongqiudi.news</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.nbagametime</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.coloros.video</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.mxtech.videoplayer.ad</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.google.android.videos</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.playit.videoplayer</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.iqiyi.i18n</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.vidio.android</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>iflix.play</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>info.t4w.vp</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.fplay.activity</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>video.player.videoplayer</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.cyberlink.powerdirector.DRA140225_01</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.google.android.youtube</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>app.revanced.android.youtube</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>org.videolan.vlc</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netflix.mediaclient</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.hulu.plus</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.disney.disneyplus</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.zhiliaoapp.musically</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>in.startv.hotstar</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.jio.media.ondemand</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.picslab.neon.editor</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.browsevideo.videoplayer.downloader</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.frontrow.vlog</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>ins.story.unfold</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>slideshow.videomaker.photovideo</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.young.simple.player</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.mxtech.videoplayer.ad</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.nemo.vidmate</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>in.startv.hotstar</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.playit.videoplayer</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.jio.jioplay.tv</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.graymatrix.did</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.camerasideas.instashot</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.downlood.sav.whmedia</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.jio.media.ondemand</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.zhiliaoapp.musically</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.google.android.videos</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.yy.biu</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.lenovo.anyshare.gps</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.picsart.studio</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.frontrow.vlog</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.amazon.avod.thirdpartyclient</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>instagram.video.downloader.story.saver</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>recover.deleted.messages.messagesrestore</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.nexstreaming.app.kinemasterfree</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>org.videolan.vlc</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.vido.particle.ly.lyrical.status.maker</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.lazygeniouz.saveit</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.young.simple.player</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.picslab.neon.editor</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>app.com.brochill</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.yy.biugo.lite</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cdi.videostreaming.app</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.suntv.sunnxt</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.alightcreative.motion</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>tv.accedo.airtel.wynk</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.mm</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.mobileqq</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.wework</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.alibaba.android.rimet</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ss.android.lark</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.wemeet.app</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>us.zoom.videomeetings</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.teamtalk.im</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.instagram.android</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>cn.soulapp.android</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.immomo.momo</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.kakao.talk</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.whatsapp</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.skype.rover</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>jp.naver.line.android</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.facebook.orca</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.facebook.orca.App</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.viber.voip</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.google.android.talk</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>true</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ss.android.article.lite</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.news</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.netease.newsreader.activity</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.jifen.qukan</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.ifeng.news2</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.sina.news</name>
+        <scene>4</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.autonavi.map</name>
+        <scene>11</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.baidu.BaiduMap</name>
+        <scene>11</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.autonavi.minimap</name>
+        <scene>11</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.tencent.map</name>
+        <scene>11</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.google.android.apps.maps</name>
+        <scene>11</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.waze</name>
+        <scene>11</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.android.mms</name>
+        <scene>10</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.coloros.alarmclock</name>
+        <scene>9</scene>
+        <denyFast>false</denyFast>
+        <voipApp>false</voipApp>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioItem>
+        <name>com.oneplus.deskclock</name>
+        <scene>9</scene>
+        <pos>0.0, 0.0, 0.0</pos>
+        <fadeInStyle>0</fadeInStyle>
+        <fadeOutStyle>0</fadeOutStyle>
+    </MetaAudioItem>
+    <MetaAudioSceParam>
+        <SceTyp>0</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>10</Priority>
+        <IsTransient>1</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>0.0,0.0,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>0.0,0.0,0.0</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>1</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>3</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>0.0,1.25,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>0.0,1.25,0.0</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>2</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>7</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>0.0,3.0,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>0.0,5.0,2.5</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>3</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>6</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>-2.75,1.5,1.2</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>-2.65,3.95,0.0</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>4</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>5</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>-2.0,2.0,0.75</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>0.0,4.0,1.25</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>5</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>5</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>2.0,2.0,0.75</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>2.5,4.0,1.25</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>6</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>0</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>0.0,0.0,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>0.0,0.0,0.0</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>7</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>4</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>2.1</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>0.0,1.1,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>4.5,-4.2,0.0</custom>
+        </HomePosCustomMode>
+        <HomePosIntelligentModeSpk>
+            <intelligent>0.0,1.4,0.0</intelligent>
+        </HomePosIntelligentModeSpk>
+        <HomePosCustomModeSpk>
+            <custom>2.85,0.0,0.0</custom>
+        </HomePosCustomModeSpk>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>8</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>1</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>-4.5,1.25,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>-5,1.25,3.3</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>9</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>2</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>4.0,1.0,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>5.0,1.0,1.5</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>10</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>9</Priority>
+        <IsTransient>1</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>-0.2,-0.2,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>-5.0,-5.0,2.8</custom>
+        </HomePosCustomMode>
+        <HomePosIntelligentModeSpk>
+            <intelligent>-0.2,0.0,0.0</intelligent>
+        </HomePosIntelligentModeSpk>
+        <HomePosCustomModeSpk>
+            <custom>0.5,3.5,0.0</custom>
+        </HomePosCustomModeSpk>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>11</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>0</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>0.01</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>0.0,0.636,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>-2.25,3.4,2.95</custom>
+        </HomePosCustomMode>
+    </MetaAudioSceParam>
+    <MetaAudioSceParam>
+        <SceTyp>12</SceTyp>
+        <HomePosTyp>0</HomePosTyp>
+        <Priority>4</Priority>
+        <IsTransient>0</IsTransient>
+        <FadeTimeLen>1.5</FadeTimeLen>
+        <CrosFadeTimeLen>0.5</CrosFadeTimeLen>
+        <HomePosIntelligentMode>
+            <intelligent>0.7,-0.4,0.0</intelligent>
+        </HomePosIntelligentMode>
+        <HomePosCustomMode>
+            <custom>4.5,-4.2,0.0</custom>
+        </HomePosCustomMode>
+        <HomePosIntelligentModeSpk>
+            <intelligent>0.7,0.0,0.0</intelligent>
+        </HomePosIntelligentModeSpk>
+        <HomePosCustomModeSpk>
+            <custom>2.85,0.0,0.0</custom>
+        </HomePosCustomModeSpk>
+    </MetaAudioSceParam>
+    <UnsupportDeviceItem>
+        <name>SC211</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>A9</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>TSX-B235 Yamaha</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>YAS-108 Yamaha</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>LSX-170 Yamaha</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>G-10</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>A1</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>F10</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Mi Bluetooth Speaker</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>XMFHZ02</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>xiaodu-A13-3912</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>xiaodu-0D-2943</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>xiaodu-A9-5683</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>DOSS DS-1831</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>D51</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>MI BT18</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>N-612</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>1MORE Speaker</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SRS-XB13</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>GZSOAIY</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>S-35</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>N6</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>DV-91W</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>[Samsung] R1</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HUAWEI AM08</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>i5</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>BT-SPEAKER</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HECATE G2000</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>EDIFIER R1700BT</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>STANMORE II</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>UE BOOM 2</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>S1</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Coocaa Live-3</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>LD-082</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HiVi M200MKII+(WiFi)</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HiVi M300MKII</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HUAWEI AI Speaker2-03825</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HUAWEI Sound X-01655</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HUAWEI AI Speaker2-03824</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HUAWEI Sound X-01409</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HUAWEI CM510</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HAVIT M8</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HK Onyx Bluetooth</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HK Aura Studio 2</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SoundSticks Wireless</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HK Aura Studio 3</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HK Onyx Studio 5</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>A17</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Philips BT110</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Q31</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SKY-W01</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>BV130</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>BV660</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Q9</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>LV2016 PLUS</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Sound Blaster FRee</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SRS-ZR7</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SRS-XB20</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SRS-XB01</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SRS-XB12</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Leviathan Mini</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Razer Leviathan</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SHELL</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>S1</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL GO Smart</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL CINEMA STV135</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL BoomBox</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Pulse 4</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL GO</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Flip 4</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL GO 2</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Clip 3</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Xtreme</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Charge 4</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Bar 5.1</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Pulse 3</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL Pulse 4</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Jabra SOLEMATE v1.34.0</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>HAVIT M3</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Bose Mini II SE SoundLink</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Bose SoundWear</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Bose Revolve+ SoundLink</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>Beoplay P2</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>SAST T11</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>G-10</name>
+    </UnsupportDeviceItem>
+    <UnsupportDeviceItem>
+        <name>JBL GO Smart</name>
+    </UnsupportDeviceItem>
+</filter-conf>

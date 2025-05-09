@@ -1,0 +1,59 @@
+<OAppNetControl>
+    <OAppNetControlVersion>20200430</OAppNetControlVersion>
+
+    <NetDisableWhiteListSwitch>
+        <Value version="20200430" config="1"/>
+    </NetDisableWhiteListSwitch>
+
+    <BgProcNetControlSwitch>
+        <Value version="20200430" config="1"/>
+    </BgProcNetControlSwitch>
+
+    <BgProcNetControlFrequencyTime>
+        <Value version="20200430" config="10"/>
+    </BgProcNetControlFrequencyTime>
+
+    <BgProcNetControlConnErrBanTime>
+        <Value version="20200430" config="3600"/>
+    </BgProcNetControlConnErrBanTime>
+
+    <BgProcNetControlDefaultConfig>
+        <Value version="20200430" config="000"/>
+    </BgProcNetControlDefaultConfig>
+
+    <BgProcNetControlWhiteListConfig>
+        <Value version="20200430"
+        app="com.tencent.mm" proc="com.tencent.mm:push" config="000"
+        app="com.tencent.mm" proc="@default" config="101"
+        app="com.tencent.mobileqq" proc="com.tencent.mobileqq:MSF" config="000"
+        app="com.tencent.mobileqq" proc="@default" config="101"/>
+    </BgProcNetControlWhiteListConfig>
+
+    <BgAppNetControlSwitch>
+        <Value version="20200430" config="1"/>
+    </BgAppNetControlSwitch>
+
+    <BgAppNetControlShortUnfreezeFilter>
+        <Value version="20200430" config="20"/>
+    </BgAppNetControlShortUnfreezeFilter>
+
+    <BgAppNetControlDefaultConfig>
+        <Value version="20210910" config="011" timer="000F00"/>
+    </BgAppNetControlDefaultConfig>
+
+    <BgAppNetControlWhiteListConfig>
+        <Value version="20210910"
+        app="com.qiyi.video" config="111" timer="2D0F00"
+        app="com.tencent.qqlive" config="111" timer="2D0F00"
+        app="com.ss.android.article.video" config="111" timer="2D0F00"
+        app="com.kugou.android" config="111" timer="1E0F00"
+        app="com.ss.android.ugc.aweme" config="111" timer="1E0F00"
+        app="com.smile.gifmaker" config="111" timer="1E0F00"
+        app="com.UCMobile" config="111" timer="140F00"
+        app="com.baidu.searchbox" config="111" timer="140F00"
+        app="com.kmxs.reader" config="111" timer="140F00"
+        app="com.ss.android.article.lite" config="111" timer="140F00"
+        app="com.taobao.taobao" config="111" timer="2D0F00"
+        app="com.xunmeng.pinduoduo" config="111" timer="2D0F00"/>
+    </BgAppNetControlWhiteListConfig>
+</OAppNetControl>

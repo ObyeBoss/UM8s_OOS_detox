@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+!  Name:
+!    ocloud_file_observer_config.xml
+!
+!  Description:
+!    For log back ocloud files observer.
+!
+!   <author>         <data>          <desc>
+!   WuXiaoyu       2022/10/26      Create this file config ocloud observer files.
+-->
+
+<contents>
+
+  <!--<file_observer business="modem_log">
+    /data/persist_log/DCS/de/mdmlog
+  </file_observer>
+
+  <file_observer business="qc_modem_minidump">
+    /data/persist_log/DCS/de/modemdump
+  </file_observer>
+
+  <file_observer business="mtk_modem_minidump">
+    /data/ramdump
+  </file_observer>-->
+</contents>
+

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filter-conf>
+    <version>20240826</version>
+    <toggle>1</toggle>
+    <features>
+        <feature name="BindCore" enable="0">
+            <!-- big core index, start from 0 -->
+            <bigcore_id>4</bigcore_id>
+            <bigcore_id>5</bigcore_id>
+            <bigcore_id>6</bigcore_id>
+            <bigcore_id>7</bigcore_id>
+        </feature>
+
+        <feature name="LocalHdr" enable="1">
+            <support10bit>enable</support10bit>
+        </feature>
+
+        <feature name="AuroraWallpaper" enable="1">
+            <support10bit>enable</support10bit>
+        </feature>
+
+        <feature name="GameEdr" enable="1">
+        </feature>
+
+        <feature name="GpuSwFence" enable="1">
+        </feature>
+
+        <feature name="HdrVision" enable="1">
+            <timeout_s>60</timeout_s>
+            <scale>6</scale>
+            <timerEnable>1</timerEnable>
+            <application name="com.netflix.mediaclient"></application>
+            <application name="com.amazon.avod.thirdpartyclient"></application>
+            <application name="com.google.android.youtube"></application>
+            <application name="app.revanced.android.youtube"></application>
+        </feature>
+
+        <feature name="OplusDolbyVision" enable="1">
+            <timeout_s>60</timeout_s>
+            <scale>6</scale>
+            <timerEnable>1</timerEnable>
+            <needDimming>1</needDimming>
+            <fullScreenOnly>0</fullScreenOnly>
+            <application name="com.netflix.mediaclient"/>
+        </feature>
+
+        <feature name="curtain" enable="1">
+            <application name="com.instagram.android">
+                <scene type="FuzzyLayer">
+                    <layer>TransparentModalActivity</layer>
+                    <action>
+                        <mode>Normal</mode>
+                    </action>
+                </scene>
+                <scene type="FuzzyLayer">
+                    <layer>MainActivity</layer>
+                    <action>
+                        <mode>Normal</mode>
+                    </action>
+                </scene>
+                <scene type="FuzzyLayer">
+                    <layer>ModalActivity</layer>
+                    <action>
+                        <mode>Normal</mode>
+                    </action>
+                </scene>
+            </application>
+            <application name="com.google.android.youtube">
+                <scene type="FuzzyLayer">
+                    <layer>WatchWhileActivity</layer>
+                    <action>
+                        <mode>SurfaceView</mode>
+                    </action>
+                </scene>
+                <scene type="FuzzyLayer">
+                    <layer>InternalMainActivity</layer>
+                    <action>
+                        <mode>SurfaceView</mode>
+                    </action>
+                </scene>
+                <scene type="FuzzyLayer">
+                    <layer>HomeActivity</layer>
+                    <action>
+                        <mode>SurfaceView</mode>
+                    </action>
+                </scene>
+            </application>
+            <application name="app.revanced.android.youtube">
+                <scene type="FuzzyLayer">
+                    <layer>WatchWhileActivity</layer>
+                    <action>
+                        <mode>SurfaceView</mode>
+                    </action>
+                </scene>
+                <scene type="FuzzyLayer">
+                    <layer>InternalMainActivity</layer>
+                    <action>
+                        <mode>SurfaceView</mode>
+                    </action>
+                </scene>
+                <scene type="FuzzyLayer">
+                    <layer>HomeActivity</layer>
+                    <action>
+                        <mode>SurfaceView</mode>
+                    </action>
+                </scene>
+            </application>
+        </feature>
+
+        <feature name="Sharpness" enable="1">
+            <application name="com.zhiliaoapp.musically">
+                <scene type="Application">
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <featureId>5</featureId>
+                        <featureValuesOn>2</featureValuesOn>
+                        <featureValuesOff>1</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.mxtech.videoplayer.ad">
+                <scene type="Application">
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <featureId>5</featureId>
+                        <featureValuesOn>2</featureValuesOn>
+                        <featureValuesOff>1</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.snaptube.premium">
+                <scene type="Application">
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <featureId>5</featureId>
+                        <featureValuesOn>2</featureValuesOn>
+                        <featureValuesOff>1</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.whatsapp">
+                <scene type="Application">
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <featureId>5</featureId>
+                        <featureValuesOn>3</featureValuesOn>
+                        <featureValuesOff>1</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.android.chrome">
+                <scene type="Application">
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <featureId>5</featureId>
+                        <featureValuesOn>3</featureValuesOn>
+                        <featureValuesOff>1</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.facebook.katana">
+                <scene type="Application">
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <featureId>5</featureId>
+                        <featureValuesOn>3</featureValuesOn>
+                        <featureValuesOff>1</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.instagram.android">
+                <scene type="Application">
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <featureId>5</featureId>
+                        <featureValuesOn>3</featureValuesOn>
+                        <featureValuesOff>1</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.google.android.youtube">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.google.android.youtube</layer>
+                    <layer>com.google.android.youtube/com.google</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="app.revanced.android.youtube">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[app.revanced.android.youtube</layer>
+                    <layer>app.revanced.android.youtube/com.google</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.netflix.mediaclient">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.netflix.mediaclient</layer>
+                    <layer>com.netflix.mediaclient</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.disney.disneyplus">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.disney.disneyplus/com</layer>
+                    <layer>com.disney.disneyplus/com</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.hbo.android.app">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.hbo.android.app</layer>
+                    <layer>com.hbo.android.app/com.hbo</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.hbo.android">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.hbo.android</layer>
+                    <layer>com.hbo.android/com.hbo</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.hbo.hbonow">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.hbo.hbonow</layer>
+                    <layer>com.hbo.hbonow/com.hbo</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.hulu.plus">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.hulu.plus/com.hulu</layer>
+                    <layer>com.hulu.plus/com.hulu</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+
+            <application name="com.amazon.avod.thirdpartyclient">
+                <scene type="ExactLayer">
+                    <layer>SurfaceView[com.amazon.avod.thirdpartyclient</layer>
+                    <layer>com.amazon.avod.thirdpartyclient/com</layer>
+                    <action>
+                        <requestResolution>1</requestResolution>
+                        <requestRotation>0</requestRotation>
+                        <targetLayerIndex>0</targetLayerIndex>
+                        <featureId>20</featureId>
+                        <featureValuesOn>1</featureValuesOn>
+                        <featureValuesOff>0</featureValuesOff>
+                    </action>
+                </scene>
+            </application>
+        </feature>
+
+        <feature name="OplusFingerPrint" enable="1">
+            <nits>2.09090 3.13635 5.22724 7.31814 10.45448 13.59083 17.77262 21.95442 27.18166 33.45435 39.72704 47.04518 55.40877 64.81781 73.18139 83.63588 94.09036 104.54485 120.22657 135.90830 156.81727 182.95348 209.08970 261.36212 313.63454 386.81594 449.54284 480.90630 522.72424 627.26909 731.81393 836.35878</nits>
+            <alpha>0.935 0.923564 0.901365 0.884506 0.864441 0.845055 0.8278 0.809715 0.790358 0.771132 0.75502 0.735053 0.713588 0.692159 0.676487 0.656674 0.637539 0.621206 0.597538 0.574416 0.545255 0.511859 0.480349 0.416539 0.379541 0.316578 0.270301 0.248902 0.219829 0.154749 0.091339 0.049635</alpha>
+        </feature>
+
+    </features>
+</filter-conf>

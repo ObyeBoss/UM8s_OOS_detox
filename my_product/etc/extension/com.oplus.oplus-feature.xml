@@ -103,19 +103,62 @@
 	<oplus-feature name="oplus.software.radio.virtualmodem_cellinfo"/>
 	<oplus-feature name="oplus.software.radio.network_vip_task"/>
 	<!-- test -->
-	<oplus-feature name="oplus.software.radio.qos_prediction_enabled"/>
+	<oplus-feature name="oplus.software.aon_aod_enable"/>
 	<oplus-feature name="oplus.hardware.display.full_brightness_DC"/>
 	<oplus-feature name="oplus.hardware.display.no_classic_low_freq_strobe"/>
+	<oplus-feature name="oplus.software.display.camera.brighten"/>
+	<oplus-feature name="oplus.software.wlan.qoe_estimate"/>
+	<oplus-feature name="oplus.software.lockscreen.enable.standard_refresh_rate"/>
+	<oplus-feature name="oplus.software.view.rgbnormalize"/>
+	<oplus-feature name="oplus.software.radio.qos_prediction_enabled"/>
+	<oplus-feature name="oplus.software.radio.qct_smart_data_flow"/>
+	<oplus-feature name="oplus.software.radio.hyper_uplink_mode_enable"/>
+	<oplus-feature name="oplus.software.radio.dns_speed_up"/>
+	<oplus-feature name="oplus.software.radio.wifi_force_rel_dual_data"/>
+	<oplus-feature name="oplus.software.radio.wifi_data_control"/>
+	<oplus-feature name="oplus.software.deviceidle_network_optimization"/>
 
-	<oplus-feature name="oplus.software.radio.sido_inter_cell_coop_dual_cell_strong_sig_opt"/>
-	<oplus-feature name="oplus.software.radio.sido_lte_srv_poor_signal_ngbr_strong_opt"/>
+	<oplus-feature name="oplus.software.radio.block_nondds_pck"/>
+	<oplus-feature name="oplus.software.radio.cybersense_location_enabled"/>
+	<oplus-feature name="oplus.software.radio.cybersense_travel_enabled"/>
+	<oplus-feature name="oplus.software.radio.data_fast_recovery"/>
+	<oplus-feature name="oplus.software.radio.disable_5g_nr_5gdump"/>
+	<oplus-feature name="oplus.software.radio.dual_ps"/>
+
+	<oplus-feature name="oplus.software.radio.exhibition_detect_service"/>
+	<oplus-feature name="oplus.software.radio.enable_cmcc_nitz"/>
+	<oplus-feature name="oplus.software.radio.enable_signal_map"/>
+	<oplus-feature name="oplus.software.radio.enable_weak_signal_backoff"/>
+
+	<oplus-feature name="oplus.software.radio.qoe_game_cell_suggest"/>
+	<oplus-feature name="oplus.software.radio.qoe_collaborative_center"/>
+	<oplus-feature name="oplus.software.radio.qr_recovery"/>
+
 	<oplus-feature name="oplus.software.radio.pcdr_lte_fast_return_to_nr_accurate_meas_recovery_opt"/>
-	<oplus-feature name="oplus.software.radio.sido_inter_cell_coop_lte_rej_15_opt"/>
+	<oplus-feature name="oplus.software.radio.pcdr_hangup_fast_return_enhance"/>
 	<oplus-feature name="oplus.software.radio.sido_rat_enhance_lte_backoff_opt"/>
 	<oplus-feature name="oplus.software.radio.sido_rat_enhance_nr_backoff_opt"/>
-	<oplus-feature name="oplus.software.radio.enable_weak_signal_backoff"/>
-	<oplus-feature name="oplus.software.radio.dual_ps"/>
-	<oplus-feature name="oplus.software.radio.hyper_uplink_mode_enable"/>
-	<oplus-feature name="oplus.software.radio.enable_signal_map"/>
+	<oplus-feature name="oplus.software.radio.sido_airplane_mode_low_power_opt_v2"/>>
+	<oplus-feature name="oplus.software.radio.sido_ss_update_abnormal_opt"/>
+	<oplus-feature name="oplus.software.radio.sido_mmr_reg_req_stuck_opt"/>
+	<oplus-feature name="oplus.software.radio.sido_airplane_mode_low_power_opt"/>
+	<oplus-feature name="oplus.software.radio.sido_lte_srv_poor_signal_ngbr_strong_opt"/>
+	<oplus-feature name="oplus.software.radio.sido_gw_lte_pingpong_lte_poor_signal_opt"/>
+	<oplus-feature name="oplus.software.radio.sido_inter_cell_coop_lte_rej_15_opt"/>
+	<oplus-feature name="oplus.software.radio.sido_inter_cell_coop_dual_cell_strong_sig_opt"/>
+	<oplus-feature name="oplus.software.radio.sido_nr_icon_pingpong_opt"/>
+	<oplus-feature name="oplus.software.radio.smart5g_Low_Power_control"/>
+	<oplus-feature name="oplus.software.radio.smart5g_thermal_nr_deprio"/>
+	<oplus-feature name="oplus.software.radio.smart5g_speed_control"/>
+	<oplus-feature name="oplus.software.radio.subway_slow_recovery"/>
+	<oplus-feature name="oplus.software.radio.sar_via_sts_support"/>
+	<oplus-feature name="oplus.software.radio.smart_game_qoe_recovery"/>
+	<oplus-feature name="oplus.software.radio.support_r16"/>
+	<oplus-feature name="oplus.software.radio.support_vonr_plus"/>
+	<oplus-feature name="oplus.software.radio.use_customized_thresholds"/>
+	<oplus-feature name="oplus.software.radio.rf_icc_support"/>
+	<oplus-feature name="oplus.software.radio.nsa_signal_optim"/>
+	<oplus-feature name="oplus.software.radio.nwpower_amc_airplanemode"/>
+	<oplus-feature name="oplus.software.radio.nwpower_amc_mediastreamcontrol"/>
 </oplus-config>
 <!-- Timestamp 2025-03-25T11:44:21 #639224 -->

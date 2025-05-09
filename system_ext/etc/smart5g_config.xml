@@ -1,0 +1,17 @@
+<Smart5gcfg>
+    <apk_cfg ver_num = "8"
+    video ="com.tencent.qqlive,com.qiyi.video,com.youku.phone,air.tv.douyu.android,com.duowan.kiwi,com.heytap.yoli,com.heytap.yoli:media,com.ss.android.ugc.aweme,com.ss.android.article.video,com.smile.gifmaker"
+    game = "com.tencent.tmgp.pubgmhd,com.tencent.tmgp.sgame"
+    filetrans = "com.heytap.market,com.oppo.market,org.zwanoo.android.speedtest,com.splashpadmobile.speedtest,org.zwanoo.android.speedtest.china,com.network.test,com.oplus.market"
+    others="com.antutu.ABenchMark"
+    scgthres = "2048:3072:5:-160,2048:3072:0:-160,0:0:0:-160:2048:3072:5:-160"
+    scorethres="50:35,40:25,40:45,50:25"
+    expblack ="com.android.vending,org.zwanoo.android.speedtest,com.vtool.speedtest.speedcheck.internet,com.speedtest.testspeed,com.Wifi.lte5g.lte4g.lte3g.speedtest.Internetspeed,com.internet.speedtest.check.wifi.meterorg,com.netflix.Speedtest,com.google.android.youtube,app.revanced.android.youtube,org.telegram.messenger,org.thunderdog.challegram,com.facebook.katana,com.zhiliaoapp.musically,com.instagram.android,org.zwanoo.android.speedtest.china"
+    gamelowtemp_enable = "0"
+    gamelowtemp_ignoreicon = "1"
+    lowtempgame = "com.tencent.tmgp.pubgmhd,com.tencent.tmgp.sgame,com.tencent.tmgp.speedmobile,com.tencent.tmgp.cf,com.tencent.af,com.tencent.YiRen,com.tencent.KiHan,com.tencent.tmgp.cod,com.tencent.tmgp.bh3,com.miHoYo.bh3.nearme.gamecenter,com.miHoYo.enterprise.NGHSoD,com.pwrd.xxajh.nearme.gamecenter,com.xsmdl.nearme.gamecenter,com.youzu.bs.nearme.gamecenter,com.denachina.g13002010.nearme.gamecenter,com.netease.jddsaef.nearme.gamecenter,com.miHoYo.Yuanshen"
+    lowtemp_scgthres = "2048:3072:5:-160,4096:5120:200:-105,0:0:0:-160,2048:3072:5:-160">
+    </apk_cfg>
+    <cmcc_test_cfg black_apk = "com.network.test,org.zwanoo.android.speedtest,com.splashpadmobile.speedtest,com.cmcc.cmvideo,com.tencent.tmgp.pubgmhd,org.zwanoo.android.speedtest.china" endcblack_apk = "com.cmcc.cmvideo,com.tencent.tmgp.pubgmhd">
+    </cmcc_test_cfg>
+</Smart5gcfg>

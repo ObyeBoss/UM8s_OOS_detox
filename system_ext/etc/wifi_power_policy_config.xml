@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2024 Oplus. All rights reserved.
+ */
+-->
+
+<!-- The attributes in this XML file provide configuration information -->
+<!-- for the WiFi Power Manager. -->
+
+<PowerPolicyConfig>
+ <version>20240808</version>
+<policy id="1">
+    <name>dynamicPKAT</name>
+    <version>20241122</version>
+    <enabled>true</enabled>
+    <!-- config options：ALL, MTK, Qcom, SM8650/SM8750/SMXXX, DX-3/DX-4/DX-X -->
+    <!-- <platform>MTK</platform> -->
+    <platform>MTK</platform>
+    <!-- config options：scene:policy effect scenario,scope as "ALL,standby, foreground" -->
+    <!-- per_day：policy trigger limits per day -->
+    <!-- execute_gap: Minimum gap between two executions(millisecond).   monitor_only: only monitor, not execute actions.-->
+    <param scene="all"
+        per_day="10000"
+        execute_gap="30"
+        monitor_only="false" />
+    <!-- the threshold of conditions only support integer yet-->
+    <in index="1" condition="wificonnected_on&amp;screen_on&amp;fgapplist_1" action_args_idx="1" />
+    <in index="2" condition="screen_off" action_args_idx="1" />
+    <out index="1" action_args_idx="1" />
+    <out index="2" condition="gamemode_on" action_args_idx="1" />
+    <action_name>dynamicPKAT</action_name>
+</policy>
+
+<policy id="2">
+    <name>lowPowerTxRate</name>
+    <version>20240902</version>
+    <enabled>true</enabled>
+    <feature_config>oplus.software.wlan.lp_txrate</feature_config>
+    <!-- config options：scene:policy effect scenario,scope as "ALL,standby, foreground" -->
+    <!-- per_day：policy trigger limits per day -->
+    <!-- execute_gap: Minimum gap between two executions(millisecond).   monitor_only: only monitor, not execute actions.-->
+    <param scene="all"
+        per_day="10000"
+        execute_gap="0"
+        monitor_only="false" />
+    <!-- the threshold of conditions only support integer yet-->
+    <in index="1" condition="wificonnected_on&amp;screen_on&amp;fgapplist_2&amp;wifistat:txTputKBpsOnWifi_lt_63&amp;wifiassocevent:wlanstandard_eq_6" action_args_idx="1" />
+    <in index="2" condition="wificonnected_on&amp;screen_on&amp;gamemode_on&amp;wifistat:txTputKBpsOnWifi_lt_63&amp;wifiassocevent:wlanstandard_eq_6" action_args_idx="1" />
+    <in index="3" condition="wificonnected_on&amp;screen_on&amp;fgapplist_2&amp;wifistat:txTputKBpsOnWifi_lt_63&amp;wifiassocevent:wlanstandard_lt_6" action_args_idx="2" />
+    <in index="4" condition="wificonnected_on&amp;screen_on&amp;gamemode_on&amp;wifistat:txTputKBpsOnWifi_lt_63&amp;wifiassocevent:wlanstandard_lt_6" action_args_idx="2" />
+    <out index="1" condition="softapstate_on" action_args_idx="1" />
+    <out index="2" condition="wifip2pgroupformed_on" action_args_idx="1" />
+    <out index="3" condition="dualsta_on" action_args_idx="1"/>
+    <action_name>lowPowerTxRate</action_name>
+</policy>
+
+<policy id="3">
+    <name>dynamicEDCCA</name>
+    <version>20240808</version>
+    <enabled>true</enabled>
+    <feature_config>oplus.software.wlan.dynamic_edcca</feature_config>
+    <!-- config options：scene:policy effect scenario,scope as "ALL,standby, foreground" -->
+    <!-- per_day：policy trigger limits per day -->
+    <!-- execute_gap: Minimum gap between two executions(millisecond).   monitor_only: only monitor, not execute actions.-->
+    <param scene="all"
+        per_day="10000"
+        execute_gap="0"
+        monitor_only="false" />
+    <!-- the threshold of conditions only support integer yet-->
+    <in index="1" condition="wifistat:rssi_ge_-40" action_args_idx="1" priority="1"/>
+    <in index="2" condition="wifistat:rssi_ge_-40&amp;fgapplist_4" action_args_idx="2" priority="2"/>
+    <in index="3" condition="wifistat:rssi_lt_-40&amp;wifistat:rssi_ge_-70" action_args_idx="3" />
+    <in index="4" condition="wifistat:rssi_lt_-70" action_args_idx="4" />
+    <out index="1" condition="softapstate_on" action_args_idx="1" />
+    <out index="2" condition="wifip2pgroupformed_on" action_args_idx="1" />
+    <out index="3" condition="wificonnected_off" action_args_idx="1" />
+    <action_name>dynamicEDCCA</action_name>
+</policy>
+
+<policy id="4">
+    <name>smartAntennaSwitch</name>
+    <version>20240808</version>
+    <enabled>true</enabled>
+    <feature_config>oplus.software.wlan.smart_antenna_switch</feature_config>
+    <!-- config options：scene:policy effect scenario,scope as "ALL,standby, foreground" -->
+    <!-- per_day：policy trigger limits per day -->
+    <!-- execute_gap: Minimum gap between two executions(millisecond).   monitor_only: only monitor, not execute actions.-->
+    <param scene="all"
+        per_day="10000"
+        execute_gap="0"
+        monitor_only="false" />
+    <!-- the threshold of conditions only support integer yet-->
+    <in index="1" condition="fgapplist_2" action_args_idx="1" />
+    <in index="2" condition="gamemode_on" action_args_idx="1" />
+    <out index="1" condition="softapstate_on" action_args_idx="1" />
+    <out index="2" condition="wifip2pgroupformed_on" action_args_idx="1" />
+    <action_name>smartAntennaSwitch</action_name>
+</policy>
+
+<action id="1">
+    <name>dynamicPKAT</name>
+    <version>20240411</version>
+    <lock_time>10</lock_time>
+    <in_args index="1" execute="ApsEnable:1" />
+    <out_args index="1" execute="ApsEnable:0" />
+</action>
+
+<action id="2">
+    <name>smartgearM</name>
+    <version>20240522</version>
+    <lock_time>10</lock_time>
+    <in_args index="1" execute="enableSmartGearMode:1" />
+    <out_args index="1" execute="disableSmartGearMode:0" />
+</action>
+
+<action id="3">
+    <name>smartgearQ</name>
+    <version>20240522</version>
+    <lock_time>10</lock_time>
+    <in_args index="1" execute="ApsEnable:1" />
+    <out_args index="1" execute="ApsEnable:0" />
+</action>
+
+<action id="4">
+    <name>dynamicNSS</name>
+    <version>20240411</version>
+    <lock_time>10</lock_time>
+    <in_args index="1" execute="siso:1" />
+    <in_args index="2" execute="detect:1" />
+    <out_args index="1" execute="siso:0" />
+    <out_args index="2" execute="detect:0" />
+</action>
+
+<action id="5">
+    <name>lowPowerTxRate</name>
+    <version>20240509</version>
+    <lock_time>0</lock_time>
+    <in_args index="1" execute="bw_limit:1,qam_limit:1,max_rate:130000" />
+    <in_args index="2" execute="bw_limit:1,qam_limit:1,max_rate:78000" />
+    <out_args index="1" execute="max_rate:0" />
+</action>
+
+<action id="6">
+    <name>dynamicEDCCA</name>
+    <version>20240902</version>
+    <lock_time>0</lock_time>
+    <in_args index="1" execute="edcca_2g_20:0xd1,edcca_2g_40:0xd4,edcca_2g_80:0xd8,edcca_5g_20:0xd1,edcca_5g_40:0xd4,edcca_5g_80:0xd8,edcca_5g_160:0xdb" />
+    <in_args index="2" execute="edcca_2g_20:0xd1,edcca_2g_40:0xd4,edcca_2g_80:0xd8,edcca_5g_20:0xd1,edcca_5g_40:0xd4,edcca_5g_80:0xd8,edcca_5g_160:0xdb" />
+    <in_args index="3" execute="edcca_2g_20:0xba,edcca_2g_40:0xbd,edcca_2g_80:0xc1,edcca_5g_20:0xb9,edcca_5g_40:0xbd,edcca_5g_80:0xc0,edcca_5g_160:0xc3" />
+    <in_args index="4" execute="edcca_2g_20:0xba,edcca_2g_40:0xbd,edcca_2g_80:0xc1,edcca_5g_20:0xb9,edcca_5g_40:0xbd,edcca_5g_80:0xc0,edcca_5g_160:0xc3" />
+    <out_args index="1" execute="edcca_2g_20:0xbf,edcca_2g_40:0xc2,edcca_2g_80:0xc6,edcca_5g_20:0xb9,edcca_5g_40:0xbe,edcca_5g_80:0xc1,edcca_5g_160:0xc4" />
+</action>
+
+<action id="7">
+    <name>smartAntennaSwitch</name>
+    <version>20240509</version>
+    <lock_time>10</lock_time>
+    <in_args index="1" execute="sasEnable:1" />
+    <out_args index="1" execute="sasEnable:0" />
+</action>
+
+<fgapplist>
+    <version>20240522</version>
+    <list index="1" applist="com.tencent.qqlive,com.qiyi.video,com.smile.gifmaker,com.ss.android.ugc.aweme,com.UCMobile,com.tencent.mtt,com.ss.android.article.news,com.netease.newsreader.activity,com.microsoft.teams,tv.twitch.android.app,com.mxtech.videoplayer.pro,com.vanced.android.youtube,jp.naver.line.android,com.tv.v18.viola,com.android.chrome,com.netflix.mediaclient,com.facebook.katana,com.zhiliaoapp.musically,com.mxtech.videoplayer.ad,com.whatsapp,com.google.android.youtube,app.revanced.android.youtube,org.telegram.messenger,org.thunderdog.challegram,com.instagram.android,com.amazon.avod.thirdpartyclient,in.startv.hotstar,com.google.android.apps.maps,com.snapchat.android,com.gbwhatsapp,com.hulu.plus,jp.konami.pesam,com.vkontakte.android,in.amazon.mShop.android.shopping,com.amazon.mShop.android.shopping" />
+    <list index="2" applist="com.smile.gifmaker,com.ss.android.ugc.aweme,com.tencent.wemeet.app,com.tencent.mm,com.tencent.mobileqq,com.alibaba.android.rimet" />
+    <list index="3" applist="com.oppo.launcher,com.android.launcher,com.tencent.mtt,com.baidu.browser.apps,com.UCMobile,com.heytap.browser,com.tencent.mobileqq,com.tencent.mm,com.dragon.read,com.kmxs.reader,com.quark.browser,com.sup.android.superb,com.xingin.xhs,com.tencent.wework,cn.xuexi.android,com.qidian.QDReader,com.tencent.weread,com.zhihu.android" />
+    <list index="4" applist="com.oplus.backuprestore,com.coloros.backuprestore" />
+</fgapplist>
+
+<routerlist>
+    <version>20240522</version>
+    <list index="1" applist="MW325R,FW325R,360路由器,TL-XDR5430易展版,TL-WR886N,TL-WR842N" />
+</routerlist>
+
+<ssidlist>
+    <version>20240522</version>
+    <list index="1" applist="Pwr_Edrc_Test_OP" />
+    <list index="2" applist="OPPO" />
+</ssidlist>
+
+</PowerPolicyConfig>

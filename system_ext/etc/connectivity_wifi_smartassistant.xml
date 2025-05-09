@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<smartassistantromupdate>
+    <version>2024082712</version>
+
+    <!-- Default Feature Control Example -->
+    <SMART_ASSISTANT_FEATURE>true</SMART_ASSISTANT_FEATURE>
+    <SMART_ASSISTANT_FEATURE_CTRL>1020</SMART_ASSISTANT_FEATURE_CTRL>
+
+    <!-- Default APP Class Example -->
+    <SMART_ASSISTANT_SHORT_VIDEO_APP>com.ss.android.ugc.aweme,com.ss.android.ugc.aweme.lite,com.ss.android.ugc.live,com.smile.gifmaker,
+        ,com.kuaishou.nebula,tv.danmaku.bili,com.ss.android.article.video,com.duowan.kiwi,air.tv.douyu.android,in.mohalla.video,com.ss.android.ugc.trill,
+        ,com.kwai.bulldog,com.zhiliaoapp.musically.go,sg.bigo.live,com.zhiliaoapp.musically</SMART_ASSISTANT_SHORT_VIDEO_APP>
+
+    <SMART_ASSISTANT_LONG_VIDEO_APP>com.youku.phone,com.tencent.qqlive,com.qiyi.video,com.cmcc.cmvideo,com.google.android.youtube,app.revanced.android.youtube,in.startv.hotstar,
+        ,com.google.android.videos,com.jio.media.ondemand,com.mxtech.videoplayer.ad,com.playit.videoplayer,com.netflix.mediaclient,free.tube.premium.advanced.tuber,
+        ,com.bstar.intl,com.dla.android,com.dywx.larkplayer</SMART_ASSISTANT_LONG_VIDEO_APP>
+
+    <SMART_ASSISTANT_NEWS_APP>com.netease.newsreader.activity,com.ss.android.article.news,com.tencent.news,com.sohu.newsclient,com.tencent.reading,
+        ,com.eterno,com.cardfeed.video_public,com.cricbuzz.android,com.ak.ta.dainikbhaskar.activity,sun.way2sms.hyd.com,com.google.android.apps.magazines,
+        ,com.jakarta.baca.lite,e.books.reading.apps,com.andi.alquran.id,com.bitsmedia.android.muslimpro,com.offline.bible,com.google.android.apps.books,
+        ,org.jw.jwlibrary.mobile,com.opera.app.news</SMART_ASSISTANT_NEWS_APP>
+
+    <SMART_ASSISTANT_BROWSER_APP>com.heytap.browser,com.UCMobile,com.tencent.mtt,com.baidu.browser.apps,com.google.android.googlequicksearchbox,
+        ,com.android.chrome,com.android.browser</SMART_ASSISTANT_BROWSER_APP>
+
+    <SMART_ASSISTANT_CONVENIENT_LIFE_APP>com.eg.android.AlipayGphone,me.ele,com.sankuai.meituan,com.sankuai.meituan.takeoutnew,com.dianping.v1,com.moji.mjweather,
+        ,ctrip.android.view,com.Qunar,com.phonepe.app,com.application.zomato,com.google.android.projection.gearhead,com.finshell.fin,net.one97.paytm,com.meesho.supply,
+        ,com.jio.myjio,com.whereismytrain.android,com.lenovo.anyshare.gps,com.grabtaxi.passenger,id.dana,com.pinterest,com.telkomsel.telkomselcm,com.gojek.app,
+        ,com.google.android.apps.walletnfcrel,com.canva.editor,com.handmark.expressweather,com.mercadopago.wallet,com.grability.rappi,com.xiaojukeji.didi.global.customer,
+        ,com.ubercab.eats,com.mcdo.mcdonalds,br.com.brainweb.ifood</SMART_ASSISTANT_CONVENIENT_LIFE_APP>
+
+    <SMART_ASSISTANT_SHOPPING_APP>com.taobao.taobao,com.jingdong.app.mall,com.tmall.wireless,com.achievo.vipshop,com.xunmeng.pinduoduo,com.xingin.xhs,
+        ,com.ss.android.auto,com.suning.mobile.ebuy,cn.TuHu.android,com.cubic.autohome,com.flipkart.android,in.amazon.mShop.android.shopping,com.myntra.android,
+        ,com.flipkart.shopsy,com.ril.ajio,com.bt.bms,com.olx.southasia,com.jpl.jiomart,com.grofers.customerapp,com.tatadigital.tcp,com.lazada.android,
+        ,com.shopee.id,com.shopee.ph,com.tokopedia.tkpd,com.pure.indosat.care,com.zzkko,asuk.com.android.app,blibli.mobile.commerce,com.tiktokshop.seller,
+        ,com.alfamart.alfagift,com.mercadolibre,com.amazon.mShop.android.shopping,com.zzkko,com.einnovation.temu,com.alibaba.aliexpresshd,mx.com.liverpool.shoppingapp,
+        ,com.walmart.mg,com.nike.omega,com.alibaba.intl.android.apps.poseidon,air.SamsClubMexico</SMART_ASSISTANT_SHOPPING_APP>
+
+    <SMART_ASSISTANT_SOCIAL_APP>com.tencent.mm,com.tencent.mobileqq,com.sina.weibo,com.qzone,com.zhihu.android,com.baidu.tieba,com.whatsapp,com.facebook.katana,
+        ,com.instagram.android,com.snapchat.android,in.mohalla.sharechat,com.linkedin.android,com.whatsapp.w4b,com.android.mms,jp.naver.line.android,
+        ,com.google.android.apps.messaging,com.facebook.orca,com.google.android.ims,com.twitter.android,org.telegram.messenger,org.thunderdog.challegram</SMART_ASSISTANT_SOCIAL_APP>
+
+    <SMART_ASSISTANT_OFFICE_APP>com.alibaba.android.rimet,com.tencent.wemeet.app,com.microsoft.teams,com.gnet.onemeeting,us.zoom.videomeetings,com.teamtalk.im,
+        ,cn.wps.moffice_eng,com.glance.internet,com.microsoft.office.word,com.dubox.drive,com.ocrm.im</SMART_ASSISTANT_OFFICE_APP>
+
+    <SMART_ASSISTANT_DOWNLOAD_APP>com.heytap.market,org.zwanoo.android.speedtest,com.baidu.netdisk,com.tencent.android.qqdownloader,com.android.vending,
+        ,com.video.fun.app</SMART_ASSISTANT_DOWNLOAD_APP>
+
+    <SMART_ASSISTANT_MUSIC_APP>com.kugou.android,com.netease.cloudmusic,com.ximalaya.ting.android,cn.kuwo.player,cmccwm.mobilemusic,com.tencent.qqmusic,
+        ,com.bsbportal.music,com.google.android.apps.youtube.music,com.spotify.music,com.zing.mp3,com.android.fmradio,com.apple.android.music,
+        ,com.aspiro.tidal,com.qobuz.music,ru.yandex.music</SMART_ASSISTANT_MUSIC_APP>
+
+    <SMART_ASSISTANT_GAME_APP>com.tencent.tmgp.sgame,com.tencent.tmgp.pubgmhd,com.tencent.lolm,com.ludo.king,com.dts.freefiremax,com.king.candycrushsaga,
+        ,com.dream11.fantasy.cricket.football.kabaddi,com.pubg.imobile,com.katanlabs.bridgerunio,com.miniclip.carrom,com.mobile.legends,com.dts.freefireth,
+        ,com.roblox.client,com.miniclip.eightballpool,jp.garud.ssimulator,com.KatanLabs.mazeball3d,com.fugo.wow,com.citibanamex.banamexmobile,
+        ,com.activision.callofduty.shooter</SMART_ASSISTANT_GAME_APP>
+
+    <SMART_ASSISTANT_BLOCK_PRE_SETUP_CELLULAR_APP>com.qiyi.video,com.android.launcher,com.android.settings</SMART_ASSISTANT_BLOCK_PRE_SETUP_CELLULAR_APP>
+
+    <!-- Default Rule Example, INPUT_FACTOR=SIGNAL_MAP, USABLE=TRUE, PRIORITY=500, APP_TYPE=DEFAULT, SCENESMODE=DEFAULT,
+        RESIDENT=DEFAULT, MOVING=DEFAULT, SERIES=DEFAULT. FREQ=DEFAULT, P0_POLICY=DEFAULT, P1_POLICY=DEFAULT -->
+
+    <!-- SIGNAL_MAP_MODULE RULES START -->
+    <SMART_ASSISTANT_POLICY>SIGNAL_MAP,ENABLED,399,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT</SMART_ASSISTANT_POLICY>
+    <!-- SIGNAL_MAP_MODULE RULES END -->
+
+    <!-- APP_QOE_MODULE RULES START -->
+    <SMART_ASSISTANT_POLICY>APP_QOE,ENABLED,599,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,TRY_SLA,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <!-- APP_QOE_MODULE RULES END -->
+
+    <!-- CLOUD_GAME_MODULE RULES START -->
+    <SMART_ASSISTANT_POLICY>CLOUD_GAME,ENABLED,699,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,TRY_WIFI,DEFAULT</SMART_ASSISTANT_POLICY>
+    <!-- CLOUD_GAME_MODULE RULES END -->
+
+    <!-- OPLUS_SCORER_MODULE RULES START -->
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,900,DEFAULT,DEFAULT,FENCE,LEAVE_FENCE,DEFAULT,DEFAULT,TRY_MODEM,DEFAULT</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,901,DEFAULT,DEFAULT,DEFAULT,GO_ELEVATOR,DEFAULT,DEFAULT,TRY_MODEM,DEFAULT</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,902,DEFAULT,VIDEO_CALL,DEFAULT,DEFAULT,DEFAULT,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,999,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,DISABLED,800,MUSIC,DEFAULT,DEFAULT,WALKING,DEFAULT,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,GAME,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,GAME,DEFAULT,DEFAULT,DEFAULT,DEFAULT,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,OFFICE,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,OFFICE,DEFAULT,DEFAULT,DEFAULT,HIGH,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,750,OFFICE,DEFAULT,DEFAULT,DEFAULT,MIDLE,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,SOCIAL,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,SOCIAL,DEFAULT,DEFAULT,DEFAULT,HIGH,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,750,SOCIAL,DEFAULT,DEFAULT,DEFAULT,MIDLE,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,SHOPPING,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,SHOPPING,DEFAULT,DEFAULT,DEFAULT,HIGH,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,750,SHOPPING,DEFAULT,DEFAULT,DEFAULT,MIDLE,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,CONVENIENT_LIFE,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,CONVENIENT_LIFE,DEFAULT,DEFAULT,DEFAULT,HIGH,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,750,CONVENIENT_LIFE,DEFAULT,DEFAULT,DEFAULT,MIDLE,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,BROWSER,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,BROWSER,DEFAULT,DEFAULT,DEFAULT,HIGH,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,750,BROWSER,DEFAULT,DEFAULT,DEFAULT,MIDLE,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,NEWS,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,NEWS,DEFAULT,DEFAULT,DEFAULT,HIGH,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,750,NEWS,DEFAULT,DEFAULT,DEFAULT,MIDLE,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,700,SHORT_VIDEO,DEFAULT,FENCE,STLL,DEFAULT,DEFAULT,TRY_WIFI,TRY_MODEM</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,701,SHORT_VIDEO,DEFAULT,DEFAULT,DEFAULT,HIGH,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <SMART_ASSISTANT_POLICY>OPLUS_SCORER,ENABLED,750,SHORT_VIDEO,DEFAULT,DEFAULT,DEFAULT,MIDLE,DEFAULT,TRY_MODEM,TRY_WIFI</SMART_ASSISTANT_POLICY>
+    <!-- OPLUS_SCORER_MODULE RULES END -->
+</smartassistantromupdate>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <!-- version time need accurate to hour -->
+    <version>2025011319</version>
+    <filter-name>sys_zoom_window_config</filter-name>
+
+    <!-- zoomwindow switch -->
+    <zoom_window_switch>true</zoom_window_switch>
+
+    <dismiss_zoom_window_pkg_list>
+        <pkg>jp.co.daj.consumer.ifilter</pkg>
+        <pkg>jp.co.daj.consumer.ifilter.mb</pkg>
+        <pkg>jp.co.daj.consumer.ifilter.shop</pkg>
+        <pkg>jp.netstar.familysmile</pkg>
+        <pkg>com.kddi.familysmile.mvno</pkg>
+        <pkg>jp.softbank.mb.parentalcontrols</pkg>
+    </dismiss_zoom_window_pkg_list>
+
+    <forced_relaunch_zoom_cpn_list>
+        <cpn>com.mfw.roadbook/com.mfw.trade.implement.hotel.detail.main.HotelDetailWebViewActivity_zoom_to_full_middle</cpn>  <!--8154286-->
+        <cpn>com.seetong.app.seetong/com.stool.zxing.ui.CaptureTDCodeUI_full_to_zoom_middle</cpn>
+        <cpn>com.tencent.mm/.plugin.recordvideo.activity.MMRecordUI_rotation_zoom_to_full_small</cpn>    <!--7914862-->
+        <cpn>photo.editor.photoeditor.photoeditorpro/com.camerasideas.collagemaker.activity.MainActivity_full_to_zoom_large</cpn>
+        <cpn>com.whatsapp/.Conversation_zoom_to_full_small</cpn>    <!--8072379-->
+        <cpn>com.google.android.googlequicksearchbox/.SearchActivity_full_to_zoom_large</cpn>    <!--8147830-->
+        <cpn>com.google.android.googlequicksearchbox/.SearchActivity_zoom_to_full_large</cpn>    <!--8147830-->
+        <cpn>com.twitter.android/com.twitter.camera.controller.root.CameraActivity_full_to_zoom_middle</cpn>    <!--8171969-->
+        <cpn>com.whatsapp/.Conversation_full_to_zoom_large</cpn>    <!--8058156-->
+        <cpn>com.whatsapp.w4b/com.whatsapp.Conversation_full_to_zoom_large</cpn>    <!--8093250-->
+        <cpn>com.google.android.googlequicksearchbox/.InternalGoogleAppActivityEntrypoint_full_to_zoom_large</cpn>    <!--8147830-->
+        <cpn>com.google.android.googlequicksearchbox/.InternalGoogleAppActivityEntrypoint_zoom_to_full_large</cpn>    <!--8147830-->
+        <cpn>com.tencent.mm/.plugin.sns.ui.improve.ImproveSnsTimelineUI_full_to_zoom_middle</cpn>    <!--8398470-->
+        <cpn>com.tencent.mm/.plugin.sns.ui.improve.ImproveSnsTimelineUI_zoom_to_full_middle</cpn>    <!--8398470-->
+        <cpn>org.telegram.messenger/.DefaultIcon_full_to_zoom_large</cpn>    <!--8501600-->
+        <cpn>org.telegram.messenger/.DefaultIcon_zoom_to_full_large</cpn>    <!--8501600-->
+        <cpn>org.thunderdog.challegram/.DefaultIcon_full_to_zoom_large</cpn>    <!--8501600-->
+        <cpn>org.thunderdog.challegram/.DefaultIcon_zoom_to_full_large</cpn>    <!--8501600-->
+    </forced_relaunch_zoom_cpn_list>
+
+    <pkg_cancel_carema_rotato_when_enter_zoom_list>
+        <pkg>com.tencent.mm</pkg>
+        <pkg>com.Qunar</pkg>
+        <pkg>com.sf.activity</pkg>
+        <pkg>com.whatsapp</pkg>
+        <pkg>com.tencent.qqlivei18n</pkg>
+        <pkg>com.vuclip.viu</pkg>
+        <pkg>com.vkontakte.android</pkg>
+        <pkg>pk.com.telenor.phoenix</pkg>
+        <pkg>com.yandex.browser</pkg>
+        <pkg>com.shopee.th</pkg>
+        <pkg>co.brainly</pkg>
+        <pkg>com.shopee.vn</pkg>
+        <pkg>com.opera.mini.native</pkg>
+        <pkg>com.shopee.my</pkg>
+        <pkg>com.gamma.scan</pkg>
+        <pkg>com.msd.JTClient</pkg>
+        <pkg>com.apps.MyXL</pkg>
+        <pkg>com.alibaba.intl.android.apps.poseidon</pkg>
+        <pkg>com.microsoft.office.officehubrow</pkg>
+        <pkg>com.microsoft.office.outlook</pkg>
+        <pkg>com.mydito</pkg>
+        <pkg>com.tokopedia.tkpd</pkg>
+        <pkg>com.google.android.apps.tachyon</pkg>
+        <pkg>com.ovital.ovitalMap</pkg>
+        <pkg>com.tencent.qqmusic</pkg> <!--qq音乐 8027160-->
+        <pkg>com.netease.cloudmusic</pkg> <!--网易云音乐 8027160-->
+        <pkg>com.greenpoint.android.mc10086.activity</pkg> <!--中国移动 8553814-->
+    </pkg_cancel_carema_rotato_when_enter_zoom_list>
+
+    <pkg_cancle_rotato_camera_when_open_camera_in_zoom_list>
+        <pkg>com.sohu.sohuvideo</pkg>
+        <pkg>com.baidu.wenku</pkg>
+        <pkg>com.ss.android.ugc.live</pkg>
+        <pkg>com.hpbr.bosszhipin</pkg>
+        <pkg>ru.yandex.searchplugin</pkg>
+        <pkg>us.zoom.videomeetings</pkg>
+        <pkg>com.kwai.kuaishou.video.live</pkg>
+        <pkg>co.brainly</pkg>
+        <pkg>com.microsoft.office.officehubrow</pkg>
+        <pkg>com.google.android.apps.meetings</pkg>
+        <pkg>com.google.android.apps.tachyon</pkg>
+        <pkg>com.nd.hy.android.edu.study.commune</pkg>
+        <pkg>com.tencent.qqmusic</pkg> <!--qq音乐 8027160-->
+    </pkg_cancle_rotato_camera_when_open_camera_in_zoom_list>
+
+    <pkg_cancle_rotato_camera_when_device_rotato_list>
+        <pkg>com.vkontakte.android</pkg>
+        <pkg>ru.yandex.searchplugin</pkg>
+        <pkg>com.facebook.lite</pkg>
+        <pkg>com.google.android.apps.tachyon</pkg>
+        <pkg>com.kwai.bulldog</pkg>
+        <pkg>com.facebook.mlite</pkg>
+        <pkg>com.whatsapp.w4b</pkg>
+        <pkg>com.kwai.kuaishou.video.live</pkg>
+        <pkg>co.brainly</pkg>
+        <pkg>com.opera.mini.native</pkg>
+        <pkg>com.gamma.scan</pkg>
+        <pkg>com.msd.JTClient</pkg>
+        <pkg>com.apps.MyXL</pkg>
+        <pkg>com.alibaba.intl.android.apps.poseidon</pkg>
+        <pkg>com.mydito</pkg>
+        <pkg>com.google.android.apps.meetings</pkg>
+        <pkg>com.google.android.apps.tachyon</pkg>
+        <pkg>com.netease.cloudmusic</pkg> <!--网易云音乐 8027160-->
+        <pkg>com.tencent.mm</pkg> <!--微信 8538598-->
+    </pkg_cancle_rotato_camera_when_device_rotato_list>
+
+    <pkg_full_screen_bar_white_list>
+        <pkg>com.qidian.QDReader</pkg>
+        <pkg>com.tencent.lolm</pkg>
+    </pkg_full_screen_bar_white_list>
+
+    <share_source_cpn_list>
+        <cpn>com.android.intentresolver/.ChooserActivity</cpn>
+    </share_source_cpn_list>
+
+    <pkg_unsupport_menu_list>
+        <pkg>com.oplus.safecenter</pkg>
+    </pkg_unsupport_menu_list>
+
+    <pkg_ignore_unsupport_toast_list>
+        <pkg>com.android.launcher</pkg>
+        <pkg>com.oplus.games</pkg>
+        <pkg>com.android.systemui</pkg>
+    </pkg_ignore_unsupport_toast_list>
+
+    <cpn_support_coordinate_transformation_list>
+        <cpn>com.tencent.mm/com.tencent.mm.ui.LauncherUI</cpn>
+        <cpn>com.tencent.mm/.ui.chatting.ChattingUI</cpn>
+        <cpn>com.tencent.mm/com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI</cpn>
+    </cpn_support_coordinate_transformation_list>
+
+    <pkg_support_coordinate_transformation_list>
+        <pkg>com.baidu.searchbox</pkg>
+        <pkg>com.baidu.searchbox.lite</pkg>
+    </pkg_support_coordinate_transformation_list>
+
+    <!-- flexible window self pkg black list  -->
+    <unsupport_flexible_window_pkg_list>
+        <pkg>com.oplus.engineermode</pkg> <!--工厂模式-->
+        <pkg>com.oplus.logkit</pkg> <!--日志工具-->
+        <pkg>com.oplus.screenshot</pkg>  <!--截图 7518678-->
+        <pkg>com.oplus.engineernetwork</pkg>  <!--网络工模APP-->
+        <pkg>com.oplus.remotecontrol</pkg>  <!--远程控制电脑-->
+        <pkg>com.oplus.securitypermission</pkg>  <!--隐私-->
+        <pkg>com.android.settings</pkg>  <!--设置 7518383-->
+        <pkg>com.oplus.wirelesssettings</pkg>  <!--无线设置 7518383-->
+        <pkg>com.android.systemui</pkg>  <!--系统UI 7518383-->
+        <pkg>com.vivo.easyshare</pkg>  <!--Vivo 共享-->
+        <pkg>com.coloros.smartsidebar</pkg>  <!--侧边栏设置页-->
+        <pkg>badminton.king.sportsgame.smash</pkg> <!--羽毛球高高手-->
+        <pkg>com.jellyblast.cmcm</pkg> <!--Jellipop Match-->
+        <pkg>com.oplus.notificationmanager</pkg>  <!--控制中心设置-->
+        <pkg>com.android.phone</pkg> <!--移动网设置-->
+        <pkg>com.oplus.uxdesign</pkg>  <!--图标设置-->
+        <pkg>com.android.incallui</pkg>  <!--拨号-->
+        <pkg>com.oplus.wallpapers</pkg>  <!--壁纸-->
+        <pkg>com.oplus.postmanservice</pkg> <!--诊断工具服务 3604139-->
+        <pkg>com.oplus.Odialer</pkg>
+        <pkg>com.oplus.exsystemservice</pkg>  <!--exsystemservice-->
+        <pkg>com.netease.my.nearme.gamecenter</pkg>
+        <pkg>com.yuwan.qiutian</pkg>  <!--陌约-->
+        <pkg>com.yanzhiyu.dahai</pkg>  <!--陌约-->
+        <pkg>jp.co.daj.consumer.ifilter</pkg>  <!--日本产品定制应用-->
+        <pkg>jp.co.daj.consumer.ifilter.mb</pkg>
+        <pkg>jp.co.daj.consumer.ifilter.shop</pkg>
+        <pkg>jp.netstar.familysmile</pkg>
+        <pkg>com.oplus.encryption</pkg> <!--保险箱-->
+        <pkg>com.kddi.familysmile.mvno</pkg>
+        <pkg>jp.softbank.mb.parentalcontrols</pkg>
+        <pkg>com.playrix.fishdomdd.gplay</pkg> <!--fishdom-->
+        <pkg>com.spotify.music</pkg>  <!--spotify music-->
+        <pkg>com.gorgeous.lite</pkg>  <!-- 轻颜相机  -->
+        <pkg>com.music.player.simple</pkg>  <!-- Music player -->
+        <pkg>com.microsoft.amp.apps.bingnews</pkg>  <!-- MSN -->
+        <pkg>com.zeptoconsumerapp</pkg>  <!-- Zepto -->
+        <pkg>com.block.game.jigsaw.puzzles</pkg>  <!-- BlockPuz -->
+        <pkg>com.block.jigsaw.puzzle.gallery</pkg>  <!-- block-jigsaw -->
+        <pkg>com.coloros.accessibilityassistant</pkg>  <!--语音转文字-->
+        <pkg>com.coloros.scenemode</pkg>  <!--简易模式-->
+        <pkg>com.coloros.activation</pkg>  <!--电子保卡-->
+        <pkg>com.coloros.childrenspace</pkg>  <!--儿童空间-->
+        <pkg>com.coloros.digitalwellbeing</pkg>  <!--应用使用时间-->
+        <pkg>com.coloros.screenrecorder</pkg>  <!--录屏-->
+        <pkg>com.revolut.business</pkg> <!--Revolt business-->
+        <pkg>com.tencent.qqgame.xq</pkg>  <!--天天象棋-->
+        <pkg>com.oppo.daydreamvideo</pkg>  <!--演示模式-->
+        <pkg>com.coloros.translate</pkg>  <!--语音翻译-->
+        <pkg>com.oneplus.backuprestore</pkg>  <!--一加外销手机搬家-->
+        <pkg>com.coloros.backuprestore</pkg>  <!--oppo手机搬家-->
+        <pkg>com.android.bankabc</pkg>  <!--中国农业银行-->
+        <pkg>com.android.bluetooth</pkg>  <!--蓝牙-->
+        <pkg>com.amazon.avod.thirdpartyclient</pkg>  <!--Prime Video-->
+        <pkg>com.ea.game.simcitymobile_row</pkg>  <!--simcity-->
+        <pkg>com.finshell.wallet</pkg>  <!--OPPO钱包-->
+        <pkg>com.fingersoft.hcr2</pkg>
+        <pkg>com.imangi.templerun</pkg>
+        <pkg>com.imangi.templerun2</pkg>
+        <pkg>com.dts.freefiremax</pkg>
+        <pkg>com.ea.game.pvzfree_row</pkg>  <!--Plants vs zombies Classic 8085883-->
+        <pkg>com.mobile.legends</pkg>  <!-- Legends -->
+        <pkg>com.heytap.tas</pkg>  <!--系统卡包-->
+        <pkg>com.wedobest.llk.nearme.gamecenter</pkg>  <!--连连看  7746183-->
+        <pkg>com.coloros.assistantscreen</pkg>  <!--负一屏-->
+        <pkg>com.FatcatStudio.NinjaAssassin</pkg>  <!--Ninja Assassin-->
+        <pkg>com.google.android.apps.googleassistant</pkg> <!--Google助理 7957114-->
+        <pkg>com.lemon.lv</pkg> <!--剪映 7879450-->
+        <pkg>com.finshell.fin</pkg> <!--FinShell Pay app 7965895-->
+        <pkg>com.coloros.bootreg</pkg> <!--开机向导-->
+        <pkg>com.google.android.dialer</pkg>  <!--谷歌电话 8099683-->
+        <pkg>com.oplus.riderMode</pkg>  <!--高能户外模式 8149127-->
+        <pkg>com.sweetfuirt.candy</pkg>  <!--Sweet Fruit Candy 8259728-->
+        <pkg>com.wordgame.words.connect</pkg> <!--Word Connect 8657769-->
+        <pkg>com.cv.docscanner</pkg>  <!--Doc Scanner 8252844-->
+        <pkg>com.cyberlink.youperfect</pkg>  <!--Yocam Perfect 8281502-->
+        <pkg>in.dreamgamestudios.games.sports.dreamcricket3d</pkg>  <!--Dream Cricket 2025 8451630-->
+        <pkg>com.oplus.aod</pkg>  <!--息屏 8498821-->
+        <pkg>com.icloudzone.DeathMoto2</pkg>  <!--DeathMoto2 8578662-->
+    </unsupport_flexible_window_pkg_list>
+
+    <!-- flexible window self cpn black list  -->
+    <unsupport_flexible_window_cpn_list>
+        <cpn>com.coloros.oshare/.ui.ShareActivity</cpn>  <!--oppo互传分享界面-->
+        <cpn>com.coloros.note/com.nearme.note.ocr.OcrConverterActivity</cpn>  <!--便签OCR界面-->
+        <cpn>com.google.android.gms/.mlkit.docscan.ui.DocumentScanningActivity</cpn>  <!--google drive相机界面-->
+        <cpn>com.google.android.gms/.common.account.AccountPickerActivity</cpn> <!--google account picker 8333271-->
+        <cpn>com.coloros.ocrscanner/com.oplus.scanner.ui.main.CameraActivity</cpn>  <!--小布助手扫一扫 7598084-->
+        <cpn>com.ss.android.ugc.aweme/.shortvideo.ui.VideoRecordNewActivity</cpn>  <!--抖音拍照界面 7720754-->
+        <cpn>com.ss.android.ugc.aweme.lite/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity</cpn>  <!--抖音极速版 7720754-->
+        <cpn>com.coloros.note/com.nearme.note.activity.richedit.ShareActivity</cpn>  <!--便签我的收藏页 7761715-->
+        <cpn>com.oneplus.note/com.nearme.note.activity.richedit.ShareActivity</cpn>  <!--便签我的收藏页 7761715-->
+        <cpn>com.oplus.gesture/.actionbuttonkey.ActionButtonSettingsActivity</cpn>  <!--魔方设置界面-->
+        <cpn>com.oplus.appdetail/.model.guide.ui.InstallGuideActivity</cpn>  <!--app安装提示界面-->
+        <cpn>com.baidu.input_oppo/com.baidu.input.ImeSysPureModeActivity</cpn>  <!--百度输入法纯净模式界面 7805106-->
+        <cpn>com.sohu.inputmethod.sogouoem/com.sogou.inputmethod.oem.oppo.pure.SysPureActivty</cpn>  <!--搜狗输入法纯净模式界面 7805106-->
+        <cpn>com.qiyi.video.lite/com.qiyi.xplugin.adapter.container.SingleTaskContainerActivity</cpn>  <!--爱奇艺极速版扫一扫 7863678-->
+        <cpn>com.android.contacts/com.customize.contacts.activities.BusinessCardCaptureActivity</cpn>  <!--电话本扫名片 7866661-->
+        <cpn>com.android.mms/com.android.mms.ui.ClassZeroActivity</cpn> <!-- 短信拦截弹框 8054962-->
+        <cpn>com.android.permissioncontroller/.permission.ui.ManagePermissionsActivity</cpn>
+        <cpn>com.android.permissioncontroller/com.oplusos.permissioncontroller.role.ui.DefaultAppListActivity</cpn>
+        <cpn>com.android.permissioncontroller/com.oplusos.permissioncontroller.role.ui.DefaultAppActivity</cpn>
+        <cpn>com.android.permissioncontroller/com.oplusos.permissioncontroller.role.ui.ExtendDefaultAppListActivity</cpn>
+        <cpn>com.xtc.watch/com.xtc.common.notifition.NotificationTrampolineActivity</cpn> <!-- 小天才过渡页 8054962-->
+        <cpn>com.dw.btime/com.tencent.android.tpush.TpnsActivity</cpn> <!-- 亲宝宝过渡页 8192760-->
+        <cpn>com.pingan.paces.ccms/cn.jiguang.privates.common.component.JCommonActivity</cpn> <!-- 平安口袋银行过渡页 8180427-->
+        <cpn>com.shuqi.controller/com.shuqi.service.push.PushClickActivityy</cpn> <!-- 书旗小说过渡页 8180427-->
+        <cpn>com.oplus.securitypermission/com.oplusos.securitypermission.permission.ui.AppStartConfirmDialogActivity</cpn> <!--权限管理 8284467-->
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.filepreview.FilePreviewDialogActivity</cpn> <!--图片 FilePreviewDialogActivity 8443615-->
+        <cpn>andes.oplus.documentsreader/com.oppo.preview.OppoDocumentPreviewActivity</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity0</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity1</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity2</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity3</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity4</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity5</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity6</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity7</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity8</cpn>
+        <cpn>andes.oplus.documentsreader/andes.oplus.documentsreader.multidoc.quickpreview.QuickPreviewActivity9</cpn>
+        <cpn>tv.twitch.android.app/tv.twitch.android.broadcast.permission.BroadcastActionConfirmationActivity</cpn> <!--twitch投屏权限 8460539-->
+    </unsupport_flexible_window_cpn_list>
+
+    <folder_screen_unsupport_pkg_list>
+        <pkg>com.oplus.battery</pkg>  <!--电池 7863678-->
+        <pkg>com.tencent.qqgame.xq</pkg>  <!-- 天天象棋-->
+        <pkg>com.lemon.faceu</pkg>  <!-- Faceu激萌-->
+        <pkg>com.shopee.th</pkg>  <!-- Shopee TH: Online shopping app-->
+        <pkg>jp.co.ponos.battlecatstw</pkg>  <!-- 貓咪大戰爭-->
+        <pkg>com.microsoft.teams</pkg>  <!-- Microsoft Teams-->
+    </folder_screen_unsupport_pkg_list>
+
+    <tablet_screen_unsupport_pkg_list>
+        <pkg>com.baidu.video.pad</pkg>  <!--百搜视频HD-->
+        <pkg>com.kuaiduizuoye.scan</pkg>  <!--快对-->
+        <pkg>com.app360eyespro</pkg>  <!--360Eyes Pro-->
+        <pkg>com.ovital.ovitalMap</pkg>  <!--奥维互动地图-->
+        <pkg>com.oplus.battery</pkg>  <!--电池 7863678-->
+        <pkg>com.google.android.apps.youtube.kids</pkg> <!-- YouToBe Kids 7771213-->
+        <pkg>com.snapchat.android</pkg> <!-- snapchat 8058035-->
+    </tablet_screen_unsupport_pkg_list>
+
+    <pkg_support_flexible_window_white_list>
+        <pkg>com.oplus.safecenter</pkg>  <!--安全中心解锁界面-->
+        <pkg>andes.oplus.documentsreader</pkg>  <!--文档 7954934-->
+        <pkg>com.netease.dwrg.nearme.gamecenter</pkg><!-- 8091700 第五人格 -->
+        <pkg>com.yywx.yhgxtllm.nearme.gamecenter</pkg>  <!--樱花高校逃离老妈  -->
+        <pkg>com.netease.moba.nearme.gamecenter</pkg> <!-- 决战平安京 -->
+        <pkg>com.easygame2022.sheepmatchcn.nearme.gamecenter</pkg>  <!-- 羊了个羊 -->
+        <pkg>com.yzxx.kldhysc.nearme.gamecenter</pkg> <!-- 恐龙岛荒野生存 -->
+        <pkg>mnlmdmx.xplay.kyx.nearme.gamecenter</pkg> <!-- 迷你联盟大冒险 -->
+        <pkg>com.zd.kbnn7.nearme.gamecenter</pkg> <!-- 恐怖奶奶7 -->
+        <pkg>com.rh.hjgzwh.nearme.gamecenter</pkg> <!-- 皇家公主舞会 -->
+        <pkg>com.yifarh.nearme.gamecenter</pkg> <!-- 一发入魂 -->
+        <pkg>com.mhfg.mzx.net.nearme.gamecenter</pkg> <!-- 7674278 梦回凤歌 -->
+        <pkg>com.yalla.yallagames</pkg> <!-- yalla ludo -->
+        <pkg>com.tong.lcgame.nearme.gamecenter</pkg> <!-- 归龙潮 -->
+        <pkg>com.tencent.letsgo</pkg> <!--  元梦之星  -->
+        <pkg>com.kiloo.subwaysurf</pkg> <!-- 地铁跑酷 -->
+        <pkg>com.kn.zdfz.nearme.gamecenter</pkg> <!-- 战斗法则 -->
+        <pkg>com.mampod.ergedd</pkg> <!-- 儿歌点点 -->
+        <pkg>com.games24x7.my11circle.fantasycricket</pkg> <!-- My11Circle -->
+        <pkg>com.yoozoo.jgame.nearme.gamecenter</pkg> <!-- 绯色回响 -->
+        <pkg>com.pubg.imobile</pkg> <!-- BGMI -->
+        <pkg>com.zhuoqu.wangxingrenyibihua.nearme.gamecenter</pkg> <!--汪星人一笔画-->
+        <pkg>com.ls.ndndhd.nearme.gamecenter</pkg> <!--你的脑洞好大-->
+        <pkg>com.ptcq.cmn.nearme.gamecenter</pkg> <!--拼图我超强-->
+        <pkg>com.ex.dwxz.nearme.gamecenter</pkg> <!-- 动物小镇  -->
+        <pkg>com.fengkuangjyhz.nearme.gamecenter</pkg> <!-- 疯狂解压盒子  -->
+        <pkg>com.fashion.homeland.nearme.gamecenter</pkg> <!--7807584梦幻的城-->
+        <pkg>com.ysch.qgdmx.nearme.gamecenter</pkg> <!-- 奇怪大冒险 -->
+        <pkg>com.snake.io.slither.merge.fun.game</pkg> <!--8038466  -->
+        <pkg>com.oplus.safecenter</pkg> <!--安全中心解锁界面-->
+        <pkg>com.nxy.sc</pkg> <!--个人手机银行（四川农信）-->
+        <pkg>com.jj.memo.zeroentry</pkg> <!-- 零记备忘录 7797046-->
+        <pkg>com.google.ar.lens</pkg>  <!-- 智能镜头 -->
+        <pkg>com.oplus.linker</pkg>  <!-- 跨屏互联 -->
+        <pkg>id.co.cimbniaga.mobile.android</pkg> <!-- OCTO Mobile by CIMB Niaga -->
+        <pkg>com.yitong.zjrc.mfs.android</pkg>  <!-- 丰收互联 -->
+        <pkg>com.ydtx.camera</pkg>  <!-- 元道经纬相机 -->
+        <pkg>com.cricbuzz.android</pkg>  <!-- Cricbuzz - Live Cricket Scores -->
+        <pkg>com.lianjia.beike</pkg> <!-- 贝壳找房 -->
+        <pkg>com.sonyliv</pkg>  <!-- SonyLIV -->
+        <pkg>com.truecaller</pkg>  <!-- com.truecaller -->
+        <pkg>com.oplus.eyeprotect</pkg>  <!-- 护眼模式 -->
+        <pkg>com.sunboxsoft.charge.institute</pkg>  <!-- 中油好客e站 -->
+        <pkg>com.moutai.mall</pkg>  <!-- i茅台 -->
+        <pkg>com.heytap.mydevices</pkg>  <!-- 设备空间 -->
+        <pkg>com.hupu.shihuo</pkg> <!-- 识货 -->
+        <pkg>com.oplus.ota</pkg> <!-- 软件更新 -->
+        <pkg>com.oplus.aiunit</pkg> <!-- AI服务引擎 -->
+        <pkg>com.jpl.jiomart</pkg> <!-- JioMart -->
+        <pkg>sg.com.gxs.app</pkg> <!--GXS Bank 8095749 -->
+        <pkg>com.lu.ashionweather</pkg> <!--8176602 天气预报 -->
+        <pkg>com.cmcc.android.ysx</pkg> <!--8175677 云视讯扫码界面 -->
+        <pkg>com.android.stk</pkg> <!--SIM工具-->
+        <pkg>com.oplus.consumerIRApp</pkg> <!--红外遥控-->
+        <pkg>com.fintech.life</pkg> <!--Fineasy-->
+        <pkg>com.oplus.screenrecorder</pkg> <!--屏幕录制-->
+        <pkg>com.coloros.systemclone</pkg> <!-- 系统分身 -->
+        <pkg>com.coloros.sharescreen</pkg> <!-- 屏幕共享 -->
+        <pkg>com.tencent.zebra</pkg> <!-- 水印相机 -->
+        <pkg>com.instagram.android</pkg> <!-- Instagram -->
+    </pkg_support_flexible_window_white_list>
+
+    <unsupport_multiwindow_flexible_window_pkg_list>
+        <pkg>com.tencent.qqlive</pkg> <!--腾讯视频-->
+        <pkg>com.youku.phone</pkg> <!--优酷-->
+        <pkg>com.hunantv.imgo.activity</pkg> <!--芒果tv-->
+        <pkg>com.duowan.kiwi</pkg> <!--虎牙直播-->
+        <pkg>tv.danmaku.bili</pkg> <!--哔哩哔哩-->
+        <pkg>com.bilibili.app.in</pkg> <!--哔哩哔哩国际版 8146702-->
+        <pkg>com.qiyi.video</pkg> <!--爱奇艺-->
+        <pkg>com.cmcc.cmvideo</pkg> <!--咪咕视频-->
+        <pkg>com.zhongduomei.rrmj.society</pkg> <!--多多视频-->
+        <pkg>com.tencent.qqsports</pkg> <!--腾讯体育-->
+        <pkg>com.cctv.yangshipin.app.androidp</pkg> <!--央视频-->
+        <pkg>com.korean.tv</pkg> <!--韩剧大全-->
+        <pkg>cn.cntv</pkg> <!--央视影音-->
+        <pkg>com.tvbc.maiduidui</pkg> <!--埋堆堆-->
+        <pkg>cn.vcinema.cinema</pkg> <!--南瓜电影-->
+        <pkg>com.baidu.video</pkg> <!--百搜视频-->
+        <pkg>com.letv.android.client</pkg> <!--乐视视频-->
+        <pkg>tv.pps.mobile</pkg> <!--爱奇艺随刻-->
+        <pkg>com.pplive.androidphone.sport</pkg> <!--PP体育-->
+        <pkg>com.cctv4g.cctvmobiletv</pkg> <!--CCTV手机电视-->
+        <pkg>com.pplive.androidphone</pkg> <!--PP视频-->
+        <pkg>com.kmplayer</pkg> <!--KMPlayer-->
+        <pkg>com.tencent.submarine</pkg> <!--片多多-->
+        <pkg>com.jeyluta.timestampcamerafree</pkg>  <!--timestamp camera 8126422-->
+        <pkg>com.bokecc.dance</pkg> <!--糖豆-->
+        <pkg>com.heytap.yoli</pkg> <!-- 视频 -->
+        <pkg>com.ss.android.article.video</pkg>  <!-- 西瓜视频 -->
+        <pkg>com.phoenix.read</pkg>  <!-- 红果短剧 -->
+        <pkg>com.oneplus.calculator</pkg>  <!-- 一加计算器 -->
+        <pkg>com.coloros.calculator</pkg>  <!-- oppo计算器 -->
+        <pkg>com.ximalaya.ting.android</pkg>  <!-- 喜马拉雅 -->
+        <pkg>com.taptap</pkg>  <!-- taptap -->
+        <pkg>com.smile.gifmaker</pkg>  <!-- 快手 -->
+        <pkg>com.achievo.vipshop</pkg>  <!-- 唯品会 -->
+        <pkg>com.immomo.momo</pkg>  <!-- 陌陌 7755543-->
+        <pkg>com.kuaishou.nebula</pkg>  <!-- 快手极速版 7873415-->
+        <pkg>com.sup.android.superb</pkg>  <!-- 皮皮虾 -->
+        <pkg>com.kugou.android.ringtone</pkg>  <!-- 酷狗铃声 7959519-->
+        <pkg>com.le123.ysdq</pkg>  <!-- 影视大全 8174786-->
+        <pkg>com.tencent.mobileqq</pkg> <!-- QQ 7808010-->
+    </unsupport_multiwindow_flexible_window_pkg_list>
+</filter-conf>

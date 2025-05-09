@@ -1,0 +1,203 @@
+<filter-conf>
+<version>20240722</version>
+<isOpen>1</isOpen>
+
+    <!-- self develop pre -->
+    <selfDevelopPre>com.oppo.</selfDevelopPre>
+    <selfDevelopPre>com.coloros.</selfDevelopPre>
+    <selfDevelopPre>com.oplus.</selfDevelopPre>
+    <selfDevelopPre>com.nearme.</selfDevelopPre>
+    <selfDevelopPre>com.heytap.</selfDevelopPre>
+
+    <!-- skip broadcast white -->
+    <skipBroadcastWhite>com.coloros.screenrecorder</skipBroadcastWhite>
+    <skipBroadcastWhite>com.toprand.voyager</skipBroadcastWhite>
+    <skipBroadcastWhite>com.oppo.im</skipBroadcastWhite>
+    <skipBroadcastWhite>com.ademo.one.oppo</skipBroadcastWhite>
+    <skipBroadcastWhite>com.ademo.two.oppo</skipBroadcastWhite>
+    <skipBroadcastWhite>com.rdemo.one.oppo</skipBroadcastWhite>
+    <skipBroadcastWhite>com.rdemo.two.oppo</skipBroadcastWhite>
+    <skipBroadcastWhite>com.coloros.videoeditor</skipBroadcastWhite>
+    <skipBroadcastWhite>com.oppo.toprand</skipBroadcastWhite>
+
+    <!-- boot short delay -->
+    <shortDelay>com.coloros.regservice</shortDelay>
+    <shortDelay>com.oppo.ctautoregist</shortDelay>
+    <shortDelay>com.oppo.tzupdate</shortDelay>
+    <shortDelay>com.nearme.gamecenter</shortDelay>
+    <shortDelay>com.coloros.note</shortDelay>
+    <shortDelay>com.oneplus.note</shortDelay>
+    <shortDelay>com.coloros.providers.fileinfo</shortDelay>
+    <shortDelay>com.android.mms</shortDelay>
+    <shortDelay>com.ted.number</shortDelay>
+
+    <!-- boot sys short delay -->
+    <!-- <sysShortDelay>com.heytap.cloud</sysShortDelay>
+    <sysShortDelay>com.heytap.browser</sysShortDelay> -->
+    <sysShortDelay>com.nearme.instant.platform</sysShortDelay>
+    <sysShortDelay>com.heytap.themestore</sysShortDelay>
+    <sysShortDelay>com.heytap.market</sysShortDelay>
+    <sysShortDelay>com.heytap.usercenter</sysShortDelay>
+    <sysShortDelay>com.coloros.backuprestore</sysShortDelay>
+
+    <AppRestrictedServiceControl>com.coloros.weather.service#com.coloros.weather.service</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.weather2#com.coloros.weather2</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.findmyphone#com.coloros.findmyphone</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.nearme.themestore#com.nearme.themestore</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.heytap.themestore#com.heytap.themestore</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oppo.daydreamvideo#com.nearme.themestore</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oppo.daydreamvideo#com.heytap.themestore</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.android.systemui#com.nearme.themestore</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.android.systemui#com.heytap.themestore</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.blacklistapp#com.coloros.blacklistapp</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oppo.ctautoregist#com.oppo.ctautoregist</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.regservice#com.coloros.regservice</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.wifisecuredetect#com.coloros.wifisecuredetect</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.ted.number#com.ted.number</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.oppopods#com.coloros.oppopods</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oplus.melody#com.oplus.melody</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.colorconnect#com.coloros.colorconnect</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>android#com.coloros.personalassistant</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.rcs.service#com.coloros.rcs.service</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oplus.apprecover#com.oplus.apprecover</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.soundrecorder#com.coloros.soundrecorder</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oplus.romupdate#com.oplus.romupdate</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oplus.gesture#com.oplus.gesture</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oplus.cosa#com.oplus.games</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.oplus.cosa#com.coloros.gamedock</AppRestrictedServiceControl>
+    <AppRestrictedServiceControl>com.coloros.calendar#com.coloros.calendar</AppRestrictedServiceControl>
+
+    <AppServicesRestrictedDefaultProtect>com.oplus.ota</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.cota</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.daemon.shelper</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.exserviceui</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.uxdesign</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.gesture</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oppo.tzupdate</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.nearme.statistics.rom</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.phonemanager</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.securepay</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.incallui</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.openid</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.mediatek.omacp</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.floatassistant</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.familyguard</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.opos.ads</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.permissioncontroller</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.dlna.service</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.reader</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.ugcvideo.praise</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.cosa</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.achievo.vipshop</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.eg.android.AlipayGphone</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.cupid</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.traceur</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.yoli</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.cosa</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.securepay</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>net.oplus.odm</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oppo.camera</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.camera</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.sceneservice</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.speechassist</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.oscenter</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.gallery3d</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oppo.instant.local.service</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.thirdkit</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.ipemanager</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.ipspace</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.studycenter</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.nearme.gamecenter</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.market</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.browser</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.pictorial</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.cloud</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.nearme.instant.platform</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.heytap.themestore</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.finshell.wallet</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.mms</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oppo.sos</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.sos</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.contacts</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.providers.telephony</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.calendar</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.android.providers.calendar</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.coloros.smartlock</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.oplus.ai.assistant.extend</AppServicesRestrictedDefaultProtect>
+    <AppServicesRestrictedDefaultProtect>com.teamtalk.ims</AppServicesRestrictedDefaultProtect>
+
+
+
+    <bootpressue_gms>com.google.android.gms</bootpressue_gms>
+    <bootpressue_gms>com.google.android.gsf</bootpressue_gms>
+    <bootpressue_gms>com.android.vending</bootpressue_gms>
+    <bootpressue_gms>com.google.android.backuptransport</bootpressue_gms>
+    <bootpressue_gms>com.google.android.partnersetup</bootpressue_gms>
+    <bootpressue_gms>com.google.android.printservice.recommendation</bootpressue_gms>
+    <bootpressue_gms>com.google.android.ext.services</bootpressue_gms>
+    <bootpressue_gms>com.google.android.onetimeinitializer</bootpressue_gms>
+    <bootpressue_gms>com.google.android.ext.shared</bootpressue_gms>
+    <bootpressue_gms>com.google.android.configupdater</bootpressue_gms>
+    <bootpressue_gms>com.google.android.marvin.talkback</bootpressue_gms>
+    <bootpressue_gms>com.google.android.syncadapters.contacts</bootpressue_gms>
+
+
+    <bootpressue_core>com.android.systemui</bootpressue_core>
+    <bootpressue_core>com.android.launcher</bootpressue_core>
+    <bootpressue_core>com.android.mtp</bootpressue_core>
+    <bootpressue_core>com.coloros.alarmclock</bootpressue_core>
+    <bootpressue_core>com.android.externalstorage</bootpressue_core>
+    <bootpressue_core>com.qti.ltebc</bootpressue_core>
+    <bootpressue_core>com.android.permissioncontroller</bootpressue_core>
+    <bootpressue_core>com.coloros.securepay</bootpressue_core>
+    <bootpressue_core>com.oplus.gesture</bootpressue_core>
+    <bootpressue_core>com.coloros.findmyphone</bootpressue_core>
+    <bootpressue_core>com.coloros.codebook</bootpressue_core>
+    <bootpressue_core>com.heytap.market</bootpressue_core>
+    <bootpressue_core>com.android.wallpaper.livepicker</bootpressue_core>
+    <bootpressue_core>com.oplus.eyeprotect</bootpressue_core>
+    <bootpressue_core>com.redteamobile.roaming</bootpressue_core>
+    <bootpressue_core>com.coloros.regservice</bootpressue_core>
+    <bootpressue_core>com.coloros.systemclone</bootpressue_core>
+    <bootpressue_core>com.oplus.securepay</bootpressue_core>
+    <bootpressue_core>com.oplus.gesture</bootpressue_core>
+    <bootpressue_core>com.oplus.eyeprotect</bootpressue_core>
+    <bootpressue_core>com.tencent.mm</bootpressue_core>
+    <bootpressue_core>com.oplus.oscenter</bootpressue_core>
+    <bootpressue_core>com.oplus.cosa</bootpressue_core>
+    <bootpressue_core>com.oplus.ovoicemanager.wakeup</bootpressue_core>
+    <bootpressue_core>com.oplus.ota</bootpressue_core>
+    <bootpressue_core>com.potintest.systestp</bootpressue_core>
+    <bootpressue_core>com.potintest.systestlow</bootpressue_core>
+
+	<bootpressue_always_restrict_multi>com.android.dynsystem</bootpressue_always_restrict_multi>
+	<bootpressue_always_restrict_multi>com.oppo.lfeh</bootpressue_always_restrict_multi>
+	<bootpressue_always_restrict_multi>com.coloros.vedio</bootpressue_always_restrict_multi>
+	<bootpressue_always_restrict_multi>com.oplus.datamigration</bootpressue_always_restrict_multi>
+	<bootpressue_always_restrict_multi>com.oplus.customize.coreapp</bootpressue_always_restrict_multi>
+	<bootpressue_always_restrict_multi>com.oplus.romupdate</bootpressue_always_restrict_multi>
+
+    <bootpressue_interceptthird>com.taobao.taobao</bootpressue_interceptthird>
+    <bootpressue_interceptthird>com.xunmeng.pinduoduo</bootpressue_interceptthird>
+    <bootpressue_interceptthird>com.tencent.mobileqq</bootpressue_interceptthird>
+
+    <bootpressue_blackComponent>androidx.work.impl.background.systemalarm.RescheduleReceiver</bootpressue_blackComponent>
+
+    <jobtimeoutwhite>com.coloros.gallery3d</jobtimeoutwhite>
+    <jobtimeoutwhite>com.android.providers.media</jobtimeoutwhite>
+    <jobtimeoutwhite>com.coloros.cloud</jobtimeoutwhite>
+    <jobtimeoutwhite>com.heytap.cloud</jobtimeoutwhite>
+    <jobtimeoutwhite>com.oplus.ota</jobtimeoutwhite>
+    <jobtimeoutwhite>com.coloros.assistantscreen</jobtimeoutwhite>
+    <jobtimeoutwhite>com.android.providers.downloads</jobtimeoutwhite>
+    <jobtimeoutwhite>com.coloros.phonemanager</jobtimeoutwhite>
+
+    <pendingIntent_white>com.google.android.gms</pendingIntent_white>
+    <pendingIntent_white>com.qihoo.magic</pendingIntent_white>
+    <pendingIntent_white>org.telegram.messenger</pendingIntent_white>
+    <pendingIntent_white>org.telegram.messenger.web</pendingIntent_white>
+    <pendingIntent_white>com.ss.android.ugc.trill</pendingIntent_white>
+    <pendingIntent_white>org.telegram.plus</pendingIntent_white>
+    <pendingIntent_white>org.thunderdog.challegram</pendingIntent_white>
+
+</filter-conf>

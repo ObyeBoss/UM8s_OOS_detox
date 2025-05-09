@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <filter-conf>
+    <version>2024110201</version>
+    <filter-name>sys_preload_config</filter-name>
+  </filter-conf>
+
+  <config name="common">
+    <!-- main switch config foreign-->
+    <!-- <switchConfig is used for RUS update, xml in mystock modify this cannot effect"/> -->
+    <switchConfig enabled="true"/>
+		<!-- memory threthrold config -->
+		<!-- app used memory(pss) + availableMem should < current sys available-->
+		<!-- && current sys free memory should > freeMem, then trigger preload!-->
+		<memoryConfig total="8" freeMem="250" availableMem="2000" maxAppSlots="19"/>
+		<memoryConfig total="12" freeMem="350" availableMem="2500" maxAppSlots="27"/>
+		<memoryConfig total="16" freeMem="450" availableMem="2700" maxAppSlots="35"/>
+		<!-- temperature should less than -->
+		<temperatureConfig temperature="39"/>
+		<!-- cpu Load should less than -->
+		<!-- interrupt cpu Load will end preload -->
+		<cpuLoadConfig cpuLoad="85" interrupt="95"/>
+		<!-- unfreeze counts limit when preloaded -->
+		<unfreezeConfig counts="5000"/>
+		<!-- kill Reason config -->
+		<killReasonConfig reason="13" subReason="2039, 2392, 6001, 6002, 6003, 6004, 6005, 6006, 6008, 6010, 6011, 6012, 6013"/>
+		<killReasonConfig reason="2" subReason="0, 1001"/>
+		<killReasonConfig reason="1"/>
+		<!-- wake preload config -->
+		<wakePreloadConfig enabled="false" slots="20"/>
+		<wakeKillReasonConfig reason="10" subReason="25"/>
+		<wakeKillReasonConfig reason="13" subReason="2003, 2032, 2033"/>
+		<wakeKillReasonConfig reason="16" subReason="0, 21"/>
+		<!-- constant -->
+		<douyin name="com.ss.android.ugc.aweme"/>
+  </config>
+
+  <config name="activity">
+		<!-- policy switch controlled by feature, only can be modified by rus!-->
+		<!-- <switchConfig is used for RUS update, xml in mystock modify this cannot effect"/> -->
+		<switchConfig enabled="true" onlyHighPerf="false"/>
+
+		<!-- durtime config -->
+		<durConfig preloadDur="5000" preloadGameDur="20000"/>
+
+		<!--black list pkg={pkgName}, default is null-->
+		<blackList pkg="com.coloros.childrenspace"/>
+		<blackList pkg="com.duowan.kiwi"/>
+		<blackList pkg="tv.danmaku.bili"/>
+		<blackList pkg="us.zoom.videomeetings"/>
+		<blackList pkg="com.aligame.sgzzlb.nearme.gamecenter"/>
+		<blackList pkg="com.kugou.android.lite"/>
+		<blackList pkg="com.kugou.android"/>
+		<blackList pkg="com.smile.gifmaker"/>
+		<blackList pkg="com.kuaishou.nebula"/>
+
+		<!--white list pkg={pkgName}, defalut is null-->
+		<whiteList pkg=""/>
+
+		<mem total="8" MaxAppSlots="19"  PreloadGameSlots="1" NeedFreeSlots="5"/>
+		<mem total="12" MaxAppSlots="27" PreloadGameSlots="1" NeedFreeSlots="5"/>
+		<mem total="16" MaxAppSlots="35" PreloadGameSlots="2" NeedFreeSlots="5"/>
+		<!--mem total="24" MaxAppSlots-->
+		<!--mem total="32" MaxAppSlots-->
+  </config>
+	
+  <config name="process">
+		<!-- policy switch -->
+		<switchConfig nextAppPreloadSwitch="true" vipAppPreloadSwitch="true" parallelAppPreloadSwitch="true" sauAppPreload="true" dcsSwitch="true" vipSdkAppPreloadSwitch="true" 
+		quickBootAppPreloadSwitch = "true" ioProfileGuidedPreload="true" ioAbilityOpen="true" ioBoostPreload="false"/>
+		
+		<!-- light preload config-->
+		<lightPreloadConfig switch="true" threshold="50"/>
+
+		<!-- share slot config -->
+		<shareSlotMem6 sharedSlot="2"/>
+		<shareSlotMem8 sharedSlot="3"/>
+		<shareSlotMem12 sharedSlot="5"/>
+
+		<!-- isolate slot config, for special preload scene -->
+		<isolateSlotMem6 ioSlot="3" processSlot="3"/>
+		<isolateSlotMem8 ioSlot="3" processSlot="3"/>
+		<isolateSlotMem12 ioSlot="3" processSlot="3"/>
+		
+		<!-- memory threshold -->
+		<memThreshold mem6="2048" mem8="3072" mem12="3072"/>
+		
+		<!-- vipsdk config -->
+		<vipSdkConfig appDiedCount="3" appDiedCountInDay="20" appDiedCountWithinTime="60000" crashStatSwitch="false" delayTime="1"/>
+		<vipSdkLevelMem6 ioSlot="0" processSlot="2"/>
+		<vipSdkLevelMem8 ioSlot="0" processSlot="2"/>
+		<vipSdkLevelMem12 ioSlot="0" processSlot="2"/>
+
+		<!--black list pkg={pkgName} mask={sauAppPreload, parallelAppPreload, vipAppPreload, nextAppPreload}-->
+		<!-- next preload-->
+		<blackList pkg="com.tencent.qqmusic" mask="0001"/>
+		<blackList pkg="com.hogezq.azsjgj" mask="0001"/>
+		<blackList pkg="com.tencent.android.qqdownloader" mask="0001"/>
+		<blackList pkg="com.tencent.mm" mask="0001"/>
+		<blackList pkg="com.kugou.android" mask="0001"/>
+		<blackList pkg="com.tencent.qqpim" mask="0001"/>
+		<!-- vip preload-->
+		<blackList pkg="com.tencent.mm" mask="0010"/>
+
+		<!-- dynamic list pkg={pkgName} mask={sauAppPreload, parallelAppPreload, vipAppPreload, nextAppPreload}-->
+		<dynamicList pkg="com.tencent.mm" mask="0010"/>
+
+		<!-- common Restriction-->
+		<commonRestriction pkg = "com.android.systemui"/>
+		<commonRestriction pkg = "com.coloros.assistantscreen"/>	
+		<commonRestriction pkg = "com.oplus.secondaryhome"/>
+		<commonRestriction pkg = "com.android.launcher"/>
+		<commonRestriction pkg = "com.oplus.pantanal.ums"/>
+		<!-- callerpkg={pkgName} calleepkg={pkgName} cpnname={cpnname} action={aciton} mask={alarm，job, sync, provider, broadcast, service  }-->
+
+		<!-- iopgp -->
+		<iopgpThreshold mem6="50" mem8="50" mem12="50"/>
+		<ioOpenThreshold mem6="100" mem8="100" mem12="100"/>
+		<iopgpConfig appTraceThreshold="1" totalTraceThreshold="50" thermalLevelThreshold="9" compilerTime="5000"/>
+		<ioOpenSlot mem6="2" mem8="2" mem12="2"/>
+		
+		<!-- io boost slot manager-->
+		<ioBoostConfig appTraceThreshold="1" totalTraceThreshold="20" thermalLevelThreshold="9" ioBoostLevelThreshold="200" ioBoostTimeout="400"
+		ioBoostCompilerTime="20000"/>
+		<ioBoostSlot slot="20"/>
+		<ioBoostPkg pkg="com.whatsapp"/>
+		<ioBoostPkg pkg="com.facebook.katana"/>
+		<ioBoostPkg pkg="com.coloros.gallery3d"/>
+		<ioBoostPkg pkg="jp.naver.line.android"/>
+		<ioBoostPkg pkg="com.ss.android.ugc.trill"/>
+		<ioBoostPkg pkg="com.facebook.orca"/>
+		<ioBoostPkg pkg="com.android.chrome"/>
+		<ioBoostPkg pkg="com.google.android.youtube"/>
+		<ioBoostPkg pkg="com.instagram.android"/>
+		<ioBoostPkg pkg="com.google.android.googlequicksearchbox"/>
+		<ioBoostPkg pkg="com.zing.zalo"/>
+		<ioBoostPkg pkg="com.android.vending"/>
+		<ioBoostPkg pkg="com.facebook.orca"/>
+		<ioBoostPkg pkg="com.shopee.id"/>
+		<ioBoostPkg pkg="com.lazada.android"/>
+		<ioBoostPkg pkg="com.kasikorn.retail.mbanking.wap"/>
+		<ioBoostPkg pkg="com.lemon.lvoverseas"/>
+		<ioBoostPkg pkg="com.globe.gcash.android"/>
+		<ioBoostPkg pkg="com.scb.phone"/>
+		<ioBoostPkg pkg="ktbcs.netbank"/>
+		<ioBoostPkg pkg="app.revanced.android.youtube"/>
+		<ioBoostPkg pkg="org.thunderdog.challegram"/>
+		
+		<!-- dexPreloadConfig -->
+		<dexPreloadConfig switch="true" threshold="100"/>
+		
+		<!-- usap switch config -->
+		<usapSwitch switch="false"/>
+
+		<!-- preopen camera config -->
+		<preOpenCamera switch="true"/>
+  </config>
+</resources>
