@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <wifiromupdate>
-    <version>2025020714</version>
+    <version>2025021410</version>
     <isOpen>1</isOpen>
     <!-- WIFI CONNECT TEAM -->
     <!-- WIFI CONNECT TEAM :WifiConfigStore.java -->
@@ -85,7 +85,8 @@
                            ,com.cubic.autohome,com.smile.gifmaker,com.kuaishou.nebula,com.youku.phone,com.tencent.qqlive,tv.danmaku.bili,com.tencent.wemeet.app,us.zoom.videomeetings</NETWORK_SLA_APPS>
     <NETWORK_SLA_APPS_EXP>com.whatsapp,in.mohalla.sharechat,app.buzz.share,com.facebook.orca,com.UCMobile.intl,
                            ,com.mcent.browser,com.redefine.welike,com.instagram.android,com.heytap.browser,com,com.android.browser,
-                           ,com.coloros.browser,com.android.chrome,com.facebook.katana,org.mozilla.firefox,com.opera.browser,us.zoom.videomeetings,
+                           ,com.coloros.browser,com.android.chrome,com.opera.browser.beta,com.opera.browser,com.chrome.dev,com.chrome.beta,com.chrome.canary,org.mozilla.klar,
+                           ,org.mozilla.firefox,com.microsoft.emmx,org.torproject.torbrowser,com.duckduckgo.mobile.android,com.facebook.katana,org.mozilla.firefox,com.opera.browser,us.zoom.videomeetings,
                            ,com.einnovation.temu,com.reddit.frontpage,com.twitter.android,org.telegram.messenger,org.thunderdog.challegram,com.zzkko,com.ss.android.ugc.trill</NETWORK_SLA_APPS_EXP>
     <NETWORK_SLA_GAME_APPS>not.defined,com.tencent.tmgp.sgame</NETWORK_SLA_GAME_APPS>
     <NETWORK_SLA_GAME_APPS_EXP>not.defined,not.defined,com.tencent.ig</NETWORK_SLA_GAME_APPS_EXP>
@@ -293,7 +294,7 @@
     <OPLUS_BASIC_WIFI_CUSTOM_P2P_BAND1_COUNTEY_LISIT></OPLUS_BASIC_WIFI_CUSTOM_P2P_BAND1_COUNTEY_LISIT>
     <OPLUS_BASIC_WIFI_CUSTOM_P2P_BAND4_COUNTEY_LISIT>ES,IT,FR,NL,PL,BE,GB,TR,IE,EE,BG,RO,CH,DE,KZ,UA,KE,NZ,SA,TH,PH,LK,SG,AE,BD,IR,HK,KH,NG,PK,ID,NP,AU,MY,BR,CL,MO,PE,PT,MM,CA,SE,FI,QA,KW,DK,CZ,SK,HU,GR,HR,AT,SI,LU,LV,LT,CY,MT,ZA,BO</OPLUS_BASIC_WIFI_CUSTOM_P2P_BAND4_COUNTEY_LISIT>
     <OPLUS_BASIC_WIFI_CUSTOM_P2P_ONLY2G_COUNTEY_LISIT>JP,MA,EG,TN,ET</OPLUS_BASIC_WIFI_CUSTOM_P2P_ONLY2G_COUNTEY_LISIT>
-    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_BADN_LIMIT>false</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_BADN_LIMIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_BADN_LIMIT>true</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_BADN_LIMIT>
     <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_BAND1_COUNTEY_LISIT></OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_BAND1_COUNTEY_LISIT>
     <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_BAND4_COUNTEY_LISIT>ES,IT,FR,NL,PL,BE,GB,TR,IE,EE,BG,RO,CH,DE,KZ,UA,KE,NZ,SA,TH,PH,LK,SG,AE,BD,IR,HK,KH,NG,PK,ID,NP,AU,MY,BR,CL,MO,PE,PT,MM,CA,SE,FI,QA,KW,DK,CZ,SK,HU,GR,HR,AT,SI,LU,LV,LT,CY,MT,ZA,BO</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_BAND4_COUNTEY_LISIT>
     <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_COUNTEY_LISIT>JP,MA,EG,TN,ET</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_ONLY2G_COUNTEY_LISIT>
@@ -305,9 +306,9 @@
     <!-- LiuZixuan@CONNECTIVITY.WIFI.Basic.SOFTAP.5470030, 2023/07/04 -->
     <!-- Add for: softap support 5G160M, include RUS feature and supported region-->
     <SOFTAP_5G160M_ENABLED>true</SOFTAP_5G160M_ENABLED>
-    <SOFTAP_5G160M_SUPPORTED_COUNTEY_LIST></SOFTAP_5G160M_SUPPORTED_COUNTEY_LIST>
+    <SOFTAP_5G160M_SUPPORTED_COUNTEY_LIST>CN</SOFTAP_5G160M_SUPPORTED_COUNTEY_LIST>
     <STA_5G160M_ENABLED>true</STA_5G160M_ENABLED>
-    <STA_5G160M_SUPPORTED_COUNTEY_LIST></STA_5G160M_SUPPORTED_COUNTEY_LIST>
+    <STA_5G160M_SUPPORTED_COUNTEY_LIST>CN</STA_5G160M_SUPPORTED_COUNTEY_LIST>
 
     <!-- WuJie@CONNECTIVITY.WIFI.P2P.7433693, 2024/07/25 -->
     <!-- add for P2P 5G160M -->
@@ -379,13 +380,13 @@
 
     <!-- jiayangshuai@CONNECTIVITY.WIFI.HARDWARE.SoftAP.4354159, 2022/09/15,-->
     <!-- Add for:softap/p2p 6G band config-->
-    <OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND1_COUNTEY_LISIT></OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND1_COUNTEY_LISIT>
-    <OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT></OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND1_COUNTEY_LISIT>TW,PK,MX,PS,BH,NO,US,NZ,TH,AU,SG,KE,MA,MY,HK,GB,CH,JO,CL,ZA,QA,MU,LI,IS,ES,IT,FR,NL,PL,BE,IE,EE,BG,RO,DE,DK,CZ,SK,HU,GR,HR,AT,SI,LU,LV,LT,PT,SE,FI,CY,MT,JP,RS</OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND1_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT>VN,PH,AE,PA,LK,KZ,DZ,MM,EG,IN,NP,BD,NG,RU,ID,CN,IR,TR,KH,TN,AO,ET,UA,MO,CO,TZ,GT,HN,SV,JM,DO,GH,CI,CM,RS,BA,ME,MK,AL,GE,AZ,AM,BO,EC,YE,BY,NI,LA,MD,IQ,LB,UZ,AR,OM,PY,UY,SY,AF,LI,LY,KV,SA,BR,PE,CR,CA</OPLUS_BASIC_WIFI_CUSTOM_P2P_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT>
 
-    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND1_COUNTEY_LISIT></OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND1_COUNTEY_LISIT>
-    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT></OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND1_COUNTEY_LISIT>TW,PK,MX,PS,BH,NO,US,NZ,TH,AU,SG,KE,MA,MY,HK,GB,CH,JO,CL,ZA,QA,MU,LI,IS,ES,IT,FR,NL,PL,BE,IE,EE,BG,RO,DE,DK,CZ,SK,HU,GR,HR,AT,SI,LU,LV,LT,PT,SE,FI,CY,MT,JP,RS</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND1_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT>VN,PH,AE,PA,LK,KZ,DZ,MM,EG,IN,NP,BD,NG,RU,ID,CN,IR,TR,KH,TN,AO,ET,UA,MO,CO,TZ,GT,HN,SV,JM,DO,GH,CI,CM,RS,BA,ME,MK,AL,GE,AZ,AM,BO,EC,YE,BY,NI,LA,MD,IQ,LB,UZ,AR,OM,PY,UY,SY,AF,LI,LY,KV,SA,BR,PE,CR,CA</OPLUS_BASIC_WIFI_CUSTOM_SOFTAP_6G_BAND_NOT_SUPPORT_COUNTEY_LISIT>
 
-    <OPLUS_BASIC_WIFI_CUSTOM_DEFAULT_6GBAND_SUPPORTED_COUNTEY_LISIT></OPLUS_BASIC_WIFI_CUSTOM_DEFAULT_6GBAND_SUPPORTED_COUNTEY_LISIT>
+    <OPLUS_BASIC_WIFI_CUSTOM_DEFAULT_6GBAND_SUPPORTED_COUNTEY_LISIT>JP</OPLUS_BASIC_WIFI_CUSTOM_DEFAULT_6GBAND_SUPPORTED_COUNTEY_LISIT>
 
     <!-- zhaochengsheng@PSW.CN.WiFi.Basic.Custom.4478, 2020/04/13, -->
     <!-- Add for: wifi sar feature -->
@@ -565,8 +566,12 @@
             ,com.ss.android.ugc.aweme.live.LivePlayActivity,com.ss.android.ugc.aweme.live.LivePlayActivityV2,com.ss.android.ugc.aweme.live.LiveBroadcastActivity,com.kuaishou.live.core.basic.activity.LiveSlideActivity,com.kuaishou.live.anchor.basic.activity.LivePushActivity,com.kuaishou.live.core.basic.activity.LiveSlideActivityTablet,
             ,com.tencent.wemeet.sdk.meeting.inmeeting.InMeetingActivity,com.zipow.videobox.conference.ui.ZmConfActivity,com.alibaba.android.teleconf.mozi.activity.TeleVideoConfActivity,
             ,tv.douyu.view.activity.PlayerActivity,com.tencent.vlive.VLiveActivity,com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3</MEDIABOOST_LOWLATENCY_ACTIVITYS>
-    <MEDIABOOST_CACHE_VEDIO_APPS>com.tencent.wemeet.app,us.zoom.videomeetings,
-            ,com.ss.android.ugc.aweme,com.smile.gifmaker,air.tv.douyu.android,com.tencent.qqlive,tv.danmaku.bili</MEDIABOOST_CACHE_VEDIO_APPS>
+    <MEDIABOOST_CACHE_VEDIO_APPS>com.innersloth.spacemafia,com.epicgames.fortnite,com.roblox.client,
+        ,com.alibaba.android.rimet,com.microsoft.teams,com.cisco.webex.meetings,com.google.android.apps.tachyon,
+        ,com.vipkid.vipcorner,com.hujiang.hjclass,com.talk51.lite,com.koolearn.android,com.xueersi.parentsmeeting,com.baidu.homework,com.A17zuoye.mobile.homework,
+        ,com.google.android.youtube,app.revanced.android.youtube,com.zhiliaoapp.musically,com.netflix.mediaclient,com.hulu.plus,
+        ,com.tencent.wemeet.app,us.zoom.videomeetings,
+        ,com.ss.android.ugc.aweme,com.smile.gifmaker,air.tv.douyu.android,com.tencent.qqlive,tv.danmaku.bili</MEDIABOOST_CACHE_VEDIO_APPS>
     <MEDIABOOST_LOWLATENCY_BLACK_LIST>com.snda.wifilocating,com.snda.lantern.wifilocating,com.qihoo.freewifi,com.tencent.wifimanager,com.wifi.key,
             ,com.ruijie.wifim,make.more.r2d2.cellular_z,net.he.networktools,com.oplus.wirelesssettings</MEDIABOOST_LOWLATENCY_BLACK_LIST>
 
@@ -594,6 +599,7 @@
     <OPLUS_IE_HYBRID_BLACKLIST>ff 00 001018 0200000c0000 ff00ffffffff 4d 0092,ff 00 000c43 08000000 ffffffff 65 00c2</OPLUS_IE_HYBRID_BLACKLIST>
     <!-- Xuyibo@CONNECTIVITY.WIFI.CONNECTIVITY.BTC.HYBRID, 2023/07/03 -->
     <FDD_BLACK_LIST_P2P></FDD_BLACK_LIST_P2P>
+    <FDD_V2_P2P_SUPPORT>true</FDD_V2_P2P_SUPPORT>
 
     <!-- LiXiong@CONNECTIVITY.WIFI.HARDWARE.POWER.SMARTGEAR.1641437, 2020/12/21 -->
     <!-- Add for smartGear -->
@@ -746,6 +752,10 @@
     <!-- Add for P2P Bandwidthcontrol on cast mode -->
     <OPLUS_WIFI_P2P_BANDWIDTH_CONTROL>true</OPLUS_WIFI_P2P_BANDWIDTH_CONTROL>
 
+    <!-- LiangXiao@CONNECTIVITY.WIFI.BASIC.P2P.D2D, 2024/09/22 -->
+    <!-- Add for control D2D disable/enable by RUS -->
+    <OPLUS_WIFI_D2D_MODE_ENABLE>true</OPLUS_WIFI_D2D_MODE_ENABLE>
+
     <!-- LiangXiao@CONNECTIVITY.WIFI.BASIC.SAP.INFOCHECKER, 2024/05/10 -->
     <!-- Add for P2P/SAP Info checker feature -->
     <OPLUS_WIFI_P2P_SAP_INFOCHECKER>false</OPLUS_WIFI_P2P_SAP_INFOCHECKER>
@@ -757,8 +767,10 @@
     <OPLUS_WIFI_ATPC_WIFI_DISPLAY_ENABLE>false</OPLUS_WIFI_ATPC_WIFI_DISPLAY_ENABLE>
     <OPLUS_WIFI_ATPC_SMART_SOFTAP_ENABLE>true</OPLUS_WIFI_ATPC_SMART_SOFTAP_ENABLE>
     <OPLUS_WIFI_ATPC_BACKUP_APPS>com.coloros.backuprestore,com.oneplus.backuprestore</OPLUS_WIFI_ATPC_BACKUP_APPS>
+    <OPLUS_WIFI_ATPC_AUTO_ADJUST_SYNERGY_CAST_ENABLE>true</OPLUS_WIFI_ATPC_AUTO_ADJUST_SYNERGY_CAST_ENABLE>
     <OPLUS_WIFI_ATPC_BACKUP_TX_POWER>5</OPLUS_WIFI_ATPC_BACKUP_TX_POWER>
     <OPLUS_WIFI_ATPC_WIFI_DISPLAY_TX_POWER>12</OPLUS_WIFI_ATPC_WIFI_DISPLAY_TX_POWER>
+    <OPLUS_WIFI_ATPC_AUTO_ADJUST_SYNERGY_CAST_TX_POWER>8</OPLUS_WIFI_ATPC_AUTO_ADJUST_SYNERGY_CAST_TX_POWER>
     <OPLUS_WIFI_ATPC_SAP_RSSI_THRESHOLD_FOR_24G>-53</OPLUS_WIFI_ATPC_SAP_RSSI_THRESHOLD_FOR_24G>
     <OPLUS_WIFI_ATPC_SAP_RSSI_THRESHOLD_FOR_5G>-43</OPLUS_WIFI_ATPC_SAP_RSSI_THRESHOLD_FOR_5G>
     <!-- //#endif /* OPLUS_FEATURE_WIFI_ATPC */ -->
@@ -797,6 +809,7 @@
     <!-- //#ifdef OPLUS_FEATURE_BACKOFF_POWER_FOR_CAMERA -->
     <!-- //Zhiqiang Yuan@CONNECTIVITY.WIFI.HARDWARE.POWER.8078988, 2024/11/10,Add this for WiFi power backoff when the camera is interfered by the WiFi signal -->
     <OPLUS_WIFI_BACKOFF_POWER_FOR_CAMERA_ENABLED>true</OPLUS_WIFI_BACKOFF_POWER_FOR_CAMERA_ENABLED>
+    <OPLUS_WIFI_BACKOFF_POWER_FOR_SCAN_ONLY_MODE_ENABLED>true</OPLUS_WIFI_BACKOFF_POWER_FOR_SCAN_ONLY_MODE_ENABLED>
     <OPLUS_WIFI_CUSTOM_POWER_FOR_CAMERA_ENABLED>false</OPLUS_WIFI_CUSTOM_POWER_FOR_CAMERA_ENABLED>
     <OPLUS_WIFI_CUSTOM_POWER_FOR_CAMERA>18</OPLUS_WIFI_CUSTOM_POWER_FOR_CAMERA>
     <!-- //#endif /* OPLUS_FEATURE_BACKOFF_POWER_FOR_CAMERA */ -->
@@ -875,10 +888,26 @@
     <ARIES_P2P_GO_DFS_ENABLE>true</ARIES_P2P_GO_DFS_ENABLE>
     <!-- End -->
 
+    <!-- LiuZixuan@CONNECTIVITY.WIFI.BASIC.P2P.8741788,2025/02/28 -->
+    <INVALID_PLATFORM_FOR_DFS_CHANNEL_SWITCH>SM8750,SM8650,SM8350,SM8250,SM7325</INVALID_PLATFORM_FOR_DFS_CHANNEL_SWITCH>
+    <!-- End -->
+
+    <!-- //#ifdef OPLUS_FEATURE_WIFISIGNAL -->
+    <OPLUS_FEATURE_WIFISIGNAL_RUS_SWITCH>true</OPLUS_FEATURE_WIFISIGNAL_RUS_SWITCH>
+    <!-- //#endif /* OPLUS_FEATURE_WIFISIGNAL */ -->
+
     <!-- LiJia@CONNECTIVITY.WIFI.NETWORK.BTC.7637979, 2024/09/29 -->
     <!-- Add for Power Save Abnormal Router -->
     <POWER_SAVE_IOT_AP_ENABLE>true</POWER_SAVE_IOT_AP_ENABLE>
     <POWER_SAVE_IOT_AP_LIST>TL-WR742N,TL-WR841N,TL-WR842N,TL-WR886N</POWER_SAVE_IOT_AP_LIST>
+
+    <!-- //#ifdef OPLUS_FEATURE_WIFI_DCS -->
+    <POWER_LIMIT_FREQ_LIST>2467,2472</POWER_LIMIT_FREQ_LIST>
+    <POWER_LIMIT_CHANNEL_RATIO>0.3</POWER_LIMIT_CHANNEL_RATIO>
+    <TOTAL_DAYS_THRESHOLD>7</TOTAL_DAYS_THRESHOLD>
+    <POWER_LIMIT_DAYS_THRESHOLD>2</POWER_LIMIT_DAYS_THRESHOLD>
+    <NET_SLOW_EVT_TOTAL_CNT_THRESHOLD>50</NET_SLOW_EVT_TOTAL_CNT_THRESHOLD>
+    <!-- //#endif /* OPLUS_FEATURE_WIFI_DCS */ -->
 
     <!-- Chuanye.Xu@CONNECTIVITY.WIFI.HARDWARE.POWER.1039214, 2017/08/24, -->
     <!-- Add for default AFP program convert from:

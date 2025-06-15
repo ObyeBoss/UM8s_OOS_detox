@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <filter-conf>
+        <!-- <project>8350R</project> -->
+        <version>2025022001</version>
+        <filter-name>sys_osense_feature_common_config</filter-name>
+    </filter-conf>
+
+    <feature name="AppMng">
+        <config name="policyEnabled_config" type="bundle">
+            <item name="POLICY_CLEAN" type="bool" value="true"/>
+            <item name="POLICY_OFREEZER" type="bool" value="true"/>
+            <item name="POLICY_PRELOAD" type="bool" value="true"/>
+        </config>
+
+        <config name="appmngBqConfig" type="bundle">
+            <item name="tuningSwitch" type="bool" value="false"/>
+            <item name="eventSize" type="int" value="3000"/>
+            <item name="maxHistoryFiles" type="int" value="30"/>
+            <item name="DCSLog" type="bool" value="true"/>
+            <item name="zipTrigger" type="bool" value="false"/>
+            <item name="version" type="int" value="1"/>
+        </config>
+
+        <config name="psiBqConfig" type="bundle">
+            <item name="tuningSwitch" type="bool" value="true"/>
+            <item name="eventSize" type="int" value="3000"/>
+            <item name="maxHistoryFiles" type="int" value="25"/>
+            <item name="DCSLog" type="bool" value="true"/>
+            <item name="zipTrigger" type="bool" value="true"/>
+            <item name="version" type="int" value="1"/>
+        </config>
+
+        <config name="cpnResBqConfig" type="bundle">
+            <item name="tuningSwitch" type="bool" value="true"/>
+            <item name="eventSize" type="int" value="3000"/>
+            <item name="maxHistoryFiles" type="int" value="25"/>
+            <item name="zipTrigger" type="bool" value="true"/>
+        </config>
+
+        <config name="appQuotaBqConfig" type="bundle">
+            <item name="tuningSwitch" type="bool" value="true"/>
+            <item name="eventSize" type="int" value="3000"/>
+            <item name="maxHistoryFiles" type="int" value="25"/>
+            <item name="zipTrigger" type="bool" value="true"/>
+        </config>
+
+        <config name="defaultBigAppList_config" type="stringList">
+            <item name="com.oplus.camera"/>
+            <item name="com.oneplus.camera"/>
+        </config>
+		
+		<config name="defaultTopAppList_config" type="stringList">
+            <item name="com.tencent.mm"/>
+            <item name="com.tencent.mobileqq"/>
+            <item name="com.ss.android.ugc.aweme"/>
+        </config>
+
+        <config name="requestConfig" type="bundle">
+            <item name="dcsThreshold" type="int" value="300"/>
+            <item name="dcsPeriod" type="int" value="600000"/>
+        </config>
+		
+        <config name="cpuLimitKillConfig" type="bundle">
+            <item name="cpuLimitKillSwitch" type="bool" value="true"/>
+            <item name="memThreshold" type="int" value="12"/>
+            <item name="cpuLimitLevelConfig" type="string" value="25|25|15|10"/>
+            <item name="perceptibleAppCpuLimitGap" type="int" value="0"/>
+            <item name="spCpuLimitAppList" type="stringList">
+	            <!--item name="processName|cpulimitGap"/-->
+                <item name="com.example.memalloc|0"/>
+            </item>
+        </config>
+
+        <config name="defaultCheckKeyWords_config" type="stringList">
+            <item name="com.oppo."/>
+            <item name="com.oplus."/>
+            <item name="com.coloros."/>
+            <item name="com.nearme."/>
+            <item name="com.heytap."/>
+            <item name="com.android."/>
+            <item name="com.aiunit.aon"/>
+            <item name="com.baidu.input_oppo"/>
+            <item name="android.process.acore"/>
+            <item name="com.debug.loggerui"/>
+            <item name="com.sohu.inputmethod.sogouoem"/>
+            <item name="com.xunmeng.pinduoduo"/>
+        </config>
+
+        <config name="defaultPssMonitorPkg_config" type="stringList">
+            <item name="com.android.launcher|604160"/>
+            <item name="com.heytap.pictorial|330752"/>
+            <item name="com.android.systemui|313344"/>
+            <item name="com.xunmeng.pinduoduo|307200"/>
+            <item name="com.oplus.cosa|280576"/>
+            <item name="com.oplus.smartsidebar|208896"/>
+            <item name="com.oplus.onetrace|190464"/>
+            <item name="com.coloros.colordirectservice|150835"/>
+            <item name="com.heytap.mcs|122777"/>
+            <item name="com.oplus.logkit|94924"/>
+            <item name="com.oplus.notificationmanager|88371"/>
+            <item name="com.android.phone|84172"/>
+            <item name="com.oplus.battery|84070"/>
+            <item name="com.oplus.ovoicemanager.wakeup|81920"/>
+            <item name="com.oplus.floatassistant|79462"/>
+            <item name="com.aiunit.aon|72704"/>
+            <item name="com.baidu.input_oppo|72397"/>
+            <item name="com.android.nfc|69632"/>
+            <item name="com.oplus.sceneservice|65229"/>
+            <item name="com.oplus.deepthinker|61440"/>
+            <item name="com.android.incallui|54067"/>
+            <item name="com.heytap.accessory|52224"/>
+            <item name="com.oplus.atlas|51200"/>
+            <item name="com.android.server.telecom|49357"/>
+            <item name="android.process.acore|48435"/>
+            <item name="com.debug.loggerui|46797"/>
+            <item name="com.oplus.securitykeyboard|45568"/>
+            <item name="com.android.bluetooth|44851"/>
+            <item name="com.heytap.openid|41984"/>
+            <item name="com.sohu.inputmethod.sogouoem|37274"/>
+            <item name="com.oplus.childrenspace|35430"/>
+            <item name="com.oplus.appplatform|35328"/>
+            <item name="com.coloros.assistantscreen|31539"/>
+            <item name="com.oplus.regservice|17715"/>
+            <item name="com.oplus.nhs|15258"/>
+            <item name="com.oplus.healthservice|14643"/>
+            <item name="com.oplus.powermonitor|14643"/>
+            <item name="com.oplus.qualityprotect|14234"/>
+        </config>
+
+        <config name="processStatsManagerConfig" type="bundle">
+            <item name="featureSwitch" type="bool" value="true"/>
+            <item name="dcsSwitch" type="bool" value="false"/>
+        </config>
+
+        <config name= "atomicCleanProcessWhiteList" type="stringList">
+            <item name="com.coloros.smartsidebar:edgepanel"/>
+            <item name="com.xunmeng.pinduoduo:titan"/>
+            <item name="com.tencent.mm:push"/>
+            <item name="com.taobao.taobao:channel"/>
+			<item name="com.oplus.trafficmonitor:network_control"/>
+            <item name="android.camera.cts"/>
+            <item name="android.process.media"/>
+        </config>
+
+        <config name="psiResLogSwitch" type="bundle">
+            <item name="logSwitch" type="bool" value="false"/>
+            <item name="preLogSwitch" type="bool" value="true"/>
+        </config>
+
+        <config name="cpnResLogSwitch" type="bundle">
+            <item name="logSwitch" type="bool" value="false"/>
+            <item name="topNlogSwitch" type="bool" value="false"/>
+            <item name="topNSize" type="int" value="3"/>
+        </config>
+
+        <config name="appQuotaLogSwitch" type="bundle">
+            <item name="logSwitch" type="bool" value="false"/>
+            <item name="preLogSwitch" type="bool" value="true"/>
+        </config>
+
+        <!-- <config name="cpnResBlackListConfig" type="stringList">
+            <item name="com.oppo.xxx"/>
+        </config> -->
+
+        <config name="CpnDcsMonitorListConfig" type="stringList">
+            <item name="com.android.systemui"/>
+            <item name="com.android.launcher"/>
+        </config>
+
+        <config name="reentrantConfig" type="bundle">
+            <item name="reentrantSwitch" type="bool" value="true"/>
+        </config>
+        
+        <config name="cpnProxyConfig" type="bundle">
+            <item name="FeatureSwitch" type="bool" value="true"/>
+            <item name="BroadcastSwitch" type="bool" value="true"/>
+            <item name="ServiceRestartSwitch" type="bool" value="true"/>
+            <item name="JobSwitch" type="bool" value="true"/>
+            <item name="AlarmSwitch" type="bool" value="true"/>
+        </config>
+
+        <config name="BrProxyConfig" type="bundle">
+            <!-- scene AppStart|Camera|Game|CpuHighLoad -->
+            <item name="Scene" type="string" value="1|2|3|4"/>
+			
+            <!--defalut implicit broadcast -->
+            <item name="Action" type="stringList">
+                <item name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <item name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
+                <item name="android.accounts.action.ACCOUNT_REMOVED"/>
+                <item name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"/>
+                <item name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+                <item name="android.hardware.usb.action.USB_ACCESSORY_DETACHED"/>
+                <item name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+                <item name="android.hardware.usb.action.USB_DEVICE_DETACHED"/>
+                <item name="android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"/>
+                <item name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"/>
+                <item name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <item name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+                <item name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+                <item name="android.intent.action.PACKAGE_REPLACED"/>
+            </item>
+
+            <!--scene support broadcast -->
+            <!-- scene AppStart|Camera|Game -->
+            <!--scene|action|action|... -->
+            <item name="SceneAction" type="stringList">
+                <item name="AppStart|action"/>
+                <item name="Camera|action"/>
+                <item name="Game|action"/>
+            </item>
+			
+            <!--scene support whiteList -->
+            <!-- scene Base|AppStart|Camera|Game -->
+            <!--scene|pkg|pkg|... -->
+            <item name="SceneWList" type="stringList">
+                <item name="Base|pkg"/>
+                <item name="AppStart|pkg"/>
+                <item name="Camera|pkg"/>
+                <item name="Game|pkg"/>
+            </item>
+			
+            <!--scene support blackList -->
+            <!-- scene Base|AppStart|Camera|Game -->
+            <!--scene|pkg|pkg|... -->
+            <item name="SceneBList" type="stringList">
+                <item name="Base|com.example.brproxy"/>
+                <item name="AppStart|pkg"/>
+                <item name="Camera|pkg"/>
+                <item name="Game|pkg"/>
+            </item>
+
+            <!-- scene CpuHighLoad|AppStart|Camera|Game -->
+			<!-- complex|action|pkg|pkg -->
+			<!-- white|pkg|pkg -->
+			<!-- black|pkg|pkg -->
+			<!-- trimwhite|action|action -->
+            <item name="CpuHighLoad" type="stringList">
+                <item name="white|com.android.launcher|com.android.systemui|com.oplus.camera|com.heytap.accessory"/>
+            </item>
+        </config>
+
+        <config name="SRProxyConfig" type="bundle">
+            <!-- scene AppStart|Camera|Game|CpuHighLoad -->
+            <item name="Scene" type="string" value="1|2|3|4"/>
+        </config>
+
+        <config name="JobProxyConfig" type="bundle">
+            <!-- scene AppStart|Camera|Game|CpuHighLoad -->
+            <item name="Scene" type="string" value="1|2|3|4"/>
+        </config>
+
+        <config name="AlarmProxyConfig" type="bundle">
+            <!-- scene AppStart|Camera|Game|CpuHighLoad -->
+            <item name="Scene" type="string" value="4"/>
+        </config>
+		
+        <config name="osenseRefreshConfig" type="bundle">
+            <item name="switch" type="bool" value="true"/>
+        </config>
+		
+        <config name="skipLimitRefreshList" type="stringList">
+            <item name="com.android.launcher"/>
+			<item name="com.android.systemui"/>
+			<item name="com.qqgame.happymj"/>
+			<item name="com.coloros.assistantscreen"/>
+			<item name="com.oplus.camera"/>
+        </config>
+    </feature>
+
+    <feature name="Memory">
+        <config name="idleRecover" type="bundle">
+            <item name="interval" type="long" value="20000"/>
+        </config>
+
+        <config name="psiConfig" type="bundle">
+            <item name="memConfig" type="string" value="0 50000 0 70000 1 50000 1 70000"/>
+            <item name="ioConfig" type="string" value="0 30000 0 50000 1 30000"/>
+        </config>
+
+        <config name="defaultForbidRestartPkg_config" type="stringList">
+            <item name="com.coloros.filemanager"/>
+            <item name="com.coloros.gallery3d"/>
+			<item name="com.android.settings"/>
+			<item name="com.heytap.speechassist"/>
+			<item name="com.heytap.health"/>
+			<item name="com.coloros.floatassistant"/>
+			<item name="com.android.mms"/>
+			<item name="com.heytap.accessory"/>
+			<item name="com.oplus.upgradeguide"/>
+			<item name="com.coloros.phonemanager"/>
+			<item name="com.coloros.securepay"/>
+			<item name="com.android.contacts"/>
+			<item name="com.example.memalloc"/>
+        </config>
+		
+		<config name="osenseCompressConfig" type="bundle">
+			<item name="Enable" type="bool" value="true"/>
+            <item name="RegisterAbortHandler" type="bool" value="true"/>
+			<item name="AllowCompressOnBigCore" type="bool" value="true"/>
+			<item name="SupportAbortKernelVersion" type="string" value="601|515|510|504|419"/>
+        </config>
+		
+		<config name="dynamicSwappinessConfig" type="bundle">
+			<item name="EnableIdleDynamicSwappiness" type="bool" value="false"/>
+            <item name="DynamicSwappinessStepSize" type="int" value="10"/>
+
+			<item name="EnableBalancedSwappiness" type="bool" value="false"/>
+			<item name="BalancedSwappiness" type="int" value="100"/>
+			
+			<item name="CameraShrinkFileFeatureEnable" type="bool" value="true"/>
+			<item name="CameraSwappiness" type="int" value="60"/>
+			<item name="CameraMinFileMB" type="int" value="1000"/>
+			<item name="CameraSwappinessTimeout" type="int" value="30000"/>
+			
+			<item name="EnableHighloadSwappiness" type="bool" value="true"/>
+			<item name="HighloadSwappiness" type="int" value="0"/>
+			<item name="HighLoadMinCachedMap" type="string" value="6-1000|8-2000|12-2500|16-3000|24-3500"/>
+        </config>
+		
+        <config name="defragConfig" type="bundle">
+		    <item name="EnableDefrag" type="bool" value="false"/>
+            <item name="CompactionHpageOrderMap" type="string" value="2-4|3-4|4-4|6-4|8-4|12-4|16-4|24-4"/>
+	        <item name="CompactionProactivenessMap" type="string" value="2-20|3-20|4-20|6-20|8-20|12-20|16-20|24-20"/>
+        </config>
+    </feature>
+    <feature name="CPU">
+    </feature>
+    <feature name="IO">
+    </feature>
+</resources>

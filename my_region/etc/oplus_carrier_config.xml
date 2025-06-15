@@ -12,7 +12,8 @@
         <string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
         <string name="gps.a_glonass_pos_protocol_select">15</string>
         <string name="gps.gps_lock">0</string>
-        <string name="gps.nfw_proxy_apps">com.oplus.locationproxy</string>
+        <!-- <string name="gps.nfw_proxy_apps">com.oplus.locationproxy</string> -->
+        <string name="gps.nfw_proxy_apps"></string>
     </carrier_config>
 
     <!--Japan Rakuten -->

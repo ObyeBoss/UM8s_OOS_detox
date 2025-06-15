@@ -584,7 +584,7 @@
 	<startup all = "1" type = "1"  mask = "32" pkgName = "com.market.heydemo" priority = "300" ></startup>
 	<startup type = "1"  mask = "32" pkgName = "com.oplus.postmanservice" priority = "300" ></startup>
 	<startup type = "1"  mask = "32" pkgName = "com.oplus.engineercamera" priority = "300" ></startup>
-	<startup type = "1"  mask = "32" pkgName = "com.oplus.healthservice" priority = "300" ></startup>
+	<!-- <startup type = "1"  mask = "32" pkgName = "com.oplus.healthservice" priority = "300" ></startup> -->
 	<!-- special broadcast 256-->
 	<!-- wl -->
 	<startup type = "1"  mask = "256" pkgName = "com.oppo.toprand.voyager"></startup>
@@ -1156,13 +1156,13 @@
 		<item mask = "8"   subMask = "1"/>
 	</startup>
 
-	<startup type = "1" mask = "128" pkgName = "com.coloros.healthcheck">
+	<!-- <startup type = "1" mask = "128" pkgName = "com.coloros.healthcheck">
 		<item mask = "128"  action = "oplus.intent.action.STORAGE_HEALTH_INFO" />
 	</startup>
 	
 	<startup type = "2" mask = "64" pkgName = "com.coloros.healthcheck">
 		<item mask = "64"  associatePkg = "com.oplus.postmanservice" comp = "com.coloros.healthcheck.diagnosis.provider.HealthCheckProvider" />
-	</startup>
+	</startup> -->
 
 	<startup type = "1" mask = "136" pkgName = "com.coloros.phonemanager">
 		<item mask = "8"  subMask = "1" />
@@ -1625,8 +1625,8 @@
 	<startup all = "11" type = "2" pkgName = "com.heytap.book"/>
 	<startup all = "11" type = "2" pkgName = "com.heytap.gamecenter"/>
 	<startup all = "11" type = "1" pkgName = "com.heytap.gamecenter"/>
-	<startup all = "11" type = "2" pkgName = "com.heytap.health"/>
-	<startup all = "11" type = "1" pkgName = "com.heytap.health"/>
+	<!-- <startup all = "11" type = "2" pkgName = "com.heytap.health"/>
+	<startup all = "11" type = "1" pkgName = "com.heytap.health"/> -->
 	
     <startup all = "11" type = "2" pkgName = "com.coloros.lives"/>
 	

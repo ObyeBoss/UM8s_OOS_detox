@@ -130,6 +130,16 @@
 		<ioBoostPkg pkg="com.ss.android.ugc.trill"/>
 		<ioBoostPkg pkg="com.facebook.orca"/>
 		<ioBoostPkg pkg="com.android.chrome"/>
+		<ioBoostPkg pkg="com.chrome.dev"/>
+		<ioBoostPkg pkg="com.chrome.beta"/>
+		<ioBoostPkg pkg="com.chrome.canary"/>
+		<ioBoostPkg pkg="com.opera.browser"/>
+		<ioBoostPkg pkg="com.opera.browser.beta"/>
+		<ioBoostPkg pkg="org.mozilla.klar"/>
+		<ioBoostPkg pkg="org.mozilla.firefox"/>
+		<ioBoostPkg pkg="com.microsoft.emmx"/>
+		<ioBoostPkg pkg="org.torproject.torbrowser"/>
+		<ioBoostPkg pkg="com.duckduckgo.mobile.android"/>
 		<ioBoostPkg pkg="com.google.android.youtube"/>
 		<ioBoostPkg pkg="com.instagram.android"/>
 		<ioBoostPkg pkg="com.google.android.googlequicksearchbox"/>

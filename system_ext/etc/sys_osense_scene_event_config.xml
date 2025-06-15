@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config name="scene_event">
+    <filter-conf>
+        <version>20250517</version>
+        <filter-name>sys_osense_scene_event_config</filter-name>
+    </filter-conf>
+    <!-- 应用生命周期及UI保证线程 -->
+    <event id="10" name="APP_MOVE_TO_TOP" maxWorkDurationMs="-1" source_caller="android">
+        <key-thread name="UIThread" owner="tp" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="RenderThread" owner="tp" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="HwUiTask" owner="tp" sched_policy="ux" priority="HIGH_LIGHT" />
+        <key-thread name="GLThread" owner="tp" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="UIThread" owner="fg1" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="fg1" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="fg1" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="GLThread" owner="fg1" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!--标识 system_server 启动完成且系统服务加载完毕-->
+    <event id="20" name="SYSTEM_BOOT_COMPLETE" maxWorkDurationMs="-1" source_caller="android">
+        <vip-binder>default</vip-binder>
+    </event>
+    <event id="50" name="APP_COLD_LAUNCH" maxWorkDurationMs="1000" source_caller="android">
+        <key-thread name="UIThread" owner="tp" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+
+    <event id="101" name="DISPLAY_DPS" source_caller="android">
+        <key-thread name="PhotonicModulator" owner="android" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- FaceHal 线程 begin -->
+    <event id="500" name="FACE_UNLOCK_BOOST" maxWorkDurationMs="-1" source_caller="face_hal">
+        <key-thread name="FaceManager" owner="face_hal" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+    <!-- FaceHal 线程 end -->
+
+    <!-- systemserver 关键线程调度场景begin  -->
+    <event id="1001" name="PENDING_MOTION_FOR_SYSTEMUI" maxWorkDurationMs="500" source_caller="android">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+
+    <event id="1004" name="SYSTEM_FOLDSCREEN_SPEED" maxWorkDurationMs="1000" source_caller="android">
+        <key-thread name="android.ui" owner="android" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="android.display" owner="android" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="PowerManagerService" owner="android" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="PhotonicModulator" owner="android" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="oplus.io" owner="android" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="LIGHT" />
+        <!-- SystemUI threads begin -->
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="GLThread" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="ImageWallpaper" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="SysUiLng" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <!-- SystemUI threads end -->
+    </event>
+
+    <event id="1006" name="SYSTEM_FAST_FREEZE" maxWorkDurationMs="500" source_caller="android">
+        <key-thread name="HansMainHandler" owner="android" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="1007" name="SYSTEM_OSENSE_KILL" maxWorkDurationMs="500" source_caller="android">
+        <key-thread name="osense.kill" owner="android" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="1008" name="DISPLAY_RAMP_ANIMATOR" maxWorkDurationMs="-1" source_caller="android">
+        <key-thread name="PowerManagerService" owner="android" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <event id="1009" name="SCENE_EVENT_GAME_TO_TOP_DELAY_UX" maxWorkDurationMs="-1" source_caller="android">
+        <key-thread name="UIThread" owner="tp" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="RenderThread" owner="tp" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+    <event id="1010" name="SCENE_EVENT_ACCESSIBILITY_UX" maxWorkDurationMs="-1" source_caller="android">
+        <key-thread name="system_server" owner="android" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="1011" name="SYSTEM_ATHENA_KILL" maxWorkDurationMs="5000" source_caller="system_app">
+        <key-thread name="athena_killer" owner="android" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <event id="1012" name="SYSTEM_OOM_ADJUSTER" maxWorkDurationMs="-1" source_caller="android">
+        <key-thread name="OomAdjuster" owner="android" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <event id="1013" name="SCREEN_STATE_TURN_ON" maxWorkDurationMs="2000" source_caller="android">
+        <key-thread name="PowerManagerService" owner="android" sched_policy="ux" priority="LISTPICK_TASK" />
+    </event>
+    <!-- systemserver 关键线程调度场景end  -->
+
+    <!-- Launcher Key thread scheduling scenarios begin  -->
+    <event id="2000" name="LAUNCHER_STATIC_UX" source_caller="android">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="2001" name="LAUNCHER_ASSIST_SCREEN_SCROLL" maxWorkDurationMs="60000"
+        source_caller="launcher|assistscreen">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="launcher-loader" owner="launcher" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="UIThread" owner="assistscreen" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="assistscreen" sched_policy="ux"
+            priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="assistscreen" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="assistscreen" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="android.anim" owner="android" sched_policy="ux" priority="ANIMATOR" />
+        <vip-binder>assisitscreen-slide-to-launcher</vip-binder>
+    </event>
+    <event id="2002" name="LAUNCHER_START_APP" maxWorkDurationMs="2000" source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="android.anim" owner="android" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="ll.splashscreen" owner="systemui" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="ll.splashworker" owner="systemui" sched_policy="ux" priority="ANIMATOR" />
+        <vip-binder>launcher-app-start</vip-binder>
+    </event>
+    <event id="2003" name="LAUNCHER_HIDE_KEYBOARD" maxWorkDurationMs="1000" source_caller="launcher">
+        <key-thread name="UiThreadHelper" owner="launcher" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="2004" name="LAUNCHER_CONNECT_ASSIST_SCREEN" maxWorkDurationMs="1000" source_caller="launcher">
+        <key-thread name="UiThreadHelper" owner="launcher" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="2005" name="LAUNCHER_BRACKET_SPACE_UX" maxWorkDurationMs="1000" source_caller="launcher">
+        <key-thread name="TaskViewTransactionHelper" owner="launcher" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="2006" name="LAUNCHER_FOLDER_ANIMATION" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <event id="2007" name="LAUNCHER_RECENTS" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="UrgentTransactionHelper" owner="launcher" sched_policy="ux" priority="LIGHT" />
+        <!-- <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />  -->
+    </event>
+    <event id="2008" name="LAUNCHER_TASKBAR_SUBSCRIBE_PRESS" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="UrgentTransactionHelper" owner="launcher" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="UiThreadHelper" owner="launcher" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="2009" name="LAUNCHER_DRAG" maxWorkDurationMs="6000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <event id="2010" name="LAUNCHER_FOLDER_ICON_FALLEN" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <event id="2011" name="LAUNCHER_GESTURE_WINDOW_ANIMATION" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <vip-binder>imms-focus-change</vip-binder>
+    </event>
+    <event id="2012" name="LAUNCHER_SUPER_POWER_MODE_EXIT" maxWorkDurationMs="2000" source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="LIGHT" />
+        <!-- SystemUI threads begin -->
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="GLThread" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="ImageWallpaper" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <!-- SystemUI threads end -->
+    </event>
+    <event id="2013" name="LAUNCHER_ICON_PRESS" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <event id="2014" name="LAUNCHER_FINISH_CONTROLLER" maxWorkDurationMs="1000">
+        <key-thread name="UrgentTransactionHelper" owner="launcher" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <event id="2015" name="LAUNCHER_WORKSPACE_SCROLL" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <event id="2016" name="LAUNCHER_STATIC_LAUNCHER_ANIM" maxWorkDurationMs="-1" source_caller="launcher">
+       <key-thread name="launcher.anim" owner="launcher" sched_policy="ux" priority="HIGH_ANIMATOR" />
+    </event>
+    <event id="2017" name="LAUNCHER_STATIC_ONLINE_UX" maxWorkDurationMs="-1" source_caller="launcher">
+       <key-thread name="onlineUXThread" owner="launcher" sched_policy="ux" priority="HIGH_ANIMATOR" />
+    </event>
+    <event id="2018" name="LAUNCHER_UPDATE_TOUCH_REGION" maxWorkDurationMs="1000" source_caller="launcher">
+       <key-thread name="UrgentTransactionHelper" owner="launcher" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <event id="2019" name="LAUNCHER_START_WALLPAPER_ANIMATION" maxWorkDurationMs="1000" source_caller="launcher">
+       <key-thread name="WallpaperTransactionHelper" owner="launcher" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <event id="2020" name="LAUNCHER_GET_TASKS" maxWorkDurationMs="1000" source_caller="launcher">
+       <key-thread name="RecentTasksList" owner="launcher" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <event name="LAUNCHER_LOAD_LAYOUT" id="2021" maxWorkDurationMs="60000" source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" priority="ANIMATOR" sched_policy="ux" />
+        <key-thread name="RenderThread" owner="launcher" priority="ANIMATOR" sched_policy="ux" />
+        <key-thread name="HwUiTask" owner="launcher" priority="ANIMATOR" sched_policy="ux" />
+        <key-thread name="GLThread" owner="launcher" priority="LIGHT" sched_policy="ux" />
+        <key-thread name="launcher-loader" owner="launcher" priority="MEDIUM_HEAVY" sched_policy="ux" />
+    </event>
+    <event id="2022" name="LAUNCHER_STATIC_LIFECYCLE_HELPER" maxWorkDurationMs="-1" source_caller="launcher">
+       <key-thread name="oplus_lifecycle_helper" owner="launcher" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <event id="2023" name="LAUNCHER_TASKICON_CACHE_POST" maxWorkDurationMs="2000"
+        source_caller="launcher">
+        <key-thread name="TaskIconCache" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="TaskThumbnailCache" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <event id="2024" name="LAUNCHER_BROWSER_SCROLL" maxWorkDurationMs="60000"
+        source_caller="launcher">
+        <key-thread name="UIThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="launcher" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="launcher" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="launcher-loader" owner="launcher" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="UIThread" owner="com.heytap.browser:slide" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="com.heytap.browser:slide" sched_policy="ux"
+            priority="ANIMATOR" />
+        <key-thread name="HwUiTask" owner="com.heytap.browser:slide" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="GLThread" owner="com.heytap.browser:slide" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- Launcher 关键线程调度场景end  -->
+
+    <!-- SystemUI 关键线程调度场景begin  -->
+    <!-- SystemUI状态栏下拉，保障从接收到event事件到systemui变为top app阶段  -->
+    <event id="3000" name="SYSTEMUI_NOTIFICATION_SHADE_EXPAND" maxWorkDurationMs="1000"
+        source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="GaussianBlur" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!-- 侧滑场景，收到侧滑事件到侧滑界面显示出来 -->
+    <event id="3001" name="SYSTEMUI_EDGE_SWIPE_BACK_UI" maxWorkDurationMs="15000" source_caller="systemui">
+        <!-- set to be MEDIUM_HEAVY for rendering animation -->
+        <key-thread name="GestureUI" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 侧滑场景，侧滑手势松手后退出 -->
+    <event id="3002" name="SYSTEMUI_EDGE_SWIPE_BACK_EXIT" maxWorkDurationMs="400"
+        source_caller="systemui">
+        <!-- set to be MEDIUM_HEAVY for rendering animation -->
+        <key-thread name="GestureUI" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <!-- for related animation like navigation bar and status bar -->
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!-- 音量弹框 -->
+    <event id="3003" name="SYSTEMUI_VOLUME_DIALOG_SHOWING" maxWorkDurationMs="5000" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="VolumeDialogControllerImpl" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 显示状态栏隐私图标 -->
+    <event id="3004" name="SYSTEMUI_PRIVACY_UI_SHOWING" maxWorkDurationMs="-1" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!-- 状态栏显示流体云胶囊 -->
+    <event id="3006" name="SYSTEMUI_SEEDLING_CAPSULE_SHOWING" maxWorkDurationMs="-1" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 状态栏流体云胶囊单击跳转到应用 -->
+    <event id="3007" name="SYSTEMUI_SEEDLING_CAPSULE_JUMP" maxWorkDurationMs="1000" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 暗色模式切换 -->
+    <event id="3008" name="UI_MODE_CHANGED" maxWorkDurationMs="2000" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 状态栏添加系统图标场景 -->
+    <event id="3020" name="SYSTEMUI_SYSTEM_STATUS_ICON_ADDING" maxWorkDurationMs="2000" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 进入锁屏场景，为指纹解锁线程设置ux，解锁完成后，场景结束 -->
+    <event id="3100" name="SYSTEMUI_SCREEN_LOCKED" maxWorkDurationMs="-1" source_caller="systemui">
+        <key-thread name="OnScreenFingerprint OpticalUIUpdateThread" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 解锁成功后的退场场景 -->
+    <event id="3101" name="SYSTEMUI_KEYGUARD_GOING_AWAY" maxWorkDurationMs="2000" source_caller="systemui">
+        <key-thread name="KeyguardWorkerThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!-- 锁屏亮灭屏壁纸/VFX动画 -->
+    <event id="3102" name="SYSTEMUI_KEYGUARD_ANIM_RUNNING" maxWorkDurationMs="1000" source_caller="systemui">
+        <key-thread name="KgdAnimThread" owner="systemui" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- 锁屏电源键灭屏到dreaming盖黑前场景 -->
+    <event id="3103" name="SYSTEMUI_KEYGUARD_GO_SLEEP" maxWorkDurationMs="200" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+
+    <!-- phone 线程 begin -->
+    <event id="3200" name="PHONE" maxWorkDurationMs="10000" source_caller="system_app">
+        <key-thread name="m.android.phone" owner="self" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!-- phone 线程 end -->
+
+    <!-- 应用锁补光功能begin -->
+    <event id="3230" name="SAFECENTER_UI" maxWorkDurationMs="4000" source_caller="system_app">
+        <key-thread name="s.safecenter:ui" owner="self" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!-- 应用锁补光功能 end -->
+
+    <!-- 手势apk 后台主线程 begin -->
+    <event id="3300" name="OPLUS_GESTURE_START_ANIM" maxWorkDurationMs="5000" source_caller="system_app">
+        <key-thread name="com.oplus.gesture" owner="self" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
+    <!-- 手势apk 后台主线程 end -->
+
+    <!-- GestureUI线程静态ux -->
+    <event id="3999" name="SYSTEMUI_EDGE_SWIPE_DETECT" maxWorkDurationMs="-1" source_caller="systemui">
+        <key-thread name="GestureUI" owner="systemui" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- SystemUI 关键线程调度场景end -->
+
+    <!-- 过渡动画 -->
+    <event id="5001" name="SYSTEM_SHELL_TRANSITION_OPEN_CLOSE" maxWorkDurationMs="5000" source_caller="android">
+        <key-thread name="android.anim" owner="android" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+
+    <!-- 转屏动画 -->
+    <event id="5002" name="SYSTEM_SHELL_TRANSITION_CHANGE" maxWorkDurationMs="5000" source_caller="android">
+        <key-thread name="android.anim" owner="android" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <vip-binder>transition-change</vip-binder>
+    </event>
+
+    <!-- AddStartingWindow -->
+    <event id="5004" name="ADD_STARTING_WINDOW" maxWorkDurationMs="2000" source_caller="android">
+        <key-thread name="HwUiTask" owner="systemui" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="ll.splashscreen" owner="systemui" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="ll.splashworker" owner="systemui" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+
+    <!-- android.anim -->
+    <event id="5005" name="ANDROID_ANIM" maxWorkDurationMs="2000" source_caller="android">
+        <key-thread name="android.anim" owner="android" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+
+    <!-- android.anim.lf -->
+    <event id="5006" name="ANDROID_ANIM_LF" maxWorkDurationMs="2000" source_caller="android">
+        <key-thread name="android.anim.lf" owner="android" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+
+    <!-- Start Activity Sync Binder -->
+    <event id="5007" name="START_ACTIVITY_BINDER" maxWorkDurationMs="200" source_caller="android" type="dynamic">
+        <key-thread name="binder" owner="android" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- wmshell.anim for wmshell animation -->
+    <event id="5008" name="WMSHELL_ANIM" maxWorkDurationMs="-1" source_caller="systemui">
+        <key-thread name="wmshell.anim" owner="systemui" sched_policy="ux" priority="HIGH_ANIMATOR" />
+    </event>
+
+    <!-- wmshell.main for wmshell animation -->
+    <event id="5009" name="WMSHELL_MAIN" maxWorkDurationMs="-1" source_caller="systemui">
+        <key-thread name="wmshell.main" owner="systemui" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- systemui uithread and renderthread -->
+    <event id="5010" name="SYSTEMUI_UITHREAD_RENDERTHREAD" maxWorkDurationMs="5000" source_caller="systemui">
+        <key-thread name="UIThread" owner="systemui" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="RenderThread" owner="systemui" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+
+    <!-- android.ui 浮窗拖动 为浮窗拖动ui线程设置ux,拖动完成后抬手,该场景结束 -->
+    <event id="5011" name="ANDROID_UI" maxWorkDurationMs="-1" source_caller="android">
+        <key-thread name="android.ui" owner="android" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="android_renderThread" owner="android" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+
+    <!-- ColorfulEngine 线程 begin -->
+    <event id="5012" name="COLORFULENGINE_UNIT_RUNNING" maxWorkDurationMs="2000" source_caller="system_app">
+        <key-thread name="GLGraffiti" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="VideoCodec" owner="self" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="GLPhoto" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="UIThread" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="MediaCodec_looper" owner="self" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- ColorfulEngine 线程 end -->
+
+    <!-- blurservice 线程 begin -->
+    <event id="5013" name="BLUR_UNIT_RUNNING" maxWorkDurationMs="5000" source_caller="system_app">
+        <key-thread name="Blur" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="Capture" owner="self" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- blurservice 线程 end -->
+
+    <!-- PS分屏动画线程 begin-->
+    <event id="5014" name="FLEXIBLE_ANIM_THREAD" maxWorkDurationMs="3000" source_caller="android">
+        <key-thread name="flexible_anim_thread" owner="android" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- PS分屏动画线程 end-->
+
+    <!-- Starting Window/Surface 相关线程 begin -->
+    <event id="5015" name="STARTING_SURFACE_LOAD_BITMAP" maxWorkDurationMs="300" source_caller="android">
+        <key-thread name=".startingwindow" owner="android" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- Starting Window/Surface 相关线程 end -->
+
+    <!-- 侧边栏面板启动应用 -->
+    <event id="5016" name="SMART_SIDEBAR_START_APP" maxWorkDurationMs="-1" source_caller="system_app">
+        <key-thread name="UIThread" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="RenderThread" owner="self" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- 侧边栏面板启动应用 -->
+
+    <!-- insets动画线程 begin-->
+    <event id="5017" name="INSETS_ANIMATION" maxWorkDurationMs="1500" source_caller="android">
+        <key-thread name="InsetsAnimation" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="main" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="UIThread" owner="self" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- insets动画线程 end-->
+
+    <!-- CameraApp 线程 begin -->
+    <event id="6001" name="SYSTEM_CAMERA_APP_RUNNING" maxWorkDurationMs="-1" source_caller="system_app">
+        <key-thread name="UIBoosterUx" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="CustomGLThread" owner="self" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="CameraHandlerThread" owner="self" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="TaskBusThread" owner="self" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="TemporaryThread" owner="self" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+    <!-- CameraApp 线程 end -->
+
+    <!-- CameraUnit 线程 begin -->
+    <event id="6002" name="CAMERA_UNIT_RUNNING" maxWorkDurationMs="-1" source_caller="system_app">
+        <key-thread name="PreviewImageThread" owner="self" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="ImageProcessThread" owner="self" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="PreviewProcessThread" owner="self" sched_policy="ux" priority="LISTPICK" />
+        <key-thread name="PreviewFrameThread" owner="self" sched_policy="ux" priority="LISTPICK" />
+        <key-thread name="CaptureImageThread" owner="self" sched_policy="ux" priority="ANIMATOR" />
+        <key-thread name="PictureMetaArriveThread" owner="self" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="ConfigInitThread" owner="self" sched_policy="ux" priority="LISTPICK" />
+        <key-thread name="UnitHandlerThread" owner="self" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="ApsUxThread" owner="self" sched_policy="ux" priority="ANIMATOR" />
+    </event>
+    <!-- CameraUnit 线程 end -->
+
+    <!-- GameOpt 线程 begin -->
+    <event id="7000" name="GAME_OPT" maxWorkDurationMs="-1" source_caller="gameopt">
+        <key-thread name="DynamicUxThread" owner="gameapp" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+    <!-- GameOpt 线程 end -->
+
+    <!-- 内置应用主题商店 线程 begin -->
+    <event id="8000" name="Themestore_LiveWallpaper_RUNNING" maxWorkDurationMs="-1" source_caller="system_app">
+        <key-thread name="ExoPlayer:Playback" owner="self" sched_policy="ux" priority="MEDIUM_HEAVY" />
+        <key-thread name="GLSurfaceViewThread" owner="self" sched_policy="ux" priority="MEDIUM_HEAVY" />
+    </event>
+    <!-- 内置应用 线程 end -->
+
+    <!-- 内置应用 截屏 begin -->
+    <event id="8010" name="SCREENSHOT_SERVICE_RUNNING" maxWorkDurationMs="1000" source_caller="system_app">
+        <key-thread name="ScreenshotThreads.WORKER" owner="self" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="ScreenshotThreads.FLUSH" owner="self" sched_policy="ux" priority="LIGHT" />
+        <key-thread name="ScreenshotThreads.FINISH" owner="self" sched_policy="ux" priority="LIGHT" />
+    </event>
+    <!-- 内置应用 截屏 线程 end -->
+
+    <!-- vipbinder 配置 begin -->
+    <!-- 按 binder node 控制策略来调整 VIP Binder 的作用范围，每个控制策略可绑定到 1 至多个 scene_event -->
+    <vip-token name="default" id="0">
+        <token interface="android.app.IActivityManager" type="all">
+            <!-- finishReceiver  -->
+            <code>24</code>
+            <!-- attachApplication  -->
+            <code>25</code>
+            <!-- serviceDoneExecuting  -->
+            <code>61</code>
+            <!-- setHasTopUi -->
+            <code>196</code>
+            <server-proc>system_server</server-proc>
+        </token>
+        <token interface="com.oplus.osense.IOsenseResManager" type="all">
+            <!-- requestSysResource java接口 -->
+            <code>16</code>
+            <!-- releaseSysResource java接口 -->
+            <code>17</code>
+            <!-- requestSysResource native接口 -->
+            <code>10011</code>
+            <!-- releaseSysResource native接口 -->
+            <code>10012</code>
+            <server-proc>system_server</server-proc>
+        </token>
+    </vip-token>
+
+    <!-- 桌面与负一屏滑动添加的vipbinder -->
+    <vip-token name="assisitscreen-slide-to-launcher" id="2">
+        <token interface="android.view.IWindowSession" type="all">
+            <!-- setWallpaperPosition -->
+            <code>18</code>
+            <!-- setWallpaperZoomOut -->
+            <code>19</code>
+            <server-proc>system_server</server-proc>
+        </token>
+        <token interface="android.gui.ITransactionComposerListener" type="all">
+            <!--  onTransactionCompleted -->
+            <code>1</code>
+            <server-proc>com.android.launcher</server-proc>
+            <client-proc>surfaceflinger</client-proc>
+        </token>
+    </vip-token>
+
+    <!-- 转屏动画添加的vipbinder -->
+    <vip-token name="transition-change" id="4">
+        <token interface="android.window.ITransitionPlayer" type="all">
+            <!-- onTransitionReady -->
+            <!-- requestStartTransition -->
+            <client-proc>system_server</client-proc>
+            <server-proc>com.android.systemui</server-proc>
+        </token>
+        <token interface="android.view.IWindowSession" type="all">
+            <!-- finishDrawing -->
+            <code>9</code>
+            <server-proc>system_server</server-proc>
+        </token>
+        <token interface="android.app.IApplicationThread" type="all">
+            <!-- scheduleTransaction -->
+            <code>55</code>
+            <client-proc>system_server</client-proc>
+        </token>
+    </vip-token>
+
+    <!-- 桌面窗口动画流程填加的vipbinder -->
+    <vip-token name="imms-focus-change" id="6">
+        <token interface="com.android.internal.view.IInputMethodManager" type="all">
+            <!-- startInputOrWindowGainedFocus -->
+            <code>9</code>
+            <server-proc>system_server</server-proc>
+            <client-proc>com.android.launcher</client-proc>
+        </token>
+    </vip-token>
+
+    <!-- 桌面启动应用 -->
+    <vip-token name="launcher-app-start" id="7">
+        <token interface="android.window.IRemoteTransition" type="all">
+            <!-- startAnimation-->
+            <code>1</code>
+            <client-proc>com.android.systemui</client-proc>
+            <server-proc>com.android.launcher</server-proc>
+        </token>
+    </vip-token>
+    <!-- vipbinder 配置 end -->
+
+    <!-- Small window delay cancellation UX-->
+    <defer-cancel>
+        <app name="com.ss.android.ugc.aweme" pre_activity="com.ss.android.ugc.aweme.detail.ui.DetailActivity|com.ss.android.ugc.aweme.live.LivePlayActivity" delay="2000" />
+        <app name="com.ss.android.ugc.aweme.lite" pre_activity="com.ss.android.ugc.aweme.detail.ui.DetailActivity|com.ss.android.ugc.aweme.live.LivePlayActivity" delay="2000" />
+        <app name="com.tencent.mm" pre_activity="com.tencent.mm.plugin.voip.ui.VideoActivity" delay="2000" />
+    </defer-cancel>
+
+    <!-- Collect background process -->
+    <collect-process>
+        <process packageName="com.android.launcher" />
+        <process packageName="com.android.systemui" />
+        <process packageName="com.oplus.camera" />
+        <process packageName="com.google.android.googlequicksearchbox" />
+        <process packageName="com.oplus.blur" />
+        <process packageName="com.android.phone" />
+        <process packageName="com.coloros.assistantscreen" />
+        <process packageName="com.oplus.gesture" />
+        <!-- <process packageName="com.heytap.colorfulengine" />
+        <process packageName="com.heytap.themestore" />
+        <process packageName="com.oplus.safecenter" />
+        <process packageName="com.oplus.screenshot" />
+        <process packageName="com.heytap.browser" /> -->
+    </collect-process>
+</config>

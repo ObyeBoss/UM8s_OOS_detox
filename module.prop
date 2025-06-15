@@ -1,7 +1,7 @@
 id=um8s_op13_detox
 name=UM8s OP13 OOS Detox
-version=0.91
-versionCode=0.91
+version=1.35
+versionCode=1.35
 author=UltraM8
 description=OP13 OOS battery, charging, gps, cellular & wifi, display optimizations.
 updateJson=

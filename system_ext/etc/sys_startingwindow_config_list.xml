@@ -1,5 +1,5 @@
 <filter-conf>
-    <version>20241223</version>
+    <version>20250329</version>
     <isOpen>1</isOpen>
     <filter-name>sys_startingwindow_config_list</filter-name>
     <quick_back_feature_open>true</quick_back_feature_open>
@@ -16,10 +16,15 @@
     <quick_back_hot_launch_white>com.hp.printercontrol</quick_back_hot_launch_white>
     <quick_back_hot_launch_white>com.kiloo.subwaysurf</quick_back_hot_launch_white>
     <quick_back_hot_launch_white>com.snaptube.premium</quick_back_hot_launch_white>
+    <quick_back_hot_launch_white>com.autonavi.minimap</quick_back_hot_launch_white>
+    <quick_back_hot_launch_white>com.opera.mini.native</quick_back_hot_launch_white>
+    <quick_back_hot_launch_white>com.jpl.jiomart</quick_back_hot_launch_white>
+    <quick_back_hot_launch_white>com.jio.myjio/.dashboard.activities.DashboardActivity</quick_back_hot_launch_white>
     <quick_back_hot_launch_black>com.zhihu.android/.app.ui.activity.QAHostActivity</quick_back_hot_launch_black>
     <quick_back_hot_launch_black>com.dragon.read/.ad.openingscreenad.OpeningScreenADActivity</quick_back_hot_launch_black>
     <quick_back_hot_launch_black>com.tencent.mm/.plugin.appbrand.launching.AppBrandLaunchProxyUI</quick_back_hot_launch_black>
-    <quick_back_hot_launch_white>com.autonavi.minimap</quick_back_hot_launch_white>
+    <quick_back_hot_launch_black>com.tencent.mm/.plugin.account.ui.WelcomeActivity</quick_back_hot_launch_black>
+    <quick_back_hot_launch_black>com.tencent.mm/.plugin.account.ui.LoginPasswordUI</quick_back_hot_launch_black>
     <quick_back_cold_launch_white>com.taobao.idlefish</quick_back_cold_launch_white>
     <quick_back_cold_launch_white>com.baidu.netdisk</quick_back_cold_launch_white>
     <a>com.coloros.gallery3d</a>
@@ -54,8 +59,6 @@
     <f>com.coloros.calculator/com.android.calculator2.activity.DispatcherActivity</f>
     <f>com.heytap.themestore/com.nearme.themespace.activities.SinglePagerCardActivity</f>
     <f>com.android.systemui/.people.widget.LaunchConversationActivity</f>
-    <f>com.heytap.market/com.oppo.cdo.ui.external.desktop.DeskHotAppActivity</f>
-    <f>com.heytap.market/com.oppo.cdo.ui.external.desktop.DeskHotGameActivity</f>
     <f>com.oplus.exsystemservice/.fantasywindow.ui.CompatibleDialogRecentTasksActivity</f>
     <f>com.google.android.apps.nbu.paisa.user/com.google.nbu.paisa.flutter.gpay.app.MainActivity</f>
     <f>com.android.settings/.search.SearchResultTrampoline</f>
@@ -102,11 +105,11 @@
     <f>com.android.stk/.OplusStkLauncherActivity3</f>
     <f>com.android.stk/.OplusStkLauncherActivity4</f>
     <f>com.tencent.mm/.plugin.appbrand.outerwidget.entry.WidgetEntryActivity</f>
+    <f>com.adakami.dana.kredit.pinjaman/com.idnadakredit.loan.activity.AMain</f>
     <f>com.oplus.eyeprotect/.ui.activity.FirstTileActivity</f>
     <f>com.mytnb.mytnb/crc6465538a373efdeac3.DashboardHomeActivity</f>
     <f>com.alibaba.android.rimet/.biz.fold.DefaultDualActivity</f>
     <f>com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity</f>
-    <f>com.google.android.googlequicksearchbox/com.google.android.apps.search.lens.LensActivity</f>
     <f>tv.danmaku.bili/.appwidget.WidgetTransparentActivity</f>
     <f>me.ele/.application.ui.Launcher.SchemeRouteActivity</f>
     <f>com.sankuai.meituan/.nearby.widget.WidgetRouterActivity</f>
@@ -122,12 +125,12 @@
     <f>com.tencent.qqlive/.open.QQLiveOpenActivity</f>
     <f>com.android.packageinstaller/.UninstallerActivity</f>
     <f>cn.TuHu.android/cn.TuHu.Activity.tuhutab.TuHuTabActivity</f>
-    <f>com.coloros.weather2/com.oplus.weather.main.view.miniapp.MiniMainActivity</f>
     <f>com.snda.wifilocating/com.lantern.tools.widget.common.TransitActivity</f>
-    <f>com.google.android.apps.youtube.kids/.splash.SplashScreenActivity</f>
     <f>com.anjuke.android.app/.mainmodule.WebStarterActivity</f>
-    <f>com.tencent.qqlive/.open.QQLiveOpenActivity</f>
-    <f>cn.TuHu.android/cn.TuHu.Activity.tuhutab.TuHuTabActivity</f>
+    <f>com.coloros.weather2/com.oplus.weather.main.view.miniapp.MiniMainActivity</f>
+    <f>tv.danmaku.bili/com.bilibili.digital.widget.intent.DigitalWidgetIntentDispatcherActivity</f>
+    <f>tv.danmaku.bili/com.bilibili.digital.widget.add.DigitalAddingAppWidgetActivity</f>
+    <f>com.tencent.mobileqq/.activity.JumpActivity</f>
     <g>com.oppo.camera</g>
     <g>com.heytap.quicksearchbox</g>
     <g>com.tudou.android</g>
@@ -154,6 +157,7 @@
     <h>com.skype.raider/com.skype4life.MainActivity</h>
     <h>com.android.settings/com.oplus.settings.privacy.ConfirmComplexPrivacy</h>
     <h>com.whatsapp/.Conversation</h>
+    <h>com.oplus.postmanservice/.plugin.runtime.PluginDefaultProxyActivity</h>
     <m>screenrecorder.recorder.editor</m>
     <i>cn.wps.moffice_eng</i>
     <i>com.ocrm.im</i>
@@ -430,6 +434,8 @@
     <k>com.coloros.backuprestore</k>
     <k>com.dianping.v1</k>
     <k>com.xingin.xhs</k>
+    <l>com.mventus.selfcare.activity</l>
+    <l>com.A17zuoye.mobile.homework</l>
     <o>com.tencent.tmgp.sgame/.SGameActivity</o>
     <o>com.mobile.legends/com.moba.unityplugin.MobaGameUnityActivity</o>
     <o>com.tencent.ig/com.epicgames.ue4.GameActivity</o>
@@ -776,6 +782,7 @@
     <w>com.mfkj.fkpt.nearme.gamecenter</w>
     <w>com.sinyee.babybus.recommendapp</w>
     <w>com.opertxb.wpssqmx.nearme.gamecenter</w>
+    <w>cn.wps.moffice_eng</w>
     <w>com.youloft.calendar</w>
     <w>com.fy.yqzzz.nearme.gamecenter</w>
     <w>com.tencent.qqpim</w>
@@ -1337,16 +1344,23 @@
     <w>com.iqiyi.i18n</w>
     <w>com.bilibili.app.in</w>
     <w>com.bstar.intl</w>
+    <w>com.able.wisdomtree</w>
+    <w>cn.wenyu.bodian</w>
+    <w>com.ss.android.yumme.video</w>
     <v>com.coloros.assistantscreen</v>
     <v>com.baidu.netdisk/.ui.Navigate</v>
     <v>com.baidu.netdisk/.ui.WapLauncherActivity</v>
     <w>com.netease.nim.avic</w>
     <w>com.netease.nim.avic.pre</w>
     <w>com.xifan.drama</w>
+    <w>com.cloudflare.onedotonedotonedotone</w>
     <v>com.xmcy.hykb</v>
+    <v>com.android.vending/.AssetBrowserActivity</v>
+    <v>com.pcy.sfdzz.nearme.gamecenter/org.cocos2dx.javascript.AppActivity</v>
     <v>com.opluskgd.onetaplocking/com.oplus.onetaplocking.OneTapLockingActivity</v>
     <v>com.coloros.onekeylockscreen/com.oplus.onekeylockscreen.OneKeyLockScreen</v>
     <v>tv.danmaku.bili/.appwidget.WidgetTransparentActivity</v>
+    <v>com.oplus.pantanal.ums/com.oplus.ums.common.wxjump.WXEntryActivity</v>
     <v>com.tencent.qqlive/.open.QQLiveOpenActivity</v>
     <v>com.coloros.gallery3d/com.oplus.gallery.widgetpage.ui.picturemanager.RecommendedManagerActivity</v>
     <v>com.coloros.gallery3d/com.oplus.gallery.widgetpage.ui.picturemanager.CustomPictureManagerActivity</v>
@@ -1429,6 +1443,8 @@
     <v>com.oplus.seedlingdemomode/.StartActivity</v>
     <v>com.oplus.ocar</v>
     <v>com.oplus.screenshot</v>
+    <v>com.oneplus.note/com.oplus.note.card.note.NoteSelectActivity</v>
+    <v>com.android.settings/.enterprise.ActionDisabledByAdminDialog</v>
     <v>com.android.mms/com.oplus.mms.shortcuts.ClearAppDataActivity</v>
     <v>com.android.settings/com.oplus.settings.privacy.ConfirmPatternPrivacy</v>
     <v>com.android.settings/com.oplus.settings.privacy.ConfirmComplexPrivacy</v>
@@ -1442,8 +1458,27 @@
     <v>com.coloros.scenemode/com.coloros.shortcut.SeedingRouterActivity</v>
     <v>com.netease.cloudmusic/.music.biz.appwidgets.view.AppwidgetPlayerRedirectActivity</v>
     <v>com.netease.cloudmusic/.activity.RedirectActivity</v>
+    <v>com.coloros.calendar/.app.event.eventcard.EventCardTrayActivity</v>
     <v>com.coloros.note/com.nearme.note.activity.richedit.ShareActivity</v>
     <v>com.oplus.beaconlink</v>
+    <v>com.heytap.market/com.oppo.cdo.ui.external.desktop.DeskHotAppActivity</v>
+    <v>com.heytap.market/com.oppo.cdo.ui.external.desktop.DeskHotGameActivity</v>
+    <v>com.tencent.mm/.plugin.appbrand.outerwidget.entry.WidgetEntryActivity</v>
+    <v>com.tencent.mm/.plugin.appbrand.ui.AppBrandLauncherFolderUI</v>
+    <v>com.gorgeous.lite/com.light.beauty.login.LoadingPageActivity</v>
+    <v>com.coloros.childrenspace/.ChildrenModeProxy</v>
+    <v>com.coloros.note/com.oplus.note.card.note.NoteSelectActivity</v>
+    <v>com.coloros.weather2/com.oplus.weather.quickcard.setting.WeatherCardSettingActivity</v>
+    <v>com.coloros.alarmclock/com.coloros.refusedesktop.DialClockSettingActivity</v>
+    <v>android/com.android.internal.app.ResolverActivity</v>
+    <v>com.android.stk/.OplusStkLauncherActivity1</v>
+    <v>com.android.stk/.OplusStkLauncherActivity2</v>
+    <v>com.android.stk/.OplusStkLauncherActivity3</v>
+    <v>com.android.stk/.OplusStkLauncherActivity4</v>
+    <v>com.campmobile.snowcamera/com.linecorp.b612.android.activity.ActivityCamera</v>
+    <v>com.campmobile.snowcamera/com.linecorp.b612.android.activity.scheme.SchemeActivity</v>
+    <v>com.android.server.telecom/.PrivilegedCallActivity</v>
+    <v>android/com.android.internal.app.SuspendedAppActivity</v>
     <z>com.baidu.input</z>
     <z>com.iflytek.inputmethod</z>
     <z>com.tencent.qqpinyin</z>
@@ -1458,21 +1493,40 @@
     <z>com.oplus.screenshot</z>
     <aa>com.tencent.mm</aa>
     <aa>com.UCMobile</aa>
-    <ab>com.tencent.tmgp.sgame</ab>
     <ab>com.eg.android.AlipayGphone</ab>
     <ab>cn.com.chsi.chsiapp</ab>
-    <ac>com.smile.gifmaker</ac>
+    <ab>com.coloros.operationManual</ab>
+    <ad>com.cleartrip.android/.common.activities.CleartripHomeActivity</ad>
     <ae>com.tencent.mm/.plugin.recordvideo.activity.MMRecordUI</ae>
+    <ae>com.snapchat.android/.LandingPageActivity</ae>
     <af>com.tencent.tmgp.sgame</af>
+    <liteos_af>com.ubercab</liteos_af>
+    <liteos_af>in.startv.hotstar</liteos_af>
+    <liteos_af>com.google.android.apps.youtube.music</liteos_af>
     <af>com.coloros.compass2</af>
     <al>com.android.settings/com.oplus.settings.feature.homepage.OplusSettingsHomepageActivity</al>
     <al>com.android.settings/.Settings</al>
+    <aj>com.nearme.gamecenter.ddz.nearme.gamecenter</aj>
     <liteos_v>com.huaxiaozhu.rider</liteos_v>
+    <liteos_v>com.speed.ditnarg</liteos_v>
+    <liteos_v>com.phoenix.read/com.dragon.read.component.biz.impl.mine.LoginActivity</liteos_v>
+    <liteos_w>com.ss.android.article.daziban</liteos_w>
+    <liteos_ab>com.google.android.videos</liteos_ab>
+    <liteos_ab>com.tencent.transfer</liteos_ab>
     <liteos_ad>com.baidu.homework/.activity.index.IndexActivity</liteos_ad>
     <liteos_ad>com.google.ar.lens/com.google.vr.apps.ornament.app.lens.LensLauncherActivity</liteos_ad>
+    <liteos_ad>com.block.juggle/org.cocos2dx.javascript.AppActivity</liteos_ad>
+    <liteos_ad>com.agoda.mobile.consumer/.screens.universallogin.UniversalLoginActivity</liteos_ad>
+    <liteos_ad>in.amazon.mShop.android.shopping/com.amazon.mShop.navigation.MainActivity</liteos_ad>
+    <liteos_ad>com.billiards.city.pool.nation.club/org.cocos2dx.cpp.AppActivity</liteos_ad>
+    <liteos_ae>com.gojek.gopay/.MainActivity</liteos_ae>
+    <liteos_ae>com.katanlabs.sandballsclassic/com.unity3d.player.UnityPlayerActivity</liteos_ae>
+    <liteos_ae>com.Jacky.ClassicCarParking/com.unity3d.player.UnityPlayerActivity</liteos_ae>
     <liteos_ae>com.google.android.apps.maps</liteos_ae>
+    <liteos_ae>com.sina.weibo/.wboxsdk.page.acts.WBXPageActivity</liteos_ae>
     <liteos_ae>com.xxwolo.cc5</liteos_ae>
     <liteos_ae>com.com.fullmetalgamedev.animalraceflyingzoo</liteos_ae>
+    <liteos_ae>com.zerodha.kite3/.MainActivity</liteos_ae>
     <liteos_ae>com.google.android.youtube</liteos_ae>
     <liteos_ae>app.revanced.android.youtube</liteos_ae>
     <liteos_ae>com.ss.android.article.video</liteos_ae>
@@ -1482,18 +1536,51 @@
     <liteos_ae>com.baidu.BaiduMap</liteos_ae>
     <liteos_ae>com.ss.android.ugc.aweme.lite</liteos_ae>
     <liteos_ae>com.qiyi.video</liteos_ae>
+    <liteos_ae>com.autonavi.minimap</liteos_ae>
+    <liteos_ae>com.mxtech.videoplayer.ad/.ActivityScreen</liteos_ae>
     <liteos_ae>com.ss.android.ugc.live</liteos_ae>
     <liteos_ae>com.fullmetalgamedev.fruitshooting</liteos_ae>
     <liteos_ae>com.qq.reader</liteos_ae>
+    <liteos_ae>com.okcam.ookcam</liteos_ae>
     <liteos_ae>com.haier.uhome.uplus</liteos_ae>
+    <liteos_ae>com.tencent.qqlive</liteos_ae>
+    <liteos_ae>com.ss.android.ugc.aweme</liteos_ae>
+    <liteos_ae>com.JindoBlu.OfflineGames</liteos_ae>
+    <liteos_ae>com.phoenix.read/com.dragon.read.component.biz.impl.mine.LoginActivity</liteos_ae>
+    <liteos_ae>com.immomo.momo/com.immomo.molive.gui.activities.live.base.LiveActivity</liteos_ae>
+    <liteos_ae>tv.danmaku.bili/com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3</liteos_ae>
+    <liteos_ae>com.mxtech.videoplayer.ad/.ActivityScreen</liteos_ae>
+    <liteos_ae>com.waze</liteos_ae>
+    <liteos_ae>ru.yandex.yandexmaps</liteos_ae>
+    <liteos_ae>com.kuaishou.nebula/com.yxcorp.gifshow.HomeActivity</liteos_ae>
     <liteos_ag>com.tencent.tmgp.pubgmhd</liteos_ag>
+    <liteos_ag>com.nearme.gamecenter.ddz.nearme.gamecenter</liteos_ag>
     <liteos_ag>com.dz.bjmo.nearme.gamecenter</liteos_ag>
+    <liteos_ag>com.ss.android.ugc.aweme</liteos_ag>
     <liteos_ah>com.jingdong.app.mall</liteos_ah>
     <liteos_ah>com.eg.android.AlipayGphone</liteos_ah>
     <liteos_ah>com.agoda.mobile.consumer</liteos_ah>
     <liteos_ai>com.jd.game.mxppx.nearme.gamecenter</liteos_ai>
     <liteos_ai>com.sunboxsoft.charge.institute</liteos_ai>
+    <liteos_ai>com.google.android.apps.classroom</liteos_ai>
+    <liteos_ai>com.qiyi.video</liteos_ai>
     <liteos_ai>com.bee.rain</liteos_ai>
+    <liteos_ai>com.autonavi.minimap</liteos_ai>
+    <liteos_ai>com.sina.weibo</liteos_ai>
+    <liteos_ai>com.videogo</liteos_ai>
+    <liteos_ai>com.heytap.music</liteos_ai>
+    <liteos_ai>com.tencent.mobileqq</liteos_ai>
+    <liteos_ai>com.outfit7.mytalkingangela2</liteos_ai>
+    <liteos_ai>com.roblox.client</liteos_ai>
+    <liteos_ai>com.ss.android.article.daziban</liteos_ai>
+    <liteos_ai>com.UCMobile</liteos_ai>
+    <liteos_ai>com.tencent.tmgp.cod</liteos_ai>
+    <liteos_ai>com.billiards.city.pool.nation.club</liteos_ai>
+    <liteos_ai>com.xs.fm</liteos_ai>
+    <liteos_ai>com.tencent.weread</liteos_ai>
+    <liteos_ai>com.seewo.en</liteos_ai>
+    <liteos_ai>com.google.android.youtube</liteos_ai>
+    <liteos_ai>com.baidu.searchbox</liteos_ai>
     <liteos_ak>com.xckj.jymnbh.nearme.gamecenter</liteos_ak>
     <liteos_ak>com.tencent.tmgp.gnyx</liteos_ak>
     <liteos_ak>com.hortor.juliancysj</liteos_ak>

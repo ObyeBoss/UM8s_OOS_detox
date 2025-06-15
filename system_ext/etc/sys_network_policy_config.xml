@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<networkpolicyromupdate>
+    <version>2025031123</version>
+    <isOpen>1</isOpen>
+    <ALLOWED_NETWORK_WHILE_BACKGROUND_ENABLED>true</ALLOWED_NETWORK_WHILE_BACKGROUND_ENABLED>
+    <ALLOWED_NETWORK_WHILE_BACKGROUND_APPS>com.microsoft.emmx,com.google.android.apps.maps,com.google.android.apps.dynamite,com.coulombtech,com.samsung.android.app.watchmanager,
+                                        com.google.android.marvin.talkback,com.android.email,com.hp.android.printservice,com.google.android.talk,com.android.email,
+                                        com.google.android.marvin.talkback,com.samsung.android.app.watchmanager</ALLOWED_NETWORK_WHILE_BACKGROUND_APPS>
+</networkpolicyromupdate>

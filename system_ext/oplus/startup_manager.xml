@@ -990,7 +990,7 @@ com.huawei.android.pushselfshow.permission.RequestPermissionsActivity
 <restartServiceWhite>com.market.heydemo</restartServiceWhite>
 <restartServiceWhite>com.oplus.postmanservice</restartServiceWhite>
 <restartServiceWhite>com.oplus.engineercamera</restartServiceWhite>
-<restartServiceWhite>com.oplus.healthservice</restartServiceWhite>
+<!-- <restartServiceWhite>com.oplus.healthservice</restartServiceWhite> -->
 
 <sp pkg="com.coloros.oppopods" mask="0010"/>
 <sp pkg="com.oplus.melody" mask="0010"/>

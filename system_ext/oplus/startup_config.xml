@@ -32,8 +32,8 @@
     <shortDelay>com.ted.number</shortDelay>
 
     <!-- boot sys short delay -->
-    <!-- <sysShortDelay>com.heytap.cloud</sysShortDelay>
-    <sysShortDelay>com.heytap.browser</sysShortDelay> -->
+    <sysShortDelay>com.heytap.cloud</sysShortDelay>
+    <!-- <sysShortDelay>com.heytap.browser</sysShortDelay> -->
     <sysShortDelay>com.nearme.instant.platform</sysShortDelay>
     <sysShortDelay>com.heytap.themestore</sysShortDelay>
     <sysShortDelay>com.heytap.market</sysShortDelay>

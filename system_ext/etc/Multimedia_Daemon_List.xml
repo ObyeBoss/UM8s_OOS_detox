@@ -1970,6 +1970,7 @@
         <name>com.coloros.video</name>
         <attribute>null</attribute>
     </HQV-support-app>
+
     <encoder-pre-process>
         <name>com.tencent.mm/.mj_template.album_template.single_template.MaasAlbumTemplatePreviewUI</name>
         <attribute>type=avc+hevc,limitWidth=1280,limitHeight=720</attribute>
@@ -3320,34 +3321,34 @@
         <name>com.google.android.googlequicksearchbox</name>
         <attribute>null</attribute>
 
-        <name>com.qihoo.browser</name>
+        <name>com.opera.browser.beta</name>
         <attribute>null</attribute>
 
-        <name>com.sing.client</name>
+        <name>com.opera.browser</name>
         <attribute>null</attribute>
 
-        <name>com.tencent.mm</name>
+        <name>com.chrome.dev</name>
         <attribute>null</attribute>
 
-        <name>com.baidu.netdisk</name>
+        <name>com.chrome.beta</name>
         <attribute>null</attribute>
 
-        <name>com.dragon.read</name>
+        <name>com.chrome.canary</name>
         <attribute>null</attribute>
 
-        <name>com.fanjiao</name>
+        <name>org.mozilla.klar</name>
         <attribute>null</attribute>
 
-        <name>com.xs.fm</name>
+        <name>org.mozilla.firefox</name>
         <attribute>null</attribute>
 
-        <name>com.qq.reader</name>
+        <name>com.microsoft.emmx</name>
         <attribute>null</attribute>
 
-        <name>com.kuaishou.kgx.novel</name>
+        <name>org.torproject.torbrowser</name>
         <attribute>null</attribute>
 
-        <name>com.ximalaya.ting.lite</name>
+        <name>com.duckduckgo.mobile.android</name>
         <attribute>null</attribute>
 
         <name>com.phoenix.read</name>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wifi_qoe_romupdate>
+    <version>20250225</version>
+
+    <!-- Feature Define -->
+    <features>0F137FFF</features>
+
+    <test_mode>false</test_mode>
+
+    <toast_notify>false</toast_notify>
+
+    <rssi_polling_intervals>2000,3000,1000</rssi_polling_intervals>
+
+    <rssi_forecast_horizon_seconds>3</rssi_forecast_horizon_seconds>
+
+    <predictor_qos_acc_enabled>true</predictor_qos_acc_enabled>
+
+    <!-- Activity and APP List Define -->
+    <activity_lists>
+        <activity_list type="low_latency" pps_threshold="60" subtype="live_video">
+            <!-- dou yin -->
+            com.ss.android.ugc.aweme.detail.ui.DetailActivity,
+            com.ss.android.ugc.aweme.live.LivePlayActivity,
+            com.ss.android.ugc.aweme.live.LivePlayActivityV2,
+            <!-- kuai shou LIVE VIDEO -->
+            com.kuaishou.live.core.basic.activity.LiveSlideActivity,
+            <!-- xi gua LIVE VIDEO-->
+            com.ixigua.openliveplugin.live.LivePlayerActivity,
+            <!-- bilibili LIVE VIDEO-->
+            com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3,
+            <!-- hu ya LIVE VIDEO -->
+            com.duowan.kiwi.liveroom.ChannelPage,
+            <!-- dou yu -->
+            tv.douyu.view.activity.PlayerActivity,
+            <!-- jd LIVE VIDEO -->
+            com.jd.lib.mylive.view.activity.VideoLiveRoomActivity,
+            <!-- toutiao LIVE VIDEO -->
+            com.bytedance.android.openlive.plugin.LivePlayerActivity,
+            <!-- taobao LIVE VIDEO -->
+            com.taobao.live.TaoLiveVideoActivity
+        </activity_list>
+        <activity_list type="low_latency" pps_threshold="70" subtype="video_call">
+            <!-- WeChat VideoCall -->
+            com.tencent.mm.plugin.voip.ui.VideoActivity,
+            <!--com.tencent.mm.plugin.flutter.ui.CachedFlutterActivity,-->
+            <!--com.tencent.mm.plugin.multitalk.ui.MultiTalkMainUI,-->
+            <!-- QQ VideoCall -->
+            <!--com.tencent.av.ui.VChatActivity,-->
+            <!--com.tencent.av.ui.VideoInviteActivity,-->
+            <!--com.tencent.av.ui.VideoInviteFull,-->
+            <!--com.tencent.av.ui.MultiIncomingCallsActivity,-->
+            <!-- whatsapp VideoCall -->
+            com.whatsapp.voipcalling.VoipActivityV2
+        </activity_list>
+        <activity_list type="low_latency" pps_threshold="70" subtype="meeting">
+            <!-- tencent meeting -->
+            <!--com.tencent.wemeet.sdk.meeting.inmeeting.InMeetingActivity,-->
+            <!-- fei shu meeting -->
+            <!--com.ss.android.vc.meeting.module.multi.ByteRTCMeetingActivityInstance,-->
+            <!-- zooms meeting -->
+            <!--com.zipow.videobox.conference.ui.ZmConfActivity,-->
+            <!-- ding ding -->
+            <!--com.alibaba.android.teleconf.mozi.activity.TeleVideoConfActivity,-->
+            <!-- teams -->
+            <!--com.microsoft.skype.teams.views.activities.InCallActivity-->
+        </activity_list>
+        <activity_list type="rtt_demand" bad="1000" switch="1000" timeout="500000" unit="ms">
+            <!-- Add for RTT Scorer -->
+            <!-- dou yin live-->
+            <!-- timeout set large number to make it unreachable-->
+            com.ss.android.ugc.aweme.live.LivePlayActivity,
+            com.ss.android.ugc.aweme.live.LivePlayActivityV2,
+        </activity_list>
+    </activity_lists>
+
+    <app_lists usage='app_type'>
+        <app_list type="latency_non_sensitive">com.oplus.wirelesssettings,com.android.settings,com.android.systemui,
+            com.android.launcher,com.oplus.logkit,com.heytap.ocsp.client,com.android.phone,com.oplus.linker,com.heytap.mydevices,
+            com.android.printspooler,com.oplus.wallpapers,com.oplus.notificationmanager,com.oplus.securitypermission,
+            com.oplus.sos,com.coloros.digitalwellbeing,com.oplus.battery,com.coloros.filemanager,com.coloros.calculator,
+            andes.oplus.documentsreader,com.coloros.compass2,com.coloros.soundrecorder,com.oplus.consumerIRApp,
+            com.coloros.alarmclock,com.coloros.weather2</app_list>
+        <app_list type="game">com.tencent.tmgp.sgame,com.tencent.tmgp.pubgmhd,com.tencent.lolm,com.ludo.king,
+            com.dts.freefiremax,com.king.candycrushsaga,com.dream11.fantasy.cricket.football.kabaddi,com.pubg.imobile,
+            com.katanlabs.bridgerunio,com.miniclip.carrom,com.mobile.legends,
+            com.tencent.jkchess,com.tencent.tmgp.dnf,com.tencent.tmgp.cf,com.netease.party</app_list>
+        <app_list type="video_audio_call">com.tencent.mm,com.tencent.mobileqq,com.whatsapp.w4b,org.telegram.messenger,org.thunderdog.challegram</app_list>
+        <app_list type="meeting">com.alibaba.android.rimet,com.tencent.wemeet.app,com.microsoft.teams,com.gnet.onemeeting,
+            us.zoom.videomeetings,com.teamtalk.im</app_list>
+        <app_list type="short_living_video">com.ss.android.ugc.aweme,com.ss.android.ugc.aweme.lite,com.ss.android.ugc.live,
+            com.duowan.kiwi, com.kuaishou.nebula,com.smile.gifmaker,tv.danmaku.bili,com.ss.android.article.video,
+            air.tv.douyu.android,in.mohalla.video,com.ss.android.ugc.trill</app_list>
+    </app_lists>
+
+    <app_lists usage="app_qoe">
+        <app_list type="app_qoe_white_list">
+            com.heytap.browser,com.ss.android.article.news,com.whatsapp.w4b,org.telegram.messenger,org.thunderdog.challegram,
+            com.android.chrome,com.opera.browser.beta,com.opera.browser,com.chrome.dev,com.chrome.beta,com.chrome.canary,org.mozilla.klar,
+            org.mozilla.firefox,com.microsoft.emmx,org.torproject.torbrowser,com.duckduckgo.mobile.android,us.zoom.videomeetings,
+            com.google.android.googlequicksearchbox
+        </app_list>
+    </app_lists>
+
+    <app_lists usage="rtt_demand">
+        <!-- Add for RTT Scorer -->
+    </app_lists>
+
+    <app_lists usage="app_scorer">
+        <!-- Add for OlkScorer -->
+        <app_list type="olk" better_rssi_delta="10">
+            com.ss.android.ugc.aweme, com.alibaba.android.rimet, com.tencent.wemeet.app,
+            com.tencent.mobileqq, com.taobao.taobao</app_list>
+        <!-- Add for Media Event - VideoScorer -->
+        <app_list type="mediaEvent" better_rssi_delta="10">com.tencent.mm</app_list>
+        <!-- Add for GameLatency - GameQoeScorer -->
+        <app_list type="gameLatency">com.tencent.tmgp.sgame,com.tencent.lolm</app_list>
+    </app_lists>
+
+    <auto_connection_opt>
+        <!-- SignalMap Define -->
+        <home_entering_scan_interval unit="ms">20000</home_entering_scan_interval>
+        <home_entering_connection_delay_max_count>3</home_entering_connection_delay_max_count>
+        <auto_connection_opt_ignored_app_list>com.oplus.wirelesssettings</auto_connection_opt_ignored_app_list>
+        <auto_connection_opt_min_throughput_score>15</auto_connection_opt_min_throughput_score>
+        <auto_connection_opt_selection_delay_time>10</auto_connection_opt_selection_delay_time>
+    </auto_connection_opt>
+
+    <user_backoff>
+        <user_backoff_delta_rssi>5</user_backoff_delta_rssi>
+        <user_backoff_thresholds>0,-20,-40</user_backoff_thresholds>
+        <user_backoff_continue_low_qos_count>0,1,2,3</user_backoff_continue_low_qos_count>
+        <user_backoff_threshold_delta>1,3</user_backoff_threshold_delta>
+    </user_backoff>
+
+    <!-- Threshold Define -->
+    <threshold_list>
+        <threshold id="0" base_id="0">
+            <rssi band="2">-82,-78,-72,-65</rssi>
+            <rssi band="5">-80,-76,-72,-65</rssi>
+            <rssi band="6">-80,-76,-72,-65</rssi>
+            <lowplatrssi band="2">-79,-75,-69,-62</lowplatrssi>
+            <lowplatrssi band="5">-77,-73,-69,-62</lowplatrssi>
+            <lowplatrssi band="6">-77,-73,-69,-62</lowplatrssi>
+            <linkspeed unit="mbps" standard="legacy">8,15,24,36</linkspeed>
+            <linkspeed unit="mbps" standard="11n">8,15,24,36</linkspeed>
+            <linkspeed unit="mbps" standard="11ac">8,15,24,36</linkspeed>
+            <linkspeed unit="mbps" standard="11ax">9,18,35,70</linkspeed>
+            <linkspeed unit="mbps" standard="11be">10,26,35,70</linkspeed>
+            <txper unit="percent">90,75,65,20</txper>
+            <cca unit="percent">195,170,115,70</cca>
+
+            <L2TxLostRate unit="percent">80,70,55,40</L2TxLostRate>
+            <L2TxRetryRate unit="percent">90,75,60,50</L2TxRetryRate>
+            <L2TxPps unit="pps">10,50,200</L2TxPps>
+            <L2RxPps unit="pps">10,50,200</L2RxPps>
+
+            <L2QosPoorLevelCount>3,2,2,1,1</L2QosPoorLevelCount>
+            <L2TrafficInsufficientCount>5,3,2,2,1</L2TrafficInsufficientCount>
+            <L2DataStallCount>5,3,2,2,1</L2DataStallCount>
+            <L2TxLostBadCount>5,3,2,2,1</L2TxLostBadCount>
+            <L2CcaBadCount>5,3,2,2,1</L2CcaBadCount>
+            <L2PpsLowCount>5,4,2,1,1</L2PpsLowCount>
+
+            <L3Rtt unit="ms">2000,400,200,100</L3Rtt>
+            <L3TxLostRate unit="percent">80,65,50,30</L3TxLostRate>
+            <L3TxRetryRate unit="percent">85,70,55,40</L3TxRetryRate>
+            <L3TxTput unit="KBps">10,100</L3TxTput>
+            <L3RxTput unit="KBps">10,100</L3RxTput>
+
+            <L4GameLatency unit="ms">110,190,300,3000,2000</L4GameLatency>
+
+            <http_probe_thresholds>10000,3000,5,200,1</http_probe_thresholds>
+            <lan_probe_thresholds>2000,200,3,60,3</lan_probe_thresholds>
+
+            <!-- rssiDelta, dayDelta -->
+            <history_score_info>1,5</history_score_info>
+
+            <app_qoe_bad_continue_count>1,1,1,1</app_qoe_bad_continue_count>
+
+            <qos_level_map>
+                <!-- [rssi, txPer, linkSpeed -> qosLevel] -->
+                111,1,112,1,113,1,114,1,115,1,121,1,122,1,123,1,124,1,125,1,131,1,132,1,
+                133,1,134,1,135,2,141,2,142,2,143,2,144,3,145,3,151,2,152,3,153,3,154,3,155,3,
+                211,1,212,1,213,2,214,2,215,2,221,1,222,1,223,2,224,2,225,2,231,2,232,3,
+                233,3,234,3,235,3,241,3,242,3,243,3,244,4,245,4,251,3,252,3,253,3,254,4,255,4,
+                311,1,312,2,313,2,314,2,315,2,321,2,322,2,323,2,324,2,325,2,331,3,332,3,
+                333,3,334,3,335,3,341,3,342,3,343,3,344,4,345,4,351,3,352,3,353,3,354,4,355,5,
+                411,1,412,2,413,2,414,2,415,2,421,2,422,2,423,3,424,3,425,3,431,3,432,3,
+                433,4,434,4,435,4,441,3,442,3,443,4,444,5,445,5,451,3,452,3,453,4,454,5,455,5,
+                511,2,512,3,513,3,514,3,515,3,521,3,522,3,523,3,524,4,525,4,531,4,532,4,
+                533,5,534,5,535,5,541,4,542,4,543,5,544,5,545,5,551,4,552,4,553,5,554,5,555,5
+            </qos_level_map>
+        </threshold>
+
+        <threshold id="1" base_id="0">
+            <rssi band="2">-80,-76,-72,-65</rssi>
+            <rssi band="5">-80,-75,-72,-65</rssi>
+            <rssi band="6">-80,-75,-72,-65</rssi>
+            <lowplatrssi band="2">-77,-73,-69,-62</lowplatrssi>
+            <lowplatrssi band="5">-77,-72,-69,-65</lowplatrssi>
+            <lowplatrssi band="6">-77,-72,-69,-65</lowplatrssi>
+            <txper unit="percent">85,75,65,20</txper>
+            <L3Rtt unit="ms">370,190,110,60</L3Rtt>
+            <qos_level_map>
+                <!-- [rssi, txPer, linkSpeed -> qosLevel] -->
+                111,1,112,1,113,1,114,1,115,1,121,1,122,1,123,1,124,1,125,1,131,1,132,1,
+                133,1,134,1,135,2,141,2,142,2,143,2,144,3,145,3,151,2,152,3,153,3,154,3,155,3,
+                211,1,212,1,213,2,214,2,215,2,221,1,222,1,223,2,224,2,225,2,231,2,232,3,
+                233,3,234,3,235,3,241,3,242,3,243,3,244,4,245,4,251,3,252,3,253,3,254,4,255,4,
+                311,1,312,2,313,2,314,2,315,2,321,2,322,2,323,2,324,2,325,2,331,3,332,3,
+                333,3,334,3,335,3,341,3,342,3,343,3,344,4,345,4,351,3,352,3,353,3,354,4,355,5,
+                411,1,412,2,413,2,414,2,415,2,421,2,422,2,423,3,424,3,425,3,431,3,432,3,
+                433,4,434,4,435,4,441,3,442,3,443,4,444,5,445,5,451,3,452,3,453,4,454,5,455,5,
+                511,2,512,2,513,2,514,3,515,3,521,3,522,3,523,3,524,4,525,4,531,4,532,4,
+                533,5,534,5,535,5,541,4,542,4,543,5,544,5,545,5,551,4,552,4,553,5,554,5,555,5
+            </qos_level_map>
+        </threshold>
+
+        <threshold id="2" base_id="0">
+            <rssi band="2">-80,-76,-72,-65</rssi>
+            <rssi band="5">-80,-75,-70,-65</rssi>
+            <rssi band="6">-80,-75,-70,-65</rssi>
+            <lowplatrssi band="2">-77,-73,-69,-62</lowplatrssi>
+            <lowplatrssi band="5">-77,-72,-67,-62</lowplatrssi>
+            <lowplatrssi band="6">-77,-72,-67,-62</lowplatrssi>
+            <txper unit="percent">85,75,65,20</txper>
+            <qos_level_map>
+                <!-- [rssi, txPer, linkSpeed -> qosLevel] -->
+                111,1,112,1,113,1,114,1,115,1,121,1,122,1,123,1,124,1,125,1,131,1,132,1,
+                133,1,134,1,135,2,141,1,142,1,143,2,144,3,145,3,151,2,152,3,153,3,154,3,155,3,
+                211,1,212,1,213,2,214,2,215,2,221,1,222,1,223,2,224,2,225,2,231,2,232,3,
+                233,3,234,3,235,3,241,3,242,3,243,3,244,4,245,4,251,3,252,3,253,3,254,4,255,4,
+                311,1,312,2,313,2,314,2,315,2,321,2,322,2,323,2,324,2,325,2,331,3,332,3,
+                333,3,334,3,335,3,341,3,342,3,343,3,344,4,345,4,351,3,352,3,353,3,354,4,355,5,
+                411,1,412,2,413,2,414,2,415,2,421,2,422,2,423,3,424,3,425,3,431,3,432,3,
+                433,4,434,4,435,4,441,3,442,3,443,4,444,5,445,5,451,3,452,3,453,4,454,5,455,5,
+                511,2,512,2,513,2,514,2,515,3,521,2,522,3,523,3,524,4,525,4,531,4,532,4,
+                533,5,534,5,535,5,541,4,542,4,543,5,544,5,545,5,551,4,552,4,553,5,554,5,555,5
+            </qos_level_map>
+        </threshold>
+
+        <threshold id="3" base_id="2">
+            <L2TxLostRate unit="percent">85,75,60,50</L2TxLostRate>
+            <L2TxRetryRate unit="percent">85,75,60,50</L2TxRetryRate>
+            <L2QosPoorLevelCount>3,2,2,1,1</L2QosPoorLevelCount>
+            <L2TrafficInsufficientCount>4,3,2,1,1</L2TrafficInsufficientCount>
+            <L2DataStallCount>4,3,2,1,1</L2DataStallCount>
+            <L2TxLostBadCount>4,3,2,1,1</L2TxLostBadCount>
+            <L2CcaBadCount>4,3,2,1,1</L2CcaBadCount>
+            <L2PpsLowCount>5,4,3,1,1</L2PpsLowCount>
+            <L3Rtt unit="ms">370,190,110,60</L3Rtt>
+        </threshold>
+
+        <threshold id="4" base_id="3">
+            <L2QosPoorLevelCount>1,1,1,1,1</L2QosPoorLevelCount>
+        </threshold>
+
+        <!-- Add for latency_non_sensitive app type -->
+        <threshold id="5" base_id="0">
+            <rssi band="2">-80,-76,-72,-67</rssi>
+            <rssi band="5">-80,-75,-72,-67</rssi>
+            <rssi band="6">-80,-75,-72,-67</rssi>
+            <lowplatrssi band="2">-77,-73,-69,-64</lowplatrssi>
+            <lowplatrssi band="5">-77,-72,-69,-65</lowplatrssi>
+            <lowplatrssi band="6">-77,-72,-69,-65</lowplatrssi>
+            <txper unit="percent">85,75,65,20</txper>
+            <L3Rtt unit="ms">370,190,110,60</L3Rtt>
+            <qos_level_map>
+                <!-- [rssi, txPer, linkSpeed -> qosLevel] -->
+                111,1,112,1,113,1,114,1,115,1,121,1,122,1,123,1,124,1,125,1,131,1,132,1,
+                133,1,134,1,135,2,141,2,142,2,143,2,144,3,145,3,151,2,152,3,153,3,154,3,155,3,
+                211,1,212,1,213,2,214,2,215,2,221,1,222,1,223,2,224,2,225,2,231,2,232,3,
+                233,3,234,3,235,3,241,3,242,3,243,3,244,4,245,4,251,3,252,3,253,3,254,4,255,4,
+                311,1,312,2,313,2,314,2,315,2,321,2,322,2,323,2,324,3,325,3,331,3,332,3,
+                333,3,334,3,335,3,341,3,342,3,343,3,344,4,345,4,351,3,352,3,353,3,354,4,355,5,
+                411,1,412,2,413,3,414,2,415,3,421,3,422,3,423,3,424,3,425,3,431,3,432,3,
+                433,4,434,4,435,4,441,3,442,3,443,4,444,5,445,5,451,3,452,3,453,4,454,5,455,5,
+                511,3,512,3,513,3,514,3,515,3,521,3,522,3,523,3,524,4,525,4,531,4,532,4,
+                533,5,534,5,535,5,541,4,542,4,543,5,544,5,545,5,551,4,552,4,553,5,554,5,555,5
+            </qos_level_map>
+        </threshold>
+    </threshold_list>
+
+    <!-- Policy Define -->
+    <policy_list>
+        <!--
+        <policy>priority,app_type,series,fence,band,scene,motion,ap_type,threshold_id</policy>
+        priority: [0-999], larger value means higher priority.
+        app_type: "default" and types from <app_lists usage='type'> tag
+        series: "default", "low", "medium", "high"
+        fence: "default", "fence", "home", "office"
+        band:  "default", "2_4G", "5G", "6G"
+        scene: "default", "game", "video_call", "audio_call", "meeting", "video"
+        motion: "default", "walk", "run", "elevator", "still"
+        ap_type: "default", "single_band", "dual_band", "ess"
+        threshold_id: id for <threshold> tag
+        -->
+        <policy>400,video_audio_call,default,default,default,video_call,default,default,3</policy>
+        <policy>401,video_audio_call,default,default,default,audio_call,default,default,3</policy>
+        <policy>302,game,high,default,2_4G,game,default,default,4</policy>
+        <policy>301,game,medium,default,2_4G,game,default,default,4</policy>
+        <policy>300,game,default,default,default,game,default,default,3</policy>
+        <policy>200,meeting,default,default,default,default,default,default,2</policy>
+        <policy>100,short_living_video,default,default,default,default,default,default,1</policy>
+        <policy>20,latency_non_sensitive,default,default,default,default,default,default,5</policy>
+        <policy>0,default,default,default,default,default,default,default,0</policy>
+    </policy_list>
+
+</wifi_qoe_romupdate>

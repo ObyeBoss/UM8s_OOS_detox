@@ -432,16 +432,16 @@
     <a>com.chinamworld.bocmbci</a>
     <a>com.meta.box</a>
     <a>com.chinamworld.main</a>
-    <a>com.icbc</a>
-    <a>cmb.pb</a>
-    <a>com.cmri.universalapp</a>
-    <a>com.kwai.videoeditor</a>
-    <a>com.lemon.lv</a>
-    <a>com.baidu.netdisk</a>
-    <a>com.kuaishou.nebula</a>
-    <a>com.gotokeep.keep</a>
-    <a>com.tencent.android.qqdownloader</a>
-    <a>com.dragon.read</a>
+    <a>com.opera.browser.beta</a>
+    <a>com.opera.browser</a>
+    <a>com.chrome.dev</a>
+    <a>com.chrome.beta</a>
+    <a>com.chrome.canary</a>
+    <a>org.mozilla.klar</a>
+    <a>org.mozilla.firefox</a>
+    <a>com.microsoft.emmx</a>
+    <a>org.torproject.torbrowser</a>
+    <a>com.duckduckgo.mobile.android</a>
     <a>com.greenpoint.android.mc10086.activity</a>
     <a>com.ct.client</a>
     <a>com.heytap.browser</a>
@@ -875,17 +875,16 @@
     <c>com.chinamworld.bocmbci</c>
     <c>com.meta.box</c>
     <c>com.chinamworld.main</c>
-    <c>com.icbc</c>
-    <c>cmb.pb</c>
-    <c>com.cmri.universalapp</c>
-    <c>com.kwai.videoeditor</c>
-    <c>com.lemon.lv</c>
-    <c>com.baidu.netdisk</c>
-    <c>com.kuaishou.nebula</c>
-    <c>com.gotokeep.keep</c>
-    <c>com.tencent.android.qqdownloader</c>
-    <c>com.dragon.read</c>
-    <c>com.greenpoint.android.mc10086.activity</c>
+    <c>com.opera.browser.beta</c>
+    <c>com.opera.browser</c>
+    <c>com.chrome.dev</c>
+    <c>com.chrome.beta</c>
+    <c>com.chrome.canary</c>
+    <c>org.mozilla.klar</c>
+    <c>org.mozilla.firefox</c>
+    <c>com.microsoft.emmx</c>
+    <c>org.torproject.torbrowser</c>
+    <c>com.duckduckgo.mobile.android</c>
     <c>com.ct.client</c>
     <c>com.heytap.browser</c>
     <c>com.alibaba.wireless</c>

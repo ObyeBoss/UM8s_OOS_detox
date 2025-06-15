@@ -86,7 +86,7 @@
     <wl>com.nearme.gamecenter</wl>
     <wl>com.heytap.gamecenter</wl>
     <wl>com.android.browser</wl>
-    <wl>com.heytap.browser</wl>
+    <!-- <wl>com.heytap.browser</wl> -->
     <wl>com.coloros.browser</wl>
     <wl>com.nearme.browser</wl>
     <wl>com.android.backupconfirm</wl>
@@ -177,7 +177,7 @@
     <wl>fr.gouv.android.stopcovid</wl>
     <wl>covid.trace.morocco</wl>
     <wl>sg.gov.homer</wl>
-    <wl>com.heytap.health</wl>
+    <!-- <wl>com.heytap.health</wl> -->
     <wl>com.xunmeng.pinduoduo</wl>
     <wl>cn.xuexi.android</wl>
     <wl>com.coloros.smartlock</wl>

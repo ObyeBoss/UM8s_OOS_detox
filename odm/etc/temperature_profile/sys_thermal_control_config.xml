@@ -498,7 +498,7 @@
                 <gear_config tempGear="12" cpu="12" charge="2" disFlashlight="1" stopCameraVideo="1" disHBMHB="0" />
                 <gear_config tempGear="14" charge="2" disHBMHB="0" />
             </com.happyelements.AndroidAnimal-com.qqgame.hlddz-cn.jj-com.tencent.lzhx-com.mfp.jelly.oppo-com.nearme.gamecenter.ddz.nearme.gamecenter-com.tencent.peng-com.qqgame.happymj>
-            <com.instagram.android-com.android.chrome>
+            <com.instagram.android-com.android.chrome-com.opera.browser.beta-com.opera.browser-com.chrome.dev-com.chrome.beta-com.chrome.canary-org.mozilla.klar-org.mozilla.firefox-com.microsoft.emmx-org.torproject.torbrowser-com.duckduckgo.mobile.android>
                 <gear_config tempGear="2" gpu="-1" restrict="0" brightness="0" charge="12" modem="0" disFlashlight="0" stopCameraVideo="0"  disCamera="0" disWifiHotSpot="0" disTorch="0" fps="0" refreshRate="0" disVideoSR="0" disOSIE="0" disHBMHB="0" speedChargeAdd="1" />
                 <gear_config tempGear="3" brightness="0" speedChargeAdd="1" />
                 <gear_config tempGear="4" brightness="0" speedChargeAdd="1" />
@@ -512,7 +512,7 @@
                 <gear_config tempGear="12" stopCameraVideo="1" disTorch="0" />
                 <gear_config tempGear="13" stopCameraVideo="1" />
                 <gear_config tempGear="14" />
-            </com.instagram.android-com.android.chrome>
+            </com.instagram.android-com.android.chrome-com.opera.browser.beta-com.opera.browser-com.chrome.dev-com.chrome.beta-com.chrome.canary-org.mozilla.klar-org.mozilla.firefox-com.microsoft.emmx-org.torproject.torbrowser-com.duckduckgo.mobile.android>
             <com.eg.android.AlipayGphone-com.teamtalk.im-com.alibaba.android.rimet-com.facebook.katana>
                 <gear_config tempGear="2" gpu="-1" restrict="0" brightness="14" charge="9" modem="0" disFlashlight="0" stopCameraVideo="0"  disCamera="0" disWifiHotSpot="0" disTorch="0" fps="0" refreshRate="0" disVideoSR="0" disOSIE="0" disHBMHB="0" />
                 <gear_config tempGear="3" />

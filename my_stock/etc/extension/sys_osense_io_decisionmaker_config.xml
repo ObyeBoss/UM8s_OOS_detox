@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <filter-conf>
+        <!-- <project>8350R</project> -->
+        <version>2023083101</version>
+        <filter-name>sys_osense_io_decisionmaker_config</filter-name>
+    </filter-conf>
+
+    <config name="ioload_config">
+        <level index="1" name="normal" value="30"/>
+        <level index="2" name="high" value="75"/>
+    </config>
+
+    <config name="rules_engine">
+        <scene id="1000" name="SCENE_RES_IO_PSI">
+          <rule index = "1" tag = "ioload" skip="ioload">
+              <!-- when ioload normal trigger cpnstop-->
+              <condition ioload="1"/>
+              <policy name="reentrant" type="iostop"/>
+          </rule>
+        </scene>
+    </config>
+
+</resources>

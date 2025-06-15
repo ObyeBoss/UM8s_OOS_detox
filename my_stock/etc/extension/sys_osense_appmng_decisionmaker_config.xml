@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <filter-conf>
+        <!-- <project>8350R</project> -->
+        <version>2025011501</version>
+        <filter-name>sys_osense_appmng_decisionmaker_config</filter-name>
+    </filter-conf>
+
+    <!-- conditions ! -->
+    <!-- available_memory_config ! -->
+    <config name="memory_config">
+        <!-- refer to clearlevelmanager memory_level_threshold -->
+        <!--should has define node, if has not, using "triggerMemory" by default-->
+        <!-- level4-critical |level3-low|level2-moderate|level1-normal"-->
+        <scene name="app_switch">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|1300|1500"/>
+            <mem total="12" value="1000|1100|1250|1500|2000"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="app_switch_C2">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|1800|2100"/>
+            <mem total="12" value="1000|1100|1250|2500|3000"/>
+            <mem total="16" value="1000|1300|1600|3300|3700"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="app_switch_C3">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|2100|2400"/>
+            <mem total="12" value="1000|1100|1250|2800|3200"/>
+            <mem total="16" value="1000|1300|1600|3600|4000"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="app_switch_C4">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|2300|2600"/>
+            <mem total="12" value="1000|1100|1250|3000|3500"/>
+            <mem total="16" value="1000|1400|2200|4300|4500"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+	<scene name="app_switch_C102">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1500|1800"/>
+            <mem total="8" value="1000|1100|1300|1700|2200"/>
+            <mem total="12" value="1000|1100|1600|3200|3500"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+	<scene name="app_switch_C103">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1700|2000"/>
+            <mem total="8" value="1000|1100|1600|2300|2500"/>
+            <mem total="12" value="1000|1200|1600|3500|3800"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+	<scene name="app_switch_C104">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1600|2500|2800"/>
+            <mem total="12" value="1000|1300|1600|3700|4000"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="app_switch_qb">
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1200|1400"/>
+            <mem total="6" value="600|1000|1100|1200|1400"/>
+            <mem total="8" value="900|1000|1100|1200|1400"/>
+            <mem total="12" value="1000|1100|1200|1300|1600"/>
+            <mem total="16" value="1000|1100|1200|1300|1600"/>
+            <mem total="24" value="1000|1100|1200|1300|1600"/>
+        </scene>
+        <scene name="launcher">
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|1300|1500"/>
+            <mem total="12" value="1000|1100|1250|1500|2000"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="launcher_C2">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|1800|2100"/>
+            <mem total="12" value="1000|1100|1250|2500|3000"/>
+            <mem total="16" value="1000|1300|1600|3300|3700"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="launcher_C3">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|2100|2400"/>
+            <mem total="12" value="1000|1100|1250|2800|3200"/>
+            <mem total="16" value="1000|1300|1600|3600|4000"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="launcher_C4">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1200|2300|2600"/>
+            <mem total="12" value="1000|1100|1250|3000|3500"/>
+            <mem total="16" value="1000|1400|2200|4300|4500"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+	<scene name="launcher_C102">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1500|1800"/>
+            <mem total="8" value="1000|1100|1300|1700|2200"/>
+            <mem total="12" value="1000|1100|1600|3200|3500"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+	<scene name="launcher_C103">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1700|2000"/>
+            <mem total="8" value="1000|1100|1600|2300|2500"/>
+            <mem total="12" value="1000|1200|1600|3500|3800"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+	<scene name="launcher_C104">
+            <define value="triggerMemory"/>
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1400|1600"/>
+            <mem total="6" value="600|1000|1300|1600|1800"/>
+            <mem total="8" value="1000|1100|1600|2500|2800"/>
+            <mem total="12" value="1000|1300|1600|3700|4000"/>
+            <mem total="16" value="1000|1300|1600|2000|2200"/>
+            <mem total="24" value="1000|1700|2700|4000|4300"/>
+        </scene>
+        <scene name="launcher_qb">
+            <mem total="2" value="400|500|600|800"/>
+            <mem total="3" value="400|600|800|1000|1200"/>
+            <mem total="4" value="400|700|1100|1200|1400"/>
+            <mem total="6" value="600|1000|1100|1200|1400"/>
+            <mem total="8" value="900|1000|1100|1200|1400"/>
+            <mem total="12" value="1000|1100|1200|1300|1600"/>
+            <mem total="16" value="1000|1100|1200|1300|1600"/>
+            <mem total="24" value="1000|1100|1200|1300|1600"/>
+        </scene>
+        <scene name="bigApp">
+            <mem total="2" value="400|500|600"/>
+            <mem total="3" value="400|600|800|1000"/>
+            <mem total="4" value="400|700|1100|1400"/>
+            <mem total="6" value="600|1000|1300|1600"/>
+            <mem total="8" value="1000|1500|2000|2300"/>
+            <mem total="12" value="1400|2200|2800|3300"/>
+            <mem total="16" value="1400|2200|2800|3300"/>
+            <mem total="24" value="1400|2200|2800|3300"/>
+        </scene>
+        <scene name="respreload">
+            <!--level3-process_preload|level2-normal_activity_preload|level1-game_activity_preload"-->
+            <mem total="2" value="400|600|1000"/>
+            <mem total="3" value="600|800|1200"/>
+            <mem total="4" value="800|1000|1400"/>
+            <mem total="6" value="1000|1300|2048"/>
+            <mem total="8" value="1000|1700|2700"/>
+            <mem total="12" value="1500|2000|3000"/>
+            <mem total="16" value="2000|2000|3000"/>
+            <mem total="24" value="2000|2000|3000"/>
+        </scene>
+    </config>
+
+    <config name="cpuload_config">
+        <level index="1" name="low" value="30"/>
+        <level index="2" name="mid" value="65"/>
+        <level index="3" name="high" value="100"/>
+    </config>
+
+    <config name="qbmode_config">
+        <!-- qbmode 1(off), 2(on) ! -->
+        <level index="1" value="1"/>
+        <level index="2" value="2"/>
+    </config>
+
+    <config name="temperature_config">
+        <level index="1" value="38"/>
+        <level index="2" value="45"/>
+        <level index="3" value="55"/>
+    </config>
+	
+    <config name="hybridswap_avail_buffers_config">
+        <scene name="avail_buffers_C2">
+            <mem total="8" value="2800 2500 2800 1536"/>
+            <mem total="12" value="3000 2700 3000 1536"/>
+            <mem total="16" value="3700 3400 3700 1536"/>
+        </scene>
+        <scene name="avail_buffers_C3">
+            <mem total="8" value="2800 2500 2800 1536"/>
+            <mem total="12" value="3300 3000 3300 1536"/>
+            <mem total="16" value="4000 3700 4000 1536"/>
+        </scene>
+        <scene name="avail_buffers_C4">
+            <mem total="8" value="2900 2600 2900 1536"/>
+            <mem total="12" value="3500 3200 3500 1536"/>
+            <mem total="16" value="4600 4300 4600 1536"/>
+        </scene>
+	<scene name="avail_buffers_C102">
+	        <mem total="6" value="2100 1800 2100 1536"/>
+            <mem total="8" value="2500 2200 2500 1536"/>
+            <mem total="12" value="3800 3500 3800 1536"/>
+            <mem total="16" value="2500 2200 2500 1536"/>
+        </scene>
+	<scene name="avail_buffers_C103">
+	        <mem total="6" value="2300 2000 2300 1536"/>
+            <mem total="8" value="2800 2500 2800 1536"/>
+            <mem total="12" value="4100 3800 4100 1536"/>
+            <mem total="16" value="2500 2200 2500 1536"/>
+        </scene>
+	<scene name="avail_buffers_C104">
+            <mem total="8" value="3100 2800 3100 1536"/>
+            <mem total="12" value="4300 4000 4300 1536"/>
+            <mem total="16" value="2500 2200 2500 1536"/>
+        </scene>
+    </config>
+
+    <!-- policies level ! -->
+    <config name="clear_level">
+        <!--triggerMemory-purposeMemory-appcareThreshold|trigger-pupose-appcare|...|...-->
+        <!-- level4-critical |level3-low|level2-moderate|level1-normal"-->
+        <!-- scene normal move to memory_config -->
+        <!--<scene name="normal">
+        </scene>-->
+        <!-- currently, scene_launcher is same to normal-->
+                <!-- refer to clearlevelmanager memory_level_threshold -->
+        <!--triggerMemory-purposeMemory-appcareThreshold|trigger-pupose-appcare|...|...-->
+        <!-- level4-critical |level3-low|level2-moderate|level1-normal"-->
+        <scene name="app_switch">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1500-1800-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|1500-1800-19|2000-2300-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="app_switch_C2">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|1800-2000-19|2100-2400-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|2500-2800-19|3000-3300-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|3300-3600-19|3700-4100-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="app_switch_C3">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|2100-2300-19|2400-2700-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|2800-3100-19|3200-3500-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|3600-3900-19|4000-4400-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="app_switch_C4">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|2300-2500-19|2600-2900-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|3000-3300-19|3500-3800-0"/>
+            <mem total="16" value="1000-1400-79|1400-1800-59|2200-2600-39|4300-4700-19|4500-4700-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+	<scene name="app_switch_C102">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1500-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1300-1500-39|1700-2000-19|2200-2500-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1600-1900-39|3200-3400-19|3500-3800-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+	<scene name="app_switch_C103">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1700-2000-19|2000-2300-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1600-1800-39|2300-2500-19|2500-2800-0"/>
+            <mem total="12" value="1000-1200-79|1200-1400-59|1600-1800-39|3500-3700-19|3800-4100-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+	<scene name="app_switch_C104">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1600-1800-39|2500-2700-19|2800-3100-0"/>
+            <mem total="12" value="1000-1200-79|1300-1500-59|1600-1800-39|3700-4000-19|4000-4300-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="app_switch_qb">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1200-1400-19|1400-1600-0"/>
+            <mem total="6" value="600-800-79|1000-1100-59|1100-1300-39|1200-1400-19|1400-1600-0"/>
+            <mem total="8" value="900-1000-79|1000-1100-59|1100-1300-39|1200-1400-19|1400-1600-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1600-1800-0"/>
+            <mem total="16" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1600-1800-0"/>
+            <mem total="24" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1600-1800-0"/>
+        </scene>
+        <scene name="launcher">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1500-1800-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|1500-1800-19|2000-2300-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="launcher_C2">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|1800-2000-19|2100-2400-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|2500-2800-19|3000-3300-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|3300-3600-19|3700-4100-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="launcher_C3">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|2100-2300-19|2400-2700-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|2800-3100-19|3200-3500-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|3600-3900-19|4000-4400-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="launcher_C4">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1200-1400-39|2300-2500-19|2600-2900-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1250-1450-39|3000-3300-19|3500-3800-0"/>
+            <mem total="16" value="1000-1400-79|1400-1800-59|2200-2600-39|4300-4700-19|4500-4700-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+	<scene name="launcher_C102">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1500-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1300-1500-39|1700-2000-19|2200-2500-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1600-1900-39|3200-3400-19|3500-3800-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+	<scene name="launcher_C103">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1700-2000-19|2000-2300-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1600-1800-39|2300-2500-19|2500-2800-0"/>
+            <mem total="12" value="1000-1200-79|1200-1400-59|1600-1800-39|3500-3700-19|3800-4100-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+	<scene name="launcher_C104">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1400-1600-19|1600-1800-0"/>
+            <mem total="6" value="600-800-79|1000-1200-59|1300-1500-39|1600-1800-19|1800-2000-0"/>
+            <mem total="8" value="1000-1200-79|1100-1300-59|1600-1800-39|2500-2700-19|2800-3100-0"/>
+            <mem total="12" value="1000-1200-79|1300-1500-59|1600-1800-39|3700-4000-19|4000-4300-0"/>
+            <mem total="16" value="1000-1200-79|1300-1500-59|1600-1800-39|2000-2300-19|2200-2600-0"/>
+            <mem total="24" value="1000-1500-79|1700-2200-59|2700-3200-39|4000-4500-19|4300-4800-0"/>
+        </scene>
+        <scene name="launcher_qb">
+            <define value="triggerMemory-purposeMemory-appcareThreshold"/>
+            <mem total="2" value="400-500-79|500-600-59|600-800-39|800-900-0"/>
+            <mem total="3" value="400-500-79|600-700-59|800-900-39|1000-1200-19|1200-1400-0"/>
+            <mem total="4" value="400-500-79|700-900-59|1100-1300-39|1200-1400-19|1400-1600-0"/>
+            <mem total="6" value="600-800-79|1000-1100-59|1100-1300-39|1200-1400-19|1400-1600-0"/>
+            <mem total="8" value="900-1000-79|1000-1100-59|1100-1300-39|1200-1400-19|1400-1600-0"/>
+            <mem total="12" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1600-1800-0"/>
+            <mem total="16" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1600-1800-0"/>
+            <mem total="24" value="1000-1200-79|1100-1300-59|1200-1400-39|1300-1500-19|1600-1800-0"/>
+        </scene>
+        <!--triggerMemory-remainingCount|trigger-count|...|...-->
+        <!--not used-->
+        <scene name="bigApp">
+            <define value="triggerMemory-remainingCount"/>
+            <mem total="2" value="400-1|500-3|600-5"/>
+            <mem total="3" value="400-1|600-1|800-3|1000-5"/>
+            <mem total="4" value="400-1|700-1|1100-3|1400-5"/>
+            <mem total="6" value="600-1|1000-1|1300-3|1600-5"/>
+            <mem total="8" value="1000-1|1500-1|2000-3|2300-5"/>
+            <mem total="12" value="1400-1|2200-1|2800-3|3300-5"/>
+            <mem total="16" value="1400-1|2200-1|2800-3|3300-5"/>
+            <mem total="24" value="1400-1|2200-1|2800-3|3300-5"/>
+        </scene>
+    </config>
+
+    <config name="freezer_level">
+        <!-- freezer duration, normal app launch 1.5s, big app launch 3s-->
+        <define value="freeze_duration"/>
+        <level index="1" value="1500"/>
+        <level index="2" value="3000"/>
+    </config>
+
+    <!-- rules_engine ! -->
+    <config name="rules_engine">
+        <scene id="1000" name="SCENE_APP_SWITCH">
+            <!-- tag: multi means multi conditions
+                skip: if conditions matched, skip some tag's rules, (all means skip all, the rule matched, just return)
+                if a policy should consider multi conditions, using this rule,
+                if a policy only consider single condition, using single tag(memory,cpuload,ioload) rule.
+                Also, multi tag rule, can resolve policies conflict/coordination problem-->
+
+            <!--clear Policy, now, may just consider memory condition, so using tag "memory"-->
+            <!--freezer Policy, now, may just consider cpuload condition, so using tag "cpuload"-->
+            <!--preload Policy, has 5000ms delay, special!!!! consider condition after 5000ms? -->
+            <!--compress Policy, may consider memory and cpuload -->
+            <!--pkg_disable Policy -->
+            <!--dropCache Policy, using when big app lunch, no conditions? -->
+            <!--<rule index = "6" tag = "delay_cpumemory" skip="delay_cpumemory" offset="5000">
+                <condition cpuload="1" memory_scene="compress" memory="1"/>
+                <policy name="compress" type="force"/>
+            </rule>-->
+            <!-- only when cpuload =2,  freezer policy can run! -->
+            <rule index = "11" tag = "cpuload" skip="cpuload">
+                <!--<condition cpuload="2"/>-->
+                <policy name="freezer" type="fast" level="1"/>
+            </rule>
+            <rule index = "10" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="1" memory_scene="app_switch" append_level="true" memory="5"/>
+                <policy name="clear" type="force-speed" level_scene="app_switch" append_level="true" level="5"/>
+            </rule>
+            <rule index = "9" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="1" memory_scene="app_switch" append_level="true"  memory="4"/>
+                <policy name="clear" type="force-speed" level_scene="app_switch" append_level="true"  level="4"/>
+            </rule>
+            <rule index = "8" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="1" memory_scene="app_switch" append_level="true" memory="3"/>
+                <policy name="clear" type="smart-force" level_scene="app_switch" append_level="true" level="3"/>
+            </rule>
+            <rule index = "7" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="1" memory_scene="app_switch" append_level="true" memory="2"/>
+                <policy name="clear" type="smart-force" level_scene="app_switch" append_level="true" level="2"/>
+            </rule>
+            <rule index = "6" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="1" memory_scene="app_switch" append_level="true" memory="1"/>
+                <policy name="clear" type="cached" level_scene="app_switch" append_level="true" level="1"/>
+            </rule>
+            <rule index = "5" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="2" memory_scene="app_switch_qb" memory="5"/>
+                <policy name="clear" type="force-speed" level_scene="app_switch_qb" level="5"/>
+            </rule>
+            <rule index = "4" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="2" memory_scene="app_switch_qb" memory="4"/>
+                <policy name="clear" type="force-speed" level_scene="app_switch_qb" level="4"/>
+            </rule>
+            <rule index = "3" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="2" memory_scene="app_switch_qb" memory="3"/>
+                <policy name="clear" type="force-speed" level_scene="app_switch_qb" level="3"/>
+            </rule>
+            <rule index = "2" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="2" memory_scene="app_switch_qb" memory="2"/>
+                <policy name="clear" type="force-speed" level_scene="app_switch_qb" level="2"/>
+            </rule>
+            <rule index = "1" tag = "delay_memory" skip="delay_memory" offset="2000">
+                <condition qbmode="2" memory_scene="app_switch_qb" memory="1"/>
+                <policy name="clear" type="cached" level_scene="app_switch_qb" level="1"/>
+            </rule>
+        </scene>
+        <scene id="1001" name="SCENE_LAUNCHER">
+            <!--<rule index = "5" tag = "delay_cpumemory" skip="delay_cpumemory" offset="5000">
+                <condition cpuload="1" memory_scene="compress" memory="1"/>
+                <policy name="compress" type="force"/>
+            </rule>-->
+            <rule index = "10" tag = "memory" skip="memory">
+                <condition qbmode="1" memory_scene="launcher" append_level="true" memory="5"/>
+                <policy name="clear" type="force-speed" level_scene="launcher" append_level="true" level="5" />
+            </rule>
+            <rule index = "9" tag = "memory" skip="memory">
+                <condition qbmode="1" memory_scene="launcher" append_level="true" memory="4"/>
+                <policy name="clear" type="force-speed" level_scene="launcher" append_level="true" level="4"/>
+            </rule>
+            <rule index = "8" tag = "memory" skip="memory">
+                <condition qbmode="1" memory_scene="launcher" append_level="true" memory="3"/>
+                <policy name="clear" type="smart-force" level_scene="launcher" append_level="true" level="3"/>
+            </rule>
+            <rule index = "7" tag = "memory" skip="memory">
+                <condition qbmode="1" memory_scene="launcher" append_level="true" memory="2"/>
+                <policy name="clear" type="smart-force" level_scene="launcher" append_level="true" level="2"/>
+            </rule>
+            <rule index = "6" tag = "memory" skip="memory">
+                <condition qbmode="1" memory_scene="launcher" append_level="true" memory="1"/>
+                <policy name="clear" type="cached" level_scene="launcher" append_level="true" level="1"/>
+            </rule>
+            <rule index = "5" tag = "memory" skip="memory">
+                <condition qbmode="2" memory_scene="launcher_qb" memory="5"/>
+                <policy name="clear" type="force-speed" level_scene="launcher_qb" level="5" />
+            </rule>
+            <rule index = "4" tag = "memory" skip="memory">
+                <condition qbmode="2" memory_scene="launcher_qb" memory="4"/>
+                <policy name="clear" type="force-speed" level_scene="launcher_qb" level="4"/>
+            </rule>
+            <rule index = "3" tag = "memory" skip="memory">
+                <condition qbmode="2" memory_scene="launcher_qb" memory="3"/>
+                <policy name="clear" type="force-speed" level_scene="launcher_qb" level="3"/>
+            </rule>
+            <rule index = "2" tag = "memory" skip="memory">
+                <condition qbmode="2" memory_scene="launcher_qb" memory="2"/>
+                <policy name="clear" type="force-speed" level_scene="launcher_qb" level="2"/>
+            </rule>
+            <rule index = "1" tag = "memory" skip="memory">
+                <condition qbmode="2" memory_scene="launcher_qb" memory="1"/>
+                <policy name="clear" type="cached" level_scene="launcher_qb" level="1"/>
+            </rule>
+        </scene>
+        <scene id="1002" name="SCENE_BIG_APP_SWITCH">
+            <rule index = "1" tag = "cpuload" skip="cpuload">
+                <!--<condition cpuload="2"/>-->
+                <policy name="freezer" type="fast" level="2"/>
+            </rule>
+        </scene>
+        <scene id="1003" name="SCENE_GAME">
+            <rule index = "1">
+                <policy name="appstartup" type="strict"/>
+                <policy name="cpn" type="proxy"/>
+            </rule>
+        </scene>
+        <!-- quick boot mode -->
+        <scene id="1004" name="SCENE_QUICK_BOOT_ENTER">
+            <rule index = "1">
+                <policy name="scenecontrol" type="enable"/>
+                <policy name="clear" type="performance_quick_start" level="1"/>
+            </rule>
+        </scene>
+        <scene id="1005" name="SCENE_QUICK_BOOT_EXIT">
+            <rule index = "1">
+                <policy name="scenecontrol" type="disable"/>
+                <policy name="clear" type="performance_quick_start" level="2"/>
+            </rule>
+        </scene>
+
+        <scene id="1010" name="SCENE_AI_PREDICT">
+            <!--retry_5 means retry 5 times, retry count = 5, offset means retry duration-->
+            <rule index = "1" tag = "retry_5" skip="all" offset="5000">
+                <!--available memory > level2(2000)"-->
+                <condition cpuload = "2" memory_scene="respreload" memory="2+" temperature="1"/>
+                <policy name="respreload" type="activity"/>
+            </rule>
+            <!--retry_1 means retry 1 time, retry count = 1"-->
+            <!--<rule index = "2" tag = "retry_1" skip="all" offset="5000"-->
+                <!--preloadmem_config 3 means available memory >= level3(1000)"-->
+                <!--<condition cpuload = "2" respreloadmem="3" temperature="1"/>
+                <policy name="respreload" type="process"/>
+            </rule>-->
+        </scene>
+
+        <scene id="1011" name="SCENE_GAME_PREDICT">
+            <rule index = "1" tag = "retry_5" skip="retry" offset="5000">
+                <!--available memory >= level1(2000)"-->
+                <condition cpuload = "2" memory_scene="respreload" memory="1+" temperature="1"/>
+                <policy name="respreload" type="activity"/>
+            </rule>
+        </scene>
+
+        <scene id="1012" name="SCENE_PERMANENT_ALIVE_ACTIVITY">
+            <rule index = "1" tag = "retry_120" skip="retry" offset="30000">
+                <!--available memory >= level3(2000)"-->
+                <condition cpuload = "2" memory_scene="respreload" memory="2+" temperature="1"/>
+                <policy name="respreload" type="activity"/>
+            </rule>
+        </scene>
+
+        <scene id="1013" name="SCENE_PERMANENT_ALIVE_PROCESS">
+            <rule index = "1" tag = "retry_10" skip="retry" offset="5000">
+                <!--available memory >= level2(2000)"-->
+                <condition cpuload = "2" memory_scene="respreload" memory="2+" temperature="1"/>
+                <policy name="respreload" type="process"/>
+            </rule>
+        </scene>
+    </config>
+
+</resources>

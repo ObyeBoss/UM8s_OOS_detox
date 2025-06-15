@@ -16,7 +16,7 @@
     <enabled>true</enabled>
     <!-- config options：ALL, MTK, Qcom, SM8650/SM8750/SMXXX, DX-3/DX-4/DX-X -->
     <!-- <platform>MTK</platform> -->
-    <platform>MTK</platform>
+    <platform>mtk</platform>
     <!-- config options：scene:policy effect scenario,scope as "ALL,standby, foreground" -->
     <!-- per_day：policy trigger limits per day -->
     <!-- execute_gap: Minimum gap between two executions(millisecond).   monitor_only: only monitor, not execute actions.-->
@@ -68,10 +68,10 @@
         execute_gap="0"
         monitor_only="false" />
     <!-- the threshold of conditions only support integer yet-->
-    <in index="1" condition="wifistat:rssi_ge_-40" action_args_idx="1" priority="1"/>
-    <in index="2" condition="wifistat:rssi_ge_-40&amp;fgapplist_4" action_args_idx="2" priority="2"/>
-    <in index="3" condition="wifistat:rssi_lt_-40&amp;wifistat:rssi_ge_-70" action_args_idx="3" />
-    <in index="4" condition="wifistat:rssi_lt_-70" action_args_idx="4" />
+    <in index="1" condition="screen_on&amp;wifistat:realRssi_ge_-40" action_args_idx="1" priority="1"/>
+    <in index="2" condition="wifistat:realRssi_ge_-40&amp;fgapplist_4" action_args_idx="2" priority="2"/>
+    <in index="3" condition="screen_on&amp;wifistat:realRssi_lt_-40&amp;wifistat:realRssi_ge_-70" action_args_idx="3" />
+    <in index="4" condition="screen_on&amp;wifistat:realRssi_lt_-70" action_args_idx="4" />
     <out index="1" condition="softapstate_on" action_args_idx="1" />
     <out index="2" condition="wifip2pgroupformed_on" action_args_idx="1" />
     <out index="3" condition="wificonnected_off" action_args_idx="1" />

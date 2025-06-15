@@ -1,0 +1,6 @@
+{
+    "version": "1.0.0",
+    "segmentFrame":[
+        {"name":"segStatus", "keyWords":"tid=\\d+ (.*)", "desc":""}
+    ]
+}

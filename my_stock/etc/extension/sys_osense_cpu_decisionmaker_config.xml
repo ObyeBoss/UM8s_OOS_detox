@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <filter-conf>
+        <!-- <project>8350R</project> -->
+        <version>2023083102</version>
+        <filter-name>sys_osense_cpu_decisionmaker_config</filter-name>
+    </filter-conf>
+
+    <config name="cpuload_config">
+        <level index="1" name="normal" value="30"/>
+        <level index="2" name="high" value="75"/>
+    </config>
+
+    <config name="clear_level">
+        <scene name="kswapd">
+            <define value="purposeFreeMB"/>
+            <mem total="2" value="300"/>
+            <mem total="3" value="300"/>
+            <mem total="4" value="300"/>
+            <mem total="6" value="300"/>
+            <mem total="8" value="300"/>
+            <mem total="12" value="450"/>
+            <mem total="16" value="600"/>
+        </scene>
+    </config>
+
+
+    <config name="rules_engine">
+        <scene id="1000" name="SCENE_RES_CPU_PSI">
+            <rule index = "2">
+                <policy name="cpn" type="proxy"/>
+            </rule>
+            <rule index = "1">
+                <condition kswapdLoadThresHold="6"/>
+                <policy name="clear" type="kswapd" level_scene="kswapd" level="1"/>
+            </rule>
+        </scene>
+    </config>
+
+</resources>
