@@ -4,5 +4,4 @@ version=1.35
 versionCode=1.35
 author=UltraM8
 description=OP13 OOS battery, charging, gps, cellular & wifi, display optimizations.
-updateJson=
-
+updateJson=https://github.com/ObyeBoss/UM8s_OOS_detox/raw/refs/heads/main/update.zip
