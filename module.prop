@@ -1,7 +1,7 @@
 id=um8s_op13_detox
 name=UM8s OP13 OOS Detox
-version=1.37
-versionCode=1.37
+version=1.38
+versionCode=1.38
 author=UltraM8
 description=OP13 OOS battery, charging, gps, cellular & wifi, display optimizations.
 updateJson=https://github.com/ObyeBoss/UM8s_OOS_detox/raw/refs/heads/main/update.zip
