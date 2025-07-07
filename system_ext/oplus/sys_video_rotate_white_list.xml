@@ -1,0 +1,17 @@
+<filter-conf>
+<version>20240807</version>
+<filter-name>sys_video_rotate_white_list</filter-name>
+    <white pkg="tv.danmaku.bili"/> <!-- 哔哩哔哩 -->
+    <white pkg="com.duowan.kiwi"/><!-- 虎牙直播 -->
+    <white pkg="com.tencent.qqlive"/><!-- 腾讯视频 -->
+    <white pkg="com.qiyi.video"/><!-- 爱奇艺 -->
+    <white pkg="com.hunantv.imgo.activity"/><!-- 芒果TV -->
+    <white pkg="com.cctv.yangshipin.app.androidp"/><!-- 央视频 -->
+    <white pkg="com.cmcc.cmvideo" title="com.cmcc.cmvideo/com.cmvideo.capability.vod.VodActivity"/><!-- 咪咕视频 -->
+    <white pkg="com.youku.phone"/><!-- 优酷视频 -->
+    <white pkg="com.sohu.sohuvideo"/><!-- 搜狐视频 -->
+    <white pkg="com.coloros.video"/>
+    <white pkg="com.coloros.yoli"/>
+    <white pkg="com.google.android.youtube"/>
+    <white pkg="app.revanced.android.youtube"/>
+</filter-conf>

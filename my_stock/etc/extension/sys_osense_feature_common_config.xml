@@ -89,15 +89,15 @@
 
         <config name="defaultPssMonitorPkg_config" type="stringList">
             <item name="com.android.launcher|604160"/>
-            <item name="com.heytap.pictorial|330752"/>
+            <!-- <item name="com.heytap.pictorial|330752"/> -->
             <item name="com.android.systemui|313344"/>
             <item name="com.xunmeng.pinduoduo|307200"/>
             <item name="com.oplus.cosa|280576"/>
             <item name="com.oplus.smartsidebar|208896"/>
-            <item name="com.oplus.onetrace|190464"/>
+            <!-- <item name="com.oplus.onetrace|190464"/> -->
             <item name="com.coloros.colordirectservice|150835"/>
-            <item name="com.heytap.mcs|122777"/>
-            <item name="com.oplus.logkit|94924"/>
+            <!-- <item name="com.heytap.mcs|122777"/> -->
+            <!-- <item name="com.oplus.logkit|94924"/> -->
             <item name="com.oplus.notificationmanager|88371"/>
             <item name="com.android.phone|84172"/>
             <item name="com.oplus.battery|84070"/>
@@ -113,7 +113,7 @@
             <item name="com.oplus.atlas|51200"/>
             <item name="com.android.server.telecom|49357"/>
             <item name="android.process.acore|48435"/>
-            <item name="com.debug.loggerui|46797"/>
+            <!-- <item name="com.debug.loggerui|46797"/> -->
             <item name="com.oplus.securitykeyboard|45568"/>
             <item name="com.android.bluetooth|44851"/>
             <item name="com.heytap.openid|41984"/>
@@ -123,9 +123,9 @@
             <item name="com.coloros.assistantscreen|31539"/>
             <item name="com.oplus.regservice|17715"/>
             <item name="com.oplus.nhs|15258"/>
-            <item name="com.oplus.healthservice|14643"/>
+            <!-- <item name="com.oplus.healthservice|14643"/> -->
             <item name="com.oplus.powermonitor|14643"/>
-            <item name="com.oplus.qualityprotect|14234"/>
+            <!-- <item name="com.oplus.qualityprotect|14234"/> -->
         </config>
 
         <config name="processStatsManagerConfig" type="bundle">
@@ -282,6 +282,7 @@
         <config name="defaultForbidRestartPkg_config" type="stringList">
             <item name="com.coloros.filemanager"/>
             <item name="com.coloros.gallery3d"/>
+            <item name="com.oneplus.gallery"/>
 			<item name="com.android.settings"/>
 			<item name="com.heytap.speechassist"/>
 			<item name="com.heytap.health"/>

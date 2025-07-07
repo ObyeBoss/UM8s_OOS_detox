@@ -126,6 +126,7 @@
 		<ioBoostPkg pkg="com.whatsapp"/>
 		<ioBoostPkg pkg="com.facebook.katana"/>
 		<ioBoostPkg pkg="com.coloros.gallery3d"/>
+		<ioBoostPkg pkg="com.oneplus.gallery"/>
 		<ioBoostPkg pkg="jp.naver.line.android"/>
 		<ioBoostPkg pkg="com.ss.android.ugc.trill"/>
 		<ioBoostPkg pkg="com.facebook.orca"/>

@@ -74,7 +74,7 @@
     <wl>com.google.android.inputmethod.latin</wl>
     <wl>com.oppoex.afterservice</wl>
     <wl>com.oplus.romupdate</wl>
-    <wl>com.nearme.statistics.rom</wl>
+    <!-- <wl>com.nearme.statistics.rom</wl> -->
     <wl>com.oplus.sau</wl>
     <wl>com.oplus.ota</wl>
     <wl>com.oplus.trafficmonitor</wl>
@@ -137,7 +137,7 @@
     <wl>com.coloros.musiclink</wl>
     <wl>com.alibaba.android.rimet</wl>
     <wl>com.heytap.pictorial</wl>
-    <wl>com.heytap.mcs</wl>
+    <!-- <wl>com.heytap.mcs</wl> -->
     <wl>com.heytap.cloud</wl>
     <wl>com.taobao.qianniu</wl>
     <wl>com.coloros.safecenter</wl>

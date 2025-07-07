@@ -21,7 +21,7 @@
 	<string name="gps.use_emergency_pdn_for_emergency_supl">1</string>
 	<string name="gps.a_glonass_pos_protocol_select">15</string>
 	<string name="gps.gps_lock">0</string>
-    <string name="gps.nfw_proxy_apps">com.oplus.locationproxy</string>
+    <!-- <string name="gps.nfw_proxy_apps">com.oplus.locationproxy</string> -->
 	<boolean name="hide_ims_apn_bool" value="true"/>
 	<boolean name="config_carrier_support_psim_convert" value="true"/>
 </carrier_config>

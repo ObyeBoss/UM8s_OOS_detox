@@ -325,7 +325,6 @@
 	<startup all="1"  type="1"  pkgName="com.facebook.mlite"/>
 	<startup all="1"  type="1"  pkgName="com.whatsapp.w4b"/>
 	<startup all="1"  type="1"  pkgName="com.imo.android.imoimbeta"/>
-	<startup all="1"  type="1"  pkgName="org.thunderdog.challegram"/>
 	<startup all="1"  type="1"  pkgName="mobi.skred.app"/>
 	<startup all="1"  type="1"  pkgName="com.imo.android.imoimlite"/>
 	<startup all="1"  type="1"  pkgName="com.michatapp.im"/>
@@ -347,7 +346,7 @@
 	<startup all="1"  type="1"  pkgName="com.market.heydemo"/>
 	<startup all="1"  type="1"  pkgName="com.oneplus.note"/>
 	<startup all="1"  type="1"  pkgName="com.finshell.fin"/>
-	<startup all="1"  type="1"  pkgName = "com.color.otaassistant"/>
+	<startup all="1"  type="1"  pkgName="com.color.otaassistant"/>
 
 	<!-- bakcground activity 2-->
 	<!-- activityCallerPkgWhite -->
@@ -514,9 +513,9 @@
 	<startup type = "3"  mask = "16" pkgName = "com.coloros.mcs">
 		<item mask = "16" subMask = "1" action="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
 	</startup>
-	<startup type = "3"  mask = "16" pkgName = "com.heytap.mcs">
+	<!-- <startup type = "3"  mask = "16" pkgName = "com.heytap.mcs">
 		<item mask = "16" subMask = "1" action="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
-	</startup>
+	</startup> -->
 	<!-- appServiceRestrictedpProtectlist -->
 	<startup type = "2"  mask = "16" pkgName = "com.oppo.ota"></startup>
 	<startup type = "2"  mask = "16" pkgName = "com.oppo.cota"></startup>
@@ -526,7 +525,7 @@
 	<startup type = "2"  mask = "16" pkgName = "com.coloros.gesture"></startup>
 	<startup type = "2"  mask = "16" pkgName = "com.oppo.tzupdate"></startup>
 	<startup type = "2"  mask = "16" pkgName = "com.oplus.tzupdate"></startup>
-	<startup type = "2"  mask = "16" pkgName = "com.nearme.statistics.rom"></startup>
+	<!-- <startup type = "2"  mask = "16" pkgName = "com.nearme.statistics.rom"></startup> -->
 	<startup type = "2"  mask = "16" pkgName = "com.coloros.familyguard"></startup>
 	<startup type = "2"  mask = "16" pkgName = "com.opos.ads"></startup>
 	<startup type = "2"  mask = "16" pkgName = "com.android.permissioncontroller"></startup>
@@ -556,7 +555,7 @@
 	<startup type = "2"  mask = "16" pkgName = "com.oppo.camera"></startup>
 	<startup type = "2"  mask = "16" pkgName = "com.finshell.fin"></startup>
 	<!-- <startup type = "2"  mask = "16" pkgName = "com.oplus.ipemanager"></startup> -->
-	<startup type = "2"  mask = "16" pkgName = "com.android.traceur"></startup>
+	<!-- <startup type = "2"  mask = "16" pkgName = "com.android.traceur"></startup> -->
 	<startup type = "2"  mask = "16" pkgName = "com.microsoft.appmanager"></startup>
 	<startup type = "2"  mask = "16" pkgName = "com.android.mms"></startup>
 	<startup type = "2"  mask = "18" pkgName = "com.oplus.calendar">
@@ -573,7 +572,7 @@
 		<item mask = "128"  action = "oplus.intent.action.PACKAGE_ADDED"/>
 	</startup>
 
-	<startup type = "1"  mask = "32" pkgName = "com.oplus.lfeh" priority = "300" ></startup>
+	<!-- <startup type = "1"  mask = "32" pkgName = "com.oplus.lfeh" priority = "300" ></startup>-->
 	<!-- <startup type = "1"  mask = "32" pkgName = "com.oplus.logkit" priority = "300" ></startup>-->
 	<startup all = "11" type = "1"  mask = "32" pkgName = "com.coloros.alarmclock" priority = "300" ></startup>
 	<startup type = "1"  mask = "32" pkgName = "com.oplus.sauhelper" priority = "300" ></startup>
@@ -582,7 +581,7 @@
 	<!-- <startup type = "1"  mask = "32" pkgName = "com.oplus.engineernetwork" priority = "300" ></startup> -->
 	<startup type = "1"  mask = "32" pkgName = "com.oppo.daydreamvideo" priority = "300" ></startup>
 	<startup all = "1" type = "1"  mask = "32" pkgName = "com.market.heydemo" priority = "300" ></startup>
-	<startup type = "1"  mask = "32" pkgName = "com.oplus.postmanservice" priority = "300" ></startup>
+	<!-- <startup type = "1"  mask = "32" pkgName = "com.oplus.postmanservice" priority = "300" ></startup> -->
 	<startup type = "1"  mask = "32" pkgName = "com.oplus.engineercamera" priority = "300" ></startup>
 	<!-- <startup type = "1"  mask = "32" pkgName = "com.oplus.healthservice" priority = "300" ></startup> -->
 	<!-- special broadcast 256-->
@@ -754,8 +753,8 @@
 	<startup type = "3"  mask = "2" pkgName = "com.oplus.melody">
 		<item mask = "2" associatePkg = "com.oplus.melody"/>
 	</startup>
-	<startup type = "1" mask = "716" pkgName = "com.oplus.statistics.rom"/>
-	<startup type = "2" mask = "732" pkgName = "com.oplus.statistics.rom"/>
+	<!-- <startup type = "1" mask = "716" pkgName = "com.oplus.statistics.rom"/>
+	<startup type = "2" mask = "732" pkgName = "com.oplus.statistics.rom"/> -->
 	<startup type = "2" mask = "716" pkgName = "com.oplus.deepthinker"/>
 	<startup type = "1" mask = "716" pkgName = "com.oplus.deepthinker"/>	
     <startup all = "11" type = "2" pkgName = "com.oplus.aod"/>
@@ -1423,8 +1422,8 @@
 	</startup>
 
     <startup type = "2"  mask = "12" pkgName = "com.oplus.acc.gac">
-	    <item mask = "4"  associatePkg = "com.oplus.statistics.rom" action = "com.oplus.dcc.action.RECEIVE_MESSAGE" />
-		<item mask = "8"  associatePkg = "com.oplus.statistics.rom" action = "com.oplus.dcc.action.RECEIVE_MESSAGE" />
+	    <!-- <item mask = "4"  associatePkg = "com.oplus.statistics.rom" action = "com.oplus.dcc.action.RECEIVE_MESSAGE" />
+		<item mask = "8"  associatePkg = "com.oplus.statistics.rom" action = "com.oplus.dcc.action.RECEIVE_MESSAGE" /> -->
 		<item mask = "8"  associatePkg = "com.oplus.games" comp = "com.oplus.acc.clouddecision.CloudDecisionService" />
 	</startup>	
 	
@@ -1613,15 +1612,15 @@
 		<item mask = "8"  associatePkg = "com.heytap.browser" comp = "com.allsaints.music.media.ThirdpartPlayService" />
 	</startup>
 
-	<startup type = "3"  mask = "16" pkgName = "com.heytap.mcs">
+	<!-- <startup type = "3"  mask = "16" pkgName = "com.heytap.mcs">
 		<item mask = "16" subMask = "1" action = "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
-	</startup>
+	</startup> -->
 
 	<startup all = "11" type = "2" pkgName = "com.heytap.xgame"/>
 	<startup type = "1" mask = "716" pkgName = "com.heytap.tas" />
 	<startup type = "2" mask = "716" pkgName = "com.heytap.tas" />
     <startup all = "11" type = "2"  mask = "16" pkgName = "com.heytap.reader"></startup>
-    <startup type = "2" mask = "76" pkgName = "com.heytap.htms" />
+    <!-- <startup type = "2" mask = "76" pkgName = "com.heytap.htms" /> -->
 	<startup all = "11" type = "2" pkgName = "com.heytap.book"/>
 	<startup all = "11" type = "2" pkgName = "com.heytap.gamecenter"/>
 	<startup all = "11" type = "1" pkgName = "com.heytap.gamecenter"/>

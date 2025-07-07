@@ -80,6 +80,14 @@
     <event id="1013" name="SCREEN_STATE_TURN_ON" maxWorkDurationMs="2000" source_caller="android">
         <key-thread name="PowerManagerService" owner="android" sched_policy="ux" priority="LISTPICK_TASK" />
     </event>
+    <event id="1014" name="SCENE_EVENT_IMMS_UX" maxWorkDurationMs="5000" source_caller="android">
+        <key-thread name="android.imms" owner="android" priority="HIGH_HEAVY" sched_policy="ux" />
+    </event>
+    <event id="1015" name="START_TOP_PROCESS" maxWorkDurationMs="1000" source_caller="android">
+        <key-thread name="AppDeath #1" owner="android" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="AppDeath #2" owner="android" sched_policy="ux" priority="MEDIUM_LIGHT" />
+        <key-thread name="oplus.appStartPerf" owner="android" sched_policy="ux" priority="MEDIUM_LIGHT" />
+    </event>
     <!-- systemserver 关键线程调度场景end  -->
 
     <!-- Launcher Key thread scheduling scenarios begin  -->
@@ -491,6 +499,72 @@
         <key-thread name="ScreenshotThreads.FINISH" owner="self" sched_policy="ux" priority="LIGHT" />
     </event>
     <!-- 内置应用 截屏 线程 end -->
+
+    <!-- 抖音直播 线程 begin -->
+    <event id="8100" name="DOUYIN_LIVE_VIP" maxWorkDurationMs="5000" source_caller="networkassistserver">
+        <key-thread name="DynamicDouYinUxThreads" owner="com.ss.android.ugc.aweme" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- 抖音直播 线程 end -->
+
+    <!-- 王者荣耀对战 线程 begin -->
+    <event id="8101" name="TMGP_SGAME_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicTmgpSgameUxThreads" owner="com.tencent.tmgp.sgame" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- 王者荣耀对战 线程 end -->
+
+    <!-- 英雄联盟手游对战 线程 begin -->
+    <event id="8102" name="LOLM_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicLolmUxThreads" owner="com.tencent.lolm" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- 英雄联盟手游对战 线程 end -->
+
+    <!-- 金铲铲对战 线程 begin -->
+    <event id="8103" name="JKCHESS_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicJkchessUxThreads" owner="com.tencent.jkchess" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- 金铲铲对战 线程 end -->
+
+    <!-- 和平精英对战 线程 begin -->
+    <event id="8104" name="PUBGMHD_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicPubgmhdUxThreads" owner="com.tencent.tmgp.pubgmhd" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- 和平精英对战 线程 end -->
+
+    <!-- MLBB对战 线程 begin -->
+    <event id="8150" name="MLBB_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicMLBBUxThreads" owner="com.mobile.legends" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- MLBB对战 线程 end -->
+
+    <!-- Free Fire对战 线程 begin -->
+    <event id="8151" name="FF_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicFFUxThreads" owner="com.dts.freefireth" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- Free Fire对战 线程 end -->
+
+    <!-- freefiremax对战 线程 begin -->
+    <event id="8152" name="FFmax_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicFFmaxUxThreads" owner="com.dts.freefiremax" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- freefiremax对战 线程 end -->
+
+    <!-- PUBG对战 线程 begin -->
+    <event id="8153" name="PUBG_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicPubgUxThreads" owner="com.tencent.ig" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- PUBG对战 线程 线程 end -->
+
+    <!-- BGMI对战 线程 begin -->
+    <event id="8154" name="BGMI_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicBGMIUxThreads" owner="com.pubg.imobile" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- BGMI对战 线程 线程 end -->
+
+    <!-- PUBGVN对战 线程 begin -->
+    <event id="8155" name="PUBGVN_VIP" maxWorkDurationMs="-1" source_caller="networkassistserver">
+        <key-thread name="DynamicPubgVNUxThreads" owner="com.vng.pubgmobile" sched_policy="ux" priority="HEAVY" />
+    </event>
+    <!-- PUBGVN对战 线程 线程 end -->
 
     <!-- vipbinder 配置 begin -->
     <!-- 按 binder node 控制策略来调整 VIP Binder 的作用范围，每个控制策略可绑定到 1 至多个 scene_event -->

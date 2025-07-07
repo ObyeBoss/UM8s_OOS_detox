@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <!-- version time need accurate to hour -->
+    <version>2020060312</version>
+    <filter-name>sys_global_drag_share</filter-name>
+
+    <!--global drag  share switch -->
+    <global_drag_share_switch>true</global_drag_share_switch>
+
+    <!-- support drag package list -->
+    <!-- default <item attr = "XXX" app_version = "0" feature_version = "1"/> -->
+    <support_drag_pkg_list>
+    </support_drag_pkg_list>
+
+    <!-- support drop package list -->
+    <!-- default  <item attr = "XXX" app_version = "0" feature_version = "1"/> -->
+    <support_drop_pkg_list>
+        <item attr = "com.tencent.mm"/>
+        <item attr = "com.tencent.mobileqq"/>
+        <item attr = "com.zing.zalo"/>
+        <item attr = "com.facebook.orca"/>
+        <item attr = "com.facebook.katana"/>
+        <item attr = "com.instagram.android"/>
+        <item attr = "jp.naver.line.android"/>
+        <item attr = "com.whatsapp"/>
+        <item attr = "com.bbm"/>
+        <item attr = "com.skype.raider"/>
+        <item attr = "com.viber.voip"/>
+        <item attr = "com.path"/>
+        <item attr = "com.facebook.lite"/>
+        <item attr = "com.truecaller"/>
+        <item attr = "com.bsb.hike"/>
+        <item attr = "com.snapchat.android"/>
+        <item attr = "com.twitter.android"/>
+        <item attr = "com.google.android.gm"/>
+        <item attr = "com.coloros.note"/>
+        <item attr = "com.oplus.note"/>
+        <item attr = "org.telegram.messenger" />
+        <item attr = "org.thunderdog.challegram" />
+    </support_drop_pkg_list>
+
+    <!-- unsupport drop activity, depends on support_drop_package_list -->
+    <!-- <item attr="xxx"/> -->
+    <!-- default  <item attr = "XXX" app_version = "0" feature_version = "1"/> -->
+    <unsupport_drop_activity_list>
+        <item attr = "com.tencent.mobileqq/cooperation.qzone.QzonePublishMoodProxyActivity"/>
+        <item attr = "com.tencent.mm/.plugin.sns.ui.SnsUploadUI"/>
+    </unsupport_drop_activity_list>
+
+</filter-conf>
